@@ -2,3 +2,9 @@
 layout: default
 title: Home
 ---
+    {% assign pages_list = site.pages %}
+    {% for node in pages_list %}
+        {% if node.title != "About Me" %}         
+            <div class="page" href="{{ node.url }}">{{ node.content }}</a>
+        {% endif %}
+    {% endfor %}
