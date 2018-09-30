@@ -11,8 +11,8 @@ tagline:          'WUSTL CS Master'
 description:      'CS MS Student in WUSTL'
 url:              http://hyde.getpoole.com
 # baseurl:          /hyde/
-# baseurl:          /jr-xing.github.io
-baseurl:          ''
+baseurl:          /jr-xing.github.io
+# baseurl:          '/'
 
 author:
   name:           'Mark Otto'
