@@ -29,6 +29,9 @@ plugins:
   - jekyll-paginate
 
 # Custom vars
+disqus:
+  shortname:   jr-xing
+  
 version:            3.7.1
 sidebar_home_link:  true
 sidebar_blog_link:  '/index_blogs'   # By default, your home page is your blog
