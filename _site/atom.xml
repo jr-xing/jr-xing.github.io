@@ -4,7 +4,7 @@
  <title>Jerry Xing</title>
  <link href="http://localhost:4000/atom.xml" rel="self"/>
  <link href="http://localhost:4000/"/>
- <updated>2018-09-30T13:28:37-05:00</updated>
+ <updated>2018-09-30T14:46:27-05:00</updated>
  <id>http://localhost:4000</id>
  <author>
    <name>Jerry Xing</name>
@@ -19,6 +19,8 @@
    <id>http://localhost:4000/test/2018/09/30/My-first-post</id>
    <content type="html">&lt;p&gt;Hydeout updates the original &lt;a href=&quot;https://github.com/poole/hyde&quot;&gt;Hyde&lt;/a&gt;
 theme for &lt;a href=&quot;http://jekyllrb.com&quot;&gt;Jekyll&lt;/a&gt; 3.x and adds new functionality.&lt;/p&gt;
+
+&lt;!--excerpt--&gt;
 
 &lt;h3 id=&quot;keep-it-simple&quot;&gt;Keep It Simple&lt;/h3&gt;
 
@@ -98,6 +100,15 @@ your property ID in your config file.&lt;/p&gt;
 
 &lt;p&gt;There’s also a bunch of minor tweaks and adjustments throughout the
 theme. Hope this works for you!&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Log of MRI Denoising Project</title>
+   <link href="http://localhost:4000/mri-denoising/2018/09/30/MRI-denoising-log.html"/>
+   <updated>2018-09-30T00:00:00-05:00</updated>
+   <id>http://localhost:4000/mri-denoising/2018/09/30/MRI-denoising-log</id>
+   <content type="html">&lt;p&gt;2018-09-30: Create FIle&lt;/p&gt;
 </content>
  </entry>
  

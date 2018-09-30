@@ -187,6 +187,7 @@ body {
   .index #sidebar { margin-bottom: 0; }
 
   // Make entire container background white to contrast against sidebar
+
   .container {
     background: $body-bg;
     color: $body-color;
@@ -196,7 +197,8 @@ body {
     height: 100vh;
 
     > header {
-      color: inherit;
+  // Xing:     inherit->$post-title-color
+      color: $post-title-color;
       margin: 0;
       h1, h2 {
         color: inherit;

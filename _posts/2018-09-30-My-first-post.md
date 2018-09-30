@@ -3,10 +3,13 @@ layout: post
 title: My First Post Test
 category: test
 excerpt_separator:  <!--more-->
+excerpt: What text editor to use? Sass or plain old CSS? What on earth is Compass? Command line? I'm not touching that. Sound like you? Welcome, I was once like you and this is the guide I wish someone had given me.
 ---
 
 Hydeout updates the original [Hyde](https://github.com/poole/hyde)
 theme for [Jekyll](http://jekyllrb.com) 3.x and adds new functionality.
+
+<!--excerpt-->
 
 ### Keep It Simple
 

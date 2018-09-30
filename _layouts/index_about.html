@@ -2,13 +2,26 @@
 layout: page
 title: Welcome!
 ---
+<style type="text/css">
+  .column {
+    float: left;
+    width: 50%;
+}
 
-A custom page!
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+</style>
 
-<p class="message">
-  Hey there! This page is included as an example. Feel free to customize it
-  for your own use upon downloading. Carry on!
-</p>
+<div class="row">
+  <div class=“column”><img src="{{site.baseurl}}photo_Jerry_xing.jpg") alt="My photo" width="200"/></div>    
+  <div class=“column”><p> This is an under construction page of Jerry (Jiarui) Xing, WUSTL CSE MS Student </p></div>
+    
+</div>
 
-To make pages show up in the sidebar, add `sidebar_link: true` to the front
-matter.
+
+
+<p>HAHAHA</p>

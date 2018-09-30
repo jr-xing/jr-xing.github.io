@@ -1,10 +1,19 @@
 ---
 layout: default
 ---
+
+<style type="text/css">
+  /* p.margin {margin: 0px 0px 0px 20px} */
+  div.margin {margin: 0px 0px 0px 30px}
+</style>
+
 <div class="content">
   	{% for post in site.posts %}	
       <h3><a href="{{site.baseurl}}{{ post.url }}">{{ post.title }}</a></h3>
-      <p><small><strong>{{ post.date | date: "%B %e, %Y" }}</strong> . {{ post.category }} . <a href="http://erjjones.github.com{{ post.url }}#disqus_thread"></a></small></p>			
+      <div class="margin" name="brief-content">
+        <p><small><strong>{{ post.date | date: "%B %e, %Y" }}</strong> . {{ post.category }} . <a href="http://erjjones.github.com{{ post.url }}#disqus_thread"></a></small></p>
+        <p>{{ post.content | truncatewords: 50 }}</p>
+      </div>
     {% endfor %}
   <!-- {% include pagination-newer.html %}
 

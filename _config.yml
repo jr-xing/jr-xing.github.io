@@ -31,7 +31,7 @@ plugins:
 # Custom vars
 disqus:
   shortname:   jr-xing
-  
+
 version:            3.7.1
 sidebar_home_link:  true
 sidebar_blog_link:  '/index_blogs'   # By default, your home page is your blog
@@ -40,3 +40,10 @@ sidebar_blog_link:  '/index_blogs'   # By default, your home page is your blog
                                 # to enable a separate blog link.
 github:
   repo:             https://github.com/fongandrew/hydeout
+
+excerpt_separator: <!--more-->  #这里可以定义自己的摘要分割符
+# http://daemon369.github.io/blog/2014/01/16/jekyll-using-excerpt
+# https://stackoverflow.com/questions/19389451/how-can-i-get-a-post-excerpt-in-jekyll
+
+# Comments:
+# 1. Edit /_layouts/index_about.html to change homepage
