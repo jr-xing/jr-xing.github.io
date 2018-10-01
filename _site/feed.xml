@@ -1,4 +1,122 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-09-30T21:58:17-05:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Jerry Xing</title><subtitle>WUSTL CSE MS Student</subtitle><author><name>Jerry Xing</name></author><entry><title type="html">Log of MRI Denoising Project</title><link href="http://localhost:4000/mri%20denoising/2018/09/30/MRI-denoising-log.html" rel="alternate" type="text/html" title="Log of MRI Denoising Project" /><published>2018-09-30T00:00:00-05:00</published><updated>2018-09-30T00:00:00-05:00</updated><id>http://localhost:4000/mri%20denoising/2018/09/30/MRI-denoising-log</id><content type="html" xml:base="http://localhost:4000/mri%20denoising/2018/09/30/MRI-denoising-log.html">&lt;style&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-10-01T15:25:09-05:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Jerry Xing</title><subtitle>WUSTL CSE MS Student</subtitle><author><name>Jerry Xing</name></author><entry><title type="html">MRI Denoising Project Report Files</title><link href="http://localhost:4000/mri%20denoising/2018/10/01/MRI-denoising-reports.html" rel="alternate" type="text/html" title="MRI Denoising Project Report Files" /><published>2018-10-01T00:00:00-05:00</published><updated>2018-10-01T00:00:00-05:00</updated><id>http://localhost:4000/mri%20denoising/2018/10/01/MRI-denoising-reports</id><content type="html" xml:base="http://localhost:4000/mri%20denoising/2018/10/01/MRI-denoising-reports.html">&lt;style&gt;
+.parameter{font-size:15px; background-color:rgb(230, 230, 230); padding:10px}
+&lt;/style&gt;
+
+&lt;!-- https://stackoverflow.com/questions/17677094/jekyll-for-loop-over-all-images-in-a-folder --&gt;
+&lt;h2 id=&quot;files&quot;&gt;Files&lt;/h2&gt;
+&lt;pre&gt;
+
+    
+
+    
+
+    
+	&lt;a src=&quot;/assets/files/denoising/jrxing_mri_report_0927.pptx&quot;&gt;jrxing_mri_report_0927.pptx&lt;/a&gt;
+    
+
+    
+	&lt;a src=&quot;/assets/files/denoising/jrxing_report_0927.tar.gz&quot;&gt;jrxing_report_0927.tar.gz&lt;/a&gt;
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+&lt;/pre&gt;
+
+&lt;h2 id=&quot;log&quot;&gt;Log&lt;/h2&gt;
+&lt;h3 id=&quot;2018-09-30&quot;&gt;2018-09-30&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Create FIle&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>Jerry Xing</name></author><category term="MRI Denoising" /><summary type="html">Files jrxing_mri_report_0927.pptx jrxing_report_0927.tar.gz Log 2018-09-30 Create FIle</summary></entry><entry><title type="html">Log of MRI Denoising Project</title><link href="http://localhost:4000/mri%20denoising/2018/09/30/MRI-denoising-log.html" rel="alternate" type="text/html" title="Log of MRI Denoising Project" /><published>2018-09-30T00:00:00-05:00</published><updated>2018-09-30T00:00:00-05:00</updated><id>http://localhost:4000/mri%20denoising/2018/09/30/MRI-denoising-log</id><content type="html" xml:base="http://localhost:4000/mri%20denoising/2018/09/30/MRI-denoising-log.html">&lt;style&gt;
 .parameter{font-size:15px; background-color:rgb(230, 230, 230); padding:10px}
 &lt;/style&gt;
 
@@ -47,6 +165,10 @@
           &lt;li&gt;
             &lt;details style=&quot;margin-top:0px; width:1000px&quot;&gt;
       &lt;summary&gt;Training&lt;/summary&gt;
+                
+                    
+                
+                    
                 
                     
                 
@@ -167,6 +289,10 @@
           &lt;li&gt;
             &lt;details style=&quot;margin-top:0px; width:1000px&quot;&gt;
       &lt;summary&gt;Test&lt;/summary&gt;
+                
+                    
+                
+                    
                 
                     
                 
@@ -391,6 +517,10 @@
                     
                 
                     
+                
+                    
+                
+                    
               &lt;img src=&quot;/assets/imgs/denoising/MRI_cont3_motion_l2_weight1/training/00406000-1374-inputs.png&quot; alt=&quot;image&quot; style=&quot;float: left; vertical-align: text-top;&quot; /&gt;
                     
                 
@@ -451,6 +581,10 @@
           &lt;li&gt;
             &lt;details style=&quot;margin-top:0px; width:1000px&quot;&gt;
       &lt;summary&gt;Test&lt;/summary&gt;
+                
+                    
+                
+                    
                 
                     
                 

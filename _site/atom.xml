@@ -4,13 +4,140 @@
  <title>Jerry Xing</title>
  <link href="http://localhost:4000/atom.xml" rel="self"/>
  <link href="http://localhost:4000/"/>
- <updated>2018-09-30T21:58:17-05:00</updated>
+ <updated>2018-10-01T15:25:09-05:00</updated>
  <id>http://localhost:4000</id>
  <author>
    <name>Jerry Xing</name>
    <email></email>
  </author>
 
+ 
+ <entry>
+   <title>MRI Denoising Project Report Files</title>
+   <link href="http://localhost:4000/mri%20denoising/2018/10/01/MRI-denoising-reports.html"/>
+   <updated>2018-10-01T00:00:00-05:00</updated>
+   <id>http://localhost:4000/mri%20denoising/2018/10/01/MRI-denoising-reports</id>
+   <content type="html">&lt;style&gt;
+.parameter{font-size:15px; background-color:rgb(230, 230, 230); padding:10px}
+&lt;/style&gt;
+
+&lt;!-- https://stackoverflow.com/questions/17677094/jekyll-for-loop-over-all-images-in-a-folder --&gt;
+&lt;h2 id=&quot;files&quot;&gt;Files&lt;/h2&gt;
+&lt;pre&gt;
+
+    
+
+    
+
+    
+	&lt;a src=&quot;/assets/files/denoising/jrxing_mri_report_0927.pptx&quot;&gt;jrxing_mri_report_0927.pptx&lt;/a&gt;
+    
+
+    
+	&lt;a src=&quot;/assets/files/denoising/jrxing_report_0927.tar.gz&quot;&gt;jrxing_report_0927.tar.gz&lt;/a&gt;
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+&lt;/pre&gt;
+
+&lt;h2 id=&quot;log&quot;&gt;Log&lt;/h2&gt;
+&lt;h3 id=&quot;2018-09-30&quot;&gt;2018-09-30&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Create FIle&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+ </entry>
  
  <entry>
    <title>My First Post Test</title>
@@ -181,6 +308,10 @@ theme. Hope this works for you!&lt;/p&gt;
                     
                 
                     
+                
+                    
+                
+                    
               &lt;img src=&quot;/assets/imgs/denoising/MRI_cont3_motion_l2_masked/training/00202000-1095-inputs.png&quot; alt=&quot;image&quot; style=&quot;float: left; vertical-align: text-top;&quot; /&gt;
                     
                 
@@ -277,6 +408,10 @@ theme. Hope this works for you!&lt;/p&gt;
           &lt;li&gt;
             &lt;details style=&quot;margin-top:0px; width:1000px&quot;&gt;
       &lt;summary&gt;Test&lt;/summary&gt;
+                
+                    
+                
+                    
                 
                     
                 
@@ -501,6 +636,10 @@ theme. Hope this works for you!&lt;/p&gt;
                     
                 
                     
+                
+                    
+                
+                    
               &lt;img src=&quot;/assets/imgs/denoising/MRI_cont3_motion_l2_weight1/training/00406000-1374-inputs.png&quot; alt=&quot;image&quot; style=&quot;float: left; vertical-align: text-top;&quot; /&gt;
                     
                 
@@ -561,6 +700,10 @@ theme. Hope this works for you!&lt;/p&gt;
           &lt;li&gt;
             &lt;details style=&quot;margin-top:0px; width:1000px&quot;&gt;
       &lt;summary&gt;Test&lt;/summary&gt;
+                
+                    
+                
+                    
                 
                     
                 
