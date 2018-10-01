@@ -11,7 +11,7 @@
 
   <title>
     
-      MRI Denoising &middot; Jerry Xing
+      Log of MRI Denoising Project &middot; Jerry Xing
     
   </title>
 
@@ -35,7 +35,7 @@
 </head>
 
 
-  <body class="category">
+  <body class="post">
 
     <div id="sidebar">
   <header>
@@ -130,7 +130,7 @@
 
   
     
-      <a class="category-link  active"
+      <a class="category-link "
           href="/category/MRI-Denoising.html">MRI Denoising</a>
     
   
@@ -244,27 +244,236 @@
 
     <main class="container">
       <header>
-  <h1 class="page-title">MRI Denoising</h1>
+  <h1 class="post-title">Log of MRI Denoising Project</h1>
 </header>
 <div class="content">
-  
-  <p>The is the collection for MRI denoising project.</p>
+  <div class="post-meta">
+  <span class="post-date">30 Sep 2018</span>
+  <span class="post-categories">
+    
+      &bull;
 
+      
+      
+      
 
-
-<ul class="posts-list">
-  
-  
-    <li>
-      <h3>
-        <a href="/mri%20denoising/2018/09/30/MRI-denoising-log.html">
-          Log of MRI Denoising Project
-          <small>30 Sep 2018</small>
+      
+        <a href="/category/MRI-Denoising.html">
+          MRI Denoising
         </a>
-      </h3>
-    </li>
-  
+      
+    
+  </span>
+</div>
+
+
+  <div class="post-body">
+    <style>
+.parameter{font-size:15px; background-color:rgb(230, 230, 230); padding:10px}
+</style>
+
+<h2 id="experiment-record">Experiment Record</h2>
+<ol>
+  <li>MRI_cont3_motion_l2_masked_test(Pix2Pix)
+    <ul>
+      <li>
+        <details><summary>Parameters</summary>
+<pre class="parameter">
+"GEN_LOSS": "L2_masked",
+"GPU_IND": "3",  
+"aspect_ratio": 1.0,  
+"batch_size": 1,  
+"beta1": 0.5,  
+"checkpoint": "../training_checkpoint/MRI_cont3_motion_l2_masked_train",  
+"custom_loss_weight": 100.0,  
+"display_freq": 1000,  
+"flip": false,  
+"gan_weight": 1.0,  
+"input_dir": "../training_data/MRI_cont3_motion/val",  
+"lab_colorization": false,  
+"lr": 0.0002,  
+"max_epochs": null,  
+"max_steps": null,  
+"mode": "test",  
+"ndf": 64,  
+"ngf": 64,  
+"output_dir": "../test_result/MRI_cont3_motion_l2_masked_test",  
+"output_filetype": "png",  
+"progress_freq": 50,  
+"save_freq": 5000,  
+"scale_size": 256,  
+"seed": 1035730246,  
+"separable_conv": false,  
+"summary_freq": 100,  
+"trace_freq": 0,  
+"which_direction": "BtoA"  
+Dataset_size: 2100
+</pre>
+</details>
+      </li>
+      <li>Images
+        <ul>
+          <li>training
+  <img src="&quot;/assets/imgs/denoising/MRI_cont3_motion_l2_masked_test/training/00202000-1095-inputs.png&quot;" alt="" /></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ol>
+
+<details style="margin-top:0px; width:1000px">
+    <summary>Parameters</summary>
+    <pre style="margin-top:0px; width:1000px">
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+            <img src="/assets/imgs/denoising/MRI_cont3_motion_l2_masked_test/training/00202000-1095-inputs.png" alt="image" style="float: left; vertical-align: text-top;" />
+        
+    
+        
+            <img src="/assets/imgs/denoising/MRI_cont3_motion_l2_masked_test/training/00202000-1095-outputs.png" alt="image" style="float: left; vertical-align: text-top;" />
+        
+    
+        
+            <img src="/assets/imgs/denoising/MRI_cont3_motion_l2_masked_test/training/00202000-1095-targets.png" alt="image" style="float: left; vertical-align: text-top;" />
+        
+    
+        
+            <img src="/assets/imgs/denoising/MRI_cont3_motion_l2_masked_test/training/00203000-816-inputs.png" alt="image" style="float: left; vertical-align: text-top;" />
+        
+    
+        
+            <img src="/assets/imgs/denoising/MRI_cont3_motion_l2_masked_test/training/00203000-816-outputs.png" alt="image" style="float: left; vertical-align: text-top;" />
+        
+    
+        
+            <img src="/assets/imgs/denoising/MRI_cont3_motion_l2_masked_test/training/00203000-816-targets.png" alt="image" style="float: left; vertical-align: text-top;" />
+        
+    
+        
+            <img src="/assets/imgs/denoising/MRI_cont3_motion_l2_masked_test/training/00204000-1699-inputs.png" alt="image" style="float: left; vertical-align: text-top;" />
+        
+    
+        
+            <img src="/assets/imgs/denoising/MRI_cont3_motion_l2_masked_test/training/00204000-1699-outputs.png" alt="image" style="float: left; vertical-align: text-top;" />
+        
+    
+        
+            <img src="/assets/imgs/denoising/MRI_cont3_motion_l2_masked_test/training/00204000-1699-targets.png" alt="image" style="float: left; vertical-align: text-top;" />
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+    </pre>
+</details>
+
+<h2 id="log">Log</h2>
+<h3 id="2018-09-30">2018-09-30</h3>
+<ul>
+  <li>Create FIle</li>
 </ul>
+
+    
+
+
+
+<div class="post-tags">
+  
+</div>
+  </div>
+
+  
+  <section class="comments">
+    <h2>Comments</h2>
+    
+  <div id="disqus_thread">
+    <button class="disqus-load" onClick="loadDisqusComments()">
+      Load Comments
+    </button>
+  </div>
+  <script>
+
+  /**
+  *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW
+  *  TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+  *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT:s
+  *  https://disqus.com/admin/universalcode/#configuration-variables
+  */
+  var disqus_config = function () {
+    this.page.url = "http://localhost:4000/mri%20denoising/2018/09/30/MRI-denoising-log.html";
+    this.page.identifier = "" ||
+                           "http://localhost:4000/mri%20denoising/2018/09/30/MRI-denoising-log.html";
+  }
+  function loadDisqusComments() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+    s.src = '//jr-xing.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+  }
+  </script>
+  <noscript>
+    Please enable JavaScript to view the
+    <a href="https://disqus.com/?ref_noscript">comments powered by Disqus</a>.
+  </noscript>
+
+
+
+  </section>
+
+  <section class="related">
+  <h2>Related Posts</h2>
+  <ul class="posts-list">
+    
+      <li>
+        <h3>
+          <a href="/test/2018/09/30/My-first-post.html">
+            My First Post Test
+            <small>30 Sep 2018</small>
+          </a>
+        </h3>
+      </li>
+    
+  </ul>
+</section>
 
 </div>
 
