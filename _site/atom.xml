@@ -4,7 +4,7 @@
  <title>Jerry Xing</title>
  <link href="http://localhost:4000/atom.xml" rel="self"/>
  <link href="http://localhost:4000/"/>
- <updated>2018-10-01T15:25:09-05:00</updated>
+ <updated>2018-10-01T15:31:21-05:00</updated>
  <id>http://localhost:4000</id>
  <author>
    <name>Jerry Xing</name>
@@ -30,11 +30,11 @@
     
 
     
-	&lt;a src=&quot;/assets/files/denoising/jrxing_mri_report_0927.pptx&quot;&gt;jrxing_mri_report_0927.pptx&lt;/a&gt;
+	&lt;a href=&quot;/assets/files/denoising/jrxing_mri_report_0927.pptx&quot;&gt;jrxing_mri_report_0927.pptx&lt;/a&gt;
     
 
     
-	&lt;a src=&quot;/assets/files/denoising/jrxing_report_0927.tar.gz&quot;&gt;jrxing_report_0927.tar.gz&lt;/a&gt;
+	&lt;a href=&quot;/assets/files/denoising/jrxing_report_0927.tar.gz&quot;&gt;jrxing_report_0927.tar.gz&lt;/a&gt;
     
 
     

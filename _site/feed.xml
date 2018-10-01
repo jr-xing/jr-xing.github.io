@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-10-01T15:25:09-05:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Jerry Xing</title><subtitle>WUSTL CSE MS Student</subtitle><author><name>Jerry Xing</name></author><entry><title type="html">MRI Denoising Project Report Files</title><link href="http://localhost:4000/mri%20denoising/2018/10/01/MRI-denoising-reports.html" rel="alternate" type="text/html" title="MRI Denoising Project Report Files" /><published>2018-10-01T00:00:00-05:00</published><updated>2018-10-01T00:00:00-05:00</updated><id>http://localhost:4000/mri%20denoising/2018/10/01/MRI-denoising-reports</id><content type="html" xml:base="http://localhost:4000/mri%20denoising/2018/10/01/MRI-denoising-reports.html">&lt;style&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-10-01T15:31:21-05:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Jerry Xing</title><subtitle>WUSTL CSE MS Student</subtitle><author><name>Jerry Xing</name></author><entry><title type="html">MRI Denoising Project Report Files</title><link href="http://localhost:4000/mri%20denoising/2018/10/01/MRI-denoising-reports.html" rel="alternate" type="text/html" title="MRI Denoising Project Report Files" /><published>2018-10-01T00:00:00-05:00</published><updated>2018-10-01T00:00:00-05:00</updated><id>http://localhost:4000/mri%20denoising/2018/10/01/MRI-denoising-reports</id><content type="html" xml:base="http://localhost:4000/mri%20denoising/2018/10/01/MRI-denoising-reports.html">&lt;style&gt;
 .parameter{font-size:15px; background-color:rgb(230, 230, 230); padding:10px}
 &lt;/style&gt;
 
@@ -11,11 +11,11 @@
     
 
     
-	&lt;a src=&quot;/assets/files/denoising/jrxing_mri_report_0927.pptx&quot;&gt;jrxing_mri_report_0927.pptx&lt;/a&gt;
+	&lt;a href=&quot;/assets/files/denoising/jrxing_mri_report_0927.pptx&quot;&gt;jrxing_mri_report_0927.pptx&lt;/a&gt;
     
 
     
-	&lt;a src=&quot;/assets/files/denoising/jrxing_report_0927.tar.gz&quot;&gt;jrxing_report_0927.tar.gz&lt;/a&gt;
+	&lt;a href=&quot;/assets/files/denoising/jrxing_report_0927.tar.gz&quot;&gt;jrxing_report_0927.tar.gz&lt;/a&gt;
     
 
     

@@ -12,7 +12,7 @@ excerpt_separator:  <!--more-->
 <pre>
 {% for file in site.static_files %}
     {% if file.path contains 'files/denoising' %}
-	<a src="{{ site.baseurl }}{{ file.path }}">{{ file.name }}</a>
+	<a href="{{ site.baseurl }}{{ file.path }}">{{ file.name }}</a>
     {% endif %}
 {% endfor %}
 </pre>
