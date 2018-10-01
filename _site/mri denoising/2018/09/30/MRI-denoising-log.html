@@ -272,139 +272,578 @@
 .parameter{font-size:15px; background-color:rgb(230, 230, 230); padding:10px}
 </style>
 
+<!-- https://stackoverflow.com/questions/17677094/jekyll-for-loop-over-all-images-in-a-folder -->
 <h2 id="experiment-record">Experiment Record</h2>
 <ol>
-  <li>MRI_cont3_motion_l2_masked_test(Pix2Pix)
+  <li><strong>MRI_cont3_motion_l2_masked (Pix2Pix)</strong>
     <ul>
       <li>
         <details><summary>Parameters</summary>
 <pre class="parameter">
-"GEN_LOSS": "L2_masked",
-"GPU_IND": "3",  
-"aspect_ratio": 1.0,  
-"batch_size": 1,  
-"beta1": 0.5,  
-"checkpoint": "../training_checkpoint/MRI_cont3_motion_l2_masked_train",  
-"custom_loss_weight": 100.0,  
-"display_freq": 1000,  
-"flip": false,  
-"gan_weight": 1.0,  
-"input_dir": "../training_data/MRI_cont3_motion/val",  
-"lab_colorization": false,  
-"lr": 0.0002,  
-"max_epochs": null,  
-"max_steps": null,  
-"mode": "test",  
-"ndf": 64,  
-"ngf": 64,  
-"output_dir": "../test_result/MRI_cont3_motion_l2_masked_test",  
-"output_filetype": "png",  
-"progress_freq": 50,  
-"save_freq": 5000,  
-"scale_size": 256,  
-"seed": 1035730246,  
-"separable_conv": false,  
-"summary_freq": 100,  
-"trace_freq": 0,  
-"which_direction": "BtoA"  
-Dataset_size: 2100
+    "GEN_LOSS": "L2_masked",
+    "GPU_IND": "3",  
+    "aspect_ratio": 1.0,  
+    "batch_size": 1,  
+    "beta1": 0.5,  
+    "checkpoint": "../training_checkpoint/MRI_cont3_motion_l2_masked_train",  
+    "custom_loss_weight": 100.0,  
+    "display_freq": 1000,  
+    "flip": false,  
+    "gan_weight": 1.0,  
+    "input_dir": "../training_data/MRI_cont3_motion/val",  
+    "lab_colorization": false,  
+    "lr": 0.0002,  
+    "max_epochs": null,  
+    "max_steps": null,  
+    "mode": "test",  
+    "ndf": 64,  
+    "ngf": 64,  
+    "output_dir": "../test_result/MRI_cont3_motion_l2_masked_test",  
+    "output_filetype": "png",  
+    "progress_freq": 50,  
+    "save_freq": 5000,  
+    "scale_size": 256,  
+    "seed": 1035730246,  
+    "separable_conv": false,  
+    "summary_freq": 100,  
+    "trace_freq": 0,  
+    "which_direction": "BtoA"  
+    Dataset_size: 2100
 </pre>
 </details>
       </li>
-      <li>Images
+      <li>Outputs
         <ul>
-          <li>training
-  <img src="&quot;/assets/imgs/denoising/MRI_cont3_motion_l2_masked_test/training/00202000-1095-inputs.png&quot;" alt="" /></li>
+          <li>
+            <details style="margin-top:0px; width:1000px">
+      <summary>Training</summary>
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+              <img src="/assets/imgs/denoising/MRI_cont3_motion_l2_masked/training/00202000-1095-inputs.png" alt="image" style="float: left; vertical-align: text-top;" />
+                    
+                
+                    
+              <img src="/assets/imgs/denoising/MRI_cont3_motion_l2_masked/training/00202000-1095-outputs.png" alt="image" style="float: left; vertical-align: text-top;" />
+                    
+                
+                    
+              <img src="/assets/imgs/denoising/MRI_cont3_motion_l2_masked/training/00202000-1095-targets.png" alt="image" style="float: left; vertical-align: text-top;" />
+                    
+                
+                    
+              <img src="/assets/imgs/denoising/MRI_cont3_motion_l2_masked/training/00203000-816-inputs.png" alt="image" style="float: left; vertical-align: text-top;" />
+                    
+                
+                    
+              <img src="/assets/imgs/denoising/MRI_cont3_motion_l2_masked/training/00203000-816-outputs.png" alt="image" style="float: left; vertical-align: text-top;" />
+                    
+                
+                    
+              <img src="/assets/imgs/denoising/MRI_cont3_motion_l2_masked/training/00203000-816-targets.png" alt="image" style="float: left; vertical-align: text-top;" />
+                    
+                
+                    
+              <img src="/assets/imgs/denoising/MRI_cont3_motion_l2_masked/training/00204000-1699-inputs.png" alt="image" style="float: left; vertical-align: text-top;" />
+                    
+                
+                    
+              <img src="/assets/imgs/denoising/MRI_cont3_motion_l2_masked/training/00204000-1699-outputs.png" alt="image" style="float: left; vertical-align: text-top;" />
+                    
+                
+                    
+              <img src="/assets/imgs/denoising/MRI_cont3_motion_l2_masked/training/00204000-1699-targets.png" alt="image" style="float: left; vertical-align: text-top;" />
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+  </details>
+          </li>
+          <li>
+            <details style="margin-top:0px; width:1000px">
+      <summary>Test</summary>
+                
+                    
+                
+                    
+                
+                    
+              <img src="/assets/imgs/denoising/MRI_cont3_motion_l2_masked/test/28-inputs.png" alt="image" style="float: left; vertical-align: text-top;" />
+                    
+                
+                    
+              <img src="/assets/imgs/denoising/MRI_cont3_motion_l2_masked/test/28-outputs.png" alt="image" style="float: left; vertical-align: text-top;" />
+                    
+                
+                    
+              <img src="/assets/imgs/denoising/MRI_cont3_motion_l2_masked/test/28-targets.png" alt="image" style="float: left; vertical-align: text-top;" />
+                    
+                
+                    
+              <img src="/assets/imgs/denoising/MRI_cont3_motion_l2_masked/test/29-inputs.png" alt="image" style="float: left; vertical-align: text-top;" />
+                    
+                
+                    
+              <img src="/assets/imgs/denoising/MRI_cont3_motion_l2_masked/test/29-outputs.png" alt="image" style="float: left; vertical-align: text-top;" />
+                    
+                
+                    
+              <img src="/assets/imgs/denoising/MRI_cont3_motion_l2_masked/test/29-targets.png" alt="image" style="float: left; vertical-align: text-top;" />
+                    
+                
+                    
+              <img src="/assets/imgs/denoising/MRI_cont3_motion_l2_masked/test/30-inputs.png" alt="image" style="float: left; vertical-align: text-top;" />
+                    
+                
+                    
+              <img src="/assets/imgs/denoising/MRI_cont3_motion_l2_masked/test/30-outputs.png" alt="image" style="float: left; vertical-align: text-top;" />
+                    
+                
+                    
+              <img src="/assets/imgs/denoising/MRI_cont3_motion_l2_masked/test/30-targets.png" alt="image" style="float: left; vertical-align: text-top;" />
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+  </details>
+          </li>
         </ul>
       </li>
+      <li>Strangely, training outputs seem to distort the shape of organs —— which may could be solved by put larger weight on l2 loss —— test outputs look much better than training outputs and only oversmooth.</li>
+      <li>Direction: Use more data and larger l2 weight</li>
+    </ul>
+  </li>
+  <li><strong>MRI_cont3_motion_l2_weight1</strong>
+    <ul>
+      <li>
+        <details><summary>Parameters</summary>
+<pre class="parameter">
+    "GEN_LOSS": "L2",
+    "GPU_IND": "3",
+    "aspect_ratio": 1.0,
+    "batch_size": 1,
+    "beta1": 0.5,
+    "checkpoint": "../training_checkpoint/MRI_cont3_motion_l2_weight1_train",
+    "custom_loss_weight": 10.0,
+    "display_freq": 1000,
+    "flip": false,
+    "gan_weight": 1.0,
+    "input_dir": "../training_data/MRI_cont3_motion/val",
+    "lab_colorization": false,
+    "lr": 0.0002,
+    "max_epochs": null,
+    "max_steps": null,
+    "mode": "test",
+    "ndf": 64,
+    "ngf": 64,
+    "output_dir": "../test_result/MRI_cont3_motion_l2_weight1_test",
+    "output_filetype": "png",
+    "progress_freq": 50,
+    "save_freq": 5000,
+    "scale_size": 256,
+    "seed": 385461128,
+    "separable_conv": false,
+    "summary_freq": 100,
+    "trace_freq": 0,
+    "which_direction": "BtoA"
+</pre>
+</details>
+      </li>
+      <li>Outputs
+        <ul>
+          <li>
+            <details style="margin-top:0px; width:1000px">
+      <summary>Training</summary>
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+              <img src="/assets/imgs/denoising/MRI_cont3_motion_l2_weight1/training/00406000-1374-inputs.png" alt="image" style="float: left; vertical-align: text-top;" />
+                    
+                
+                    
+              <img src="/assets/imgs/denoising/MRI_cont3_motion_l2_weight1/training/00406000-1374-outputs.png" alt="image" style="float: left; vertical-align: text-top;" />
+                    
+                
+                    
+              <img src="/assets/imgs/denoising/MRI_cont3_motion_l2_weight1/training/00406000-1374-targets.png" alt="image" style="float: left; vertical-align: text-top;" />
+                    
+                
+                    
+              <img src="/assets/imgs/denoising/MRI_cont3_motion_l2_weight1/training/00407000-409-inputs.png" alt="image" style="float: left; vertical-align: text-top;" />
+                    
+                
+                    
+              <img src="/assets/imgs/denoising/MRI_cont3_motion_l2_weight1/training/00407000-409-outputs.png" alt="image" style="float: left; vertical-align: text-top;" />
+                    
+                
+                    
+              <img src="/assets/imgs/denoising/MRI_cont3_motion_l2_weight1/training/00407000-409-targets.png" alt="image" style="float: left; vertical-align: text-top;" />
+                    
+                
+                    
+              <img src="/assets/imgs/denoising/MRI_cont3_motion_l2_weight1/training/00408000-391-inputs.png" alt="image" style="float: left; vertical-align: text-top;" />
+                    
+                
+                    
+              <img src="/assets/imgs/denoising/MRI_cont3_motion_l2_weight1/training/00408000-391-outputs.png" alt="image" style="float: left; vertical-align: text-top;" />
+                    
+                
+                    
+              <img src="/assets/imgs/denoising/MRI_cont3_motion_l2_weight1/training/00408000-391-targets.png" alt="image" style="float: left; vertical-align: text-top;" />
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+  </details>
+          </li>
+          <li>
+            <details style="margin-top:0px; width:1000px">
+      <summary>Test</summary>
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+              <img src="/assets/imgs/denoising/MRI_cont3_motion_l2_weight1/test/28-inputs.png" alt="image" style="float: left; vertical-align: text-top;" />
+                    
+                
+                    
+              <img src="/assets/imgs/denoising/MRI_cont3_motion_l2_weight1/test/28-outputs.png" alt="image" style="float: left; vertical-align: text-top;" />
+                    
+                
+                    
+              <img src="/assets/imgs/denoising/MRI_cont3_motion_l2_weight1/test/28-targets.png" alt="image" style="float: left; vertical-align: text-top;" />
+                    
+                
+                    
+              <img src="/assets/imgs/denoising/MRI_cont3_motion_l2_weight1/test/29-inputs.png" alt="image" style="float: left; vertical-align: text-top;" />
+                    
+                
+                    
+              <img src="/assets/imgs/denoising/MRI_cont3_motion_l2_weight1/test/29-outputs.png" alt="image" style="float: left; vertical-align: text-top;" />
+                    
+                
+                    
+              <img src="/assets/imgs/denoising/MRI_cont3_motion_l2_weight1/test/29-targets.png" alt="image" style="float: left; vertical-align: text-top;" />
+                    
+                
+                    
+              <img src="/assets/imgs/denoising/MRI_cont3_motion_l2_weight1/test/30-inputs.png" alt="image" style="float: left; vertical-align: text-top;" />
+                    
+                
+                    
+              <img src="/assets/imgs/denoising/MRI_cont3_motion_l2_weight1/test/30-outputs.png" alt="image" style="float: left; vertical-align: text-top;" />
+                    
+                
+                    
+              <img src="/assets/imgs/denoising/MRI_cont3_motion_l2_weight1/test/30-targets.png" alt="image" style="float: left; vertical-align: text-top;" />
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+  </details>
+          </li>
+        </ul>
+      </li>
+      <li>Again….WHY!(╯°Д°）╯︵</li>
     </ul>
   </li>
 </ol>
-
-<details style="margin-top:0px; width:1000px">
-    <summary>Parameters</summary>
-    <pre style="margin-top:0px; width:1000px">
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-            <img src="/assets/imgs/denoising/MRI_cont3_motion_l2_masked_test/training/00202000-1095-inputs.png" alt="image" style="float: left; vertical-align: text-top;" />
-        
-    
-        
-            <img src="/assets/imgs/denoising/MRI_cont3_motion_l2_masked_test/training/00202000-1095-outputs.png" alt="image" style="float: left; vertical-align: text-top;" />
-        
-    
-        
-            <img src="/assets/imgs/denoising/MRI_cont3_motion_l2_masked_test/training/00202000-1095-targets.png" alt="image" style="float: left; vertical-align: text-top;" />
-        
-    
-        
-            <img src="/assets/imgs/denoising/MRI_cont3_motion_l2_masked_test/training/00203000-816-inputs.png" alt="image" style="float: left; vertical-align: text-top;" />
-        
-    
-        
-            <img src="/assets/imgs/denoising/MRI_cont3_motion_l2_masked_test/training/00203000-816-outputs.png" alt="image" style="float: left; vertical-align: text-top;" />
-        
-    
-        
-            <img src="/assets/imgs/denoising/MRI_cont3_motion_l2_masked_test/training/00203000-816-targets.png" alt="image" style="float: left; vertical-align: text-top;" />
-        
-    
-        
-            <img src="/assets/imgs/denoising/MRI_cont3_motion_l2_masked_test/training/00204000-1699-inputs.png" alt="image" style="float: left; vertical-align: text-top;" />
-        
-    
-        
-            <img src="/assets/imgs/denoising/MRI_cont3_motion_l2_masked_test/training/00204000-1699-outputs.png" alt="image" style="float: left; vertical-align: text-top;" />
-        
-    
-        
-            <img src="/assets/imgs/denoising/MRI_cont3_motion_l2_masked_test/training/00204000-1699-targets.png" alt="image" style="float: left; vertical-align: text-top;" />
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-    </pre>
-</details>
 
 <h2 id="log">Log</h2>
 <h3 id="2018-09-30">2018-09-30</h3>
