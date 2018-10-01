@@ -9,14 +9,11 @@ excerpt_separator:  <!--more-->
 </style>
 <!-- https://stackoverflow.com/questions/17677094/jekyll-for-loop-over-all-images-in-a-folder -->
 ## Files
-<pre>
-{% for file in site.static_files %}
-    {% if file.path contains 'files/denoising' %}
-	<a href="{{ site.baseurl }}{{ file.path }}">{{ file.name }}</a>
-    {% endif %}
-{% endfor %}
-</pre>
 
-## Log
-### 2018-09-30
-- Create FIle
+<ul>
+{% for file in site.static_files %}
+{% if file.path contains 'files/denoising' %}
+	<li><a href="{{ site.baseurl }}{{ file.path }}">{{ file.name }}</a></li>
+{% endif %}
+{% endfor %}
+</ul>
