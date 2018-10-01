@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-10-01T15:42:21-05:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Jerry Xing</title><subtitle>WUSTL CSE MS Student</subtitle><author><name>Jerry Xing</name></author><entry><title type="html">MRI Denoising Project Report Files</title><link href="http://localhost:4000/mri%20denoising/2018/10/01/MRI-denoising-reports.html" rel="alternate" type="text/html" title="MRI Denoising Project Report Files" /><published>2018-10-01T00:00:00-05:00</published><updated>2018-10-01T00:00:00-05:00</updated><id>http://localhost:4000/mri%20denoising/2018/10/01/MRI-denoising-reports</id><content type="html" xml:base="http://localhost:4000/mri%20denoising/2018/10/01/MRI-denoising-reports.html">&lt;style&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-10-01T17:17:44-05:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Jerry Xing</title><subtitle>WUSTL CSE MS Student</subtitle><author><name>Jerry Xing</name></author><entry><title type="html">MRI Denoising Project Report Files</title><link href="http://localhost:4000/mri%20denoising/2018/10/01/MRI-denoising-reports.html" rel="alternate" type="text/html" title="MRI Denoising Project Report Files" /><published>2018-10-01T00:00:00-05:00</published><updated>2018-10-01T00:00:00-05:00</updated><id>http://localhost:4000/mri%20denoising/2018/10/01/MRI-denoising-reports</id><content type="html" xml:base="http://localhost:4000/mri%20denoising/2018/10/01/MRI-denoising-reports.html">&lt;style&gt;
 .parameter{font-size:15px; background-color:rgb(230, 230, 230); padding:10px}
 &lt;/style&gt;
 
@@ -16,13 +16,15 @@
 
 
 
-	&lt;li&gt;&lt;a href=&quot;/assets/files/denoising/jrxing_mri_report_0927.tar.gz&quot;&gt;jrxing_mri_report_0927.tar.gz&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;/assets/files/denoising/jrxing_mri_report_0927_updated.pptx&quot;&gt;jrxing_mri_report_0927_updated.pptx&lt;/a&gt;&lt;/li&gt;
 
 
 
+	&lt;li&gt;&lt;a href=&quot;/assets/files/denoising/jrxing_report_0927.tar.gz&quot;&gt;jrxing_report_0927.tar.gz&lt;/a&gt;&lt;/li&gt;
 
 
 
+	&lt;li&gt;&lt;a href=&quot;/assets/files/denoising/jrxing_report_0927_update.tar.gz&quot;&gt;jrxing_report_0927_update.tar.gz&lt;/a&gt;&lt;/li&gt;
 
 
 
@@ -111,11 +113,34 @@
 
 
 
-&lt;/ul&gt;</content><author><name>Jerry Xing</name></author><category term="MRI Denoising" /><summary type="html">Files jrxing_mri_report_0927.pptx jrxing_mri_report_0927.tar.gz</summary></entry><entry><title type="html">Log of MRI Denoising Project</title><link href="http://localhost:4000/mri%20denoising/2018/09/30/MRI-denoising-log.html" rel="alternate" type="text/html" title="Log of MRI Denoising Project" /><published>2018-09-30T00:00:00-05:00</published><updated>2018-09-30T00:00:00-05:00</updated><id>http://localhost:4000/mri%20denoising/2018/09/30/MRI-denoising-log</id><content type="html" xml:base="http://localhost:4000/mri%20denoising/2018/09/30/MRI-denoising-log.html">&lt;style&gt;
+
+
+
+
+
+
+&lt;/ul&gt;</content><author><name>Jerry Xing</name></author><category term="MRI Denoising" /><summary type="html">Files jrxing_mri_report_0927.pptx jrxing_mri_report_0927_updated.pptx jrxing_report_0927.tar.gz jrxing_report_0927_update.tar.gz</summary></entry><entry><title type="html">Log of MRI Denoising Project</title><link href="http://localhost:4000/mri%20denoising/2018/09/30/MRI-denoising-log.html" rel="alternate" type="text/html" title="Log of MRI Denoising Project" /><published>2018-09-30T00:00:00-05:00</published><updated>2018-09-30T00:00:00-05:00</updated><id>http://localhost:4000/mri%20denoising/2018/09/30/MRI-denoising-log</id><content type="html" xml:base="http://localhost:4000/mri%20denoising/2018/09/30/MRI-denoising-log.html">&lt;style&gt;
 .parameter{font-size:15px; background-color:rgb(230, 230, 230); padding:10px}
 &lt;/style&gt;
 
 &lt;!-- https://stackoverflow.com/questions/17677094/jekyll-for-loop-over-all-images-in-a-folder --&gt;
+
+&lt;h2 id=&quot;ongoing-projects&quot;&gt;Ongoing Projects&lt;/h2&gt;
+&lt;ol&gt;
+  &lt;li&gt;l2_3C_motion_gradient_reg_no_drop_0.75_FULL_data
+    &lt;ul&gt;
+      &lt;li&gt;Description:&lt;/li&gt;
+      &lt;li&gt;Location: cigserver1/gpu3&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;l2_3C_motion_masked_gradient_masked_reg_no_drop_0.75_FULL_data
+    &lt;ul&gt;
+      &lt;li&gt;Description:&lt;/li&gt;
+      &lt;li&gt;Location: cigserver1/gpu2&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
 &lt;h2 id=&quot;experiment-record&quot;&gt;Experiment Record&lt;/h2&gt;
 &lt;ol&gt;
   &lt;li&gt;&lt;strong&gt;MRI_cont3_motion_l2_masked (Pix2Pix)&lt;/strong&gt;
@@ -160,6 +185,10 @@
           &lt;li&gt;
             &lt;details style=&quot;margin-top:0px; width:1000px&quot;&gt;
       &lt;summary&gt;Training&lt;/summary&gt;
+                
+                    
+                
+                    
                 
                     
                 
@@ -284,6 +313,10 @@
           &lt;li&gt;
             &lt;details style=&quot;margin-top:0px; width:1000px&quot;&gt;
       &lt;summary&gt;Test&lt;/summary&gt;
+                
+                    
+                
+                    
                 
                     
                 
@@ -516,6 +549,10 @@
                     
                 
                     
+                
+                    
+                
+                    
               &lt;img src=&quot;/assets/imgs/denoising/MRI_cont3_motion_l2_weight1/training/00406000-1374-inputs.png&quot; alt=&quot;image&quot; style=&quot;float: left; vertical-align: text-top;&quot; /&gt;
                     
                 
@@ -576,6 +613,10 @@
           &lt;li&gt;
             &lt;details style=&quot;margin-top:0px; width:1000px&quot;&gt;
       &lt;summary&gt;Test&lt;/summary&gt;
+                
+                    
+                
+                    
                 
                     
                 
@@ -708,7 +749,7 @@
 &lt;h3 id=&quot;2018-09-30&quot;&gt;2018-09-30&lt;/h3&gt;
 &lt;ul&gt;
   &lt;li&gt;Create FIle&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>Jerry Xing</name></author><category term="MRI Denoising" /><summary type="html">Experiment Record MRI_cont3_motion_l2_masked (Pix2Pix) Parameters &quot;GEN_LOSS&quot;: &quot;L2_masked&quot;, &quot;GPU_IND&quot;: &quot;3&quot;, &quot;aspect_ratio&quot;: 1.0, &quot;batch_size&quot;: 1, &quot;beta1&quot;: 0.5, &quot;checkpoint&quot;: &quot;../training_checkpoint/MRI_cont3_motion_l2_masked_train&quot;, &quot;custom_loss_weight&quot;: 100.0, &quot;display_freq&quot;: 1000, &quot;flip&quot;: false, &quot;gan_weight&quot;: 1.0, &quot;input_dir&quot;: &quot;../training_data/MRI_cont3_motion/val&quot;, &quot;lab_colorization&quot;: false, &quot;lr&quot;: 0.0002, &quot;max_epochs&quot;: null, &quot;max_steps&quot;: null, &quot;mode&quot;: &quot;test&quot;, &quot;ndf&quot;: 64, &quot;ngf&quot;: 64, &quot;output_dir&quot;: &quot;../test_result/MRI_cont3_motion_l2_masked_test&quot;, &quot;output_filetype&quot;: &quot;png&quot;, &quot;progress_freq&quot;: 50, &quot;save_freq&quot;: 5000, &quot;scale_size&quot;: 256, &quot;seed&quot;: 1035730246, &quot;separable_conv&quot;: false, &quot;summary_freq&quot;: 100, &quot;trace_freq&quot;: 0, &quot;which_direction&quot;: &quot;BtoA&quot; Dataset_size: 2100 Outputs Training Test Strangely, training outputs seem to distort the shape of organs —— which may could be solved by put larger weight on l2 loss —— test outputs look much better than training outputs and only oversmooth. Direction: Use more data and larger l2 weight MRI_cont3_motion_l2_weight1 Parameters &quot;GEN_LOSS&quot;: &quot;L2&quot;, &quot;GPU_IND&quot;: &quot;3&quot;, &quot;aspect_ratio&quot;: 1.0, &quot;batch_size&quot;: 1, &quot;beta1&quot;: 0.5, &quot;checkpoint&quot;: &quot;../training_checkpoint/MRI_cont3_motion_l2_weight1_train&quot;, &quot;custom_loss_weight&quot;: 10.0, &quot;display_freq&quot;: 1000, &quot;flip&quot;: false, &quot;gan_weight&quot;: 1.0, &quot;input_dir&quot;: &quot;../training_data/MRI_cont3_motion/val&quot;, &quot;lab_colorization&quot;: false, &quot;lr&quot;: 0.0002, &quot;max_epochs&quot;: null, &quot;max_steps&quot;: null, &quot;mode&quot;: &quot;test&quot;, &quot;ndf&quot;: 64, &quot;ngf&quot;: 64, &quot;output_dir&quot;: &quot;../test_result/MRI_cont3_motion_l2_weight1_test&quot;, &quot;output_filetype&quot;: &quot;png&quot;, &quot;progress_freq&quot;: 50, &quot;save_freq&quot;: 5000, &quot;scale_size&quot;: 256, &quot;seed&quot;: 385461128, &quot;separable_conv&quot;: false, &quot;summary_freq&quot;: 100, &quot;trace_freq&quot;: 0, &quot;which_direction&quot;: &quot;BtoA&quot; Outputs Training Test Again….WHY!(╯°Д°）╯︵ Log 2018-09-30 Create FIle</summary></entry><entry><title type="html">My First Post Test</title><link href="http://localhost:4000/test/2018/09/30/My-first-post.html" rel="alternate" type="text/html" title="My First Post Test" /><published>2018-09-30T00:00:00-05:00</published><updated>2018-09-30T00:00:00-05:00</updated><id>http://localhost:4000/test/2018/09/30/My-first-post</id><content type="html" xml:base="http://localhost:4000/test/2018/09/30/My-first-post.html">&lt;p&gt;Hydeout updates the original &lt;a href=&quot;https://github.com/poole/hyde&quot;&gt;Hyde&lt;/a&gt;
+&lt;/ul&gt;</content><author><name>Jerry Xing</name></author><category term="MRI Denoising" /><summary type="html">Ongoing Projects l2_3C_motion_gradient_reg_no_drop_0.75_FULL_data Description: Location: cigserver1/gpu3 l2_3C_motion_masked_gradient_masked_reg_no_drop_0.75_FULL_data Description: Location: cigserver1/gpu2 Experiment Record MRI_cont3_motion_l2_masked (Pix2Pix) Parameters &quot;GEN_LOSS&quot;: &quot;L2_masked&quot;, &quot;GPU_IND&quot;: &quot;3&quot;, &quot;aspect_ratio&quot;: 1.0, &quot;batch_size&quot;: 1, &quot;beta1&quot;: 0.5, &quot;checkpoint&quot;: &quot;../training_checkpoint/MRI_cont3_motion_l2_masked_train&quot;, &quot;custom_loss_weight&quot;: 100.0, &quot;display_freq&quot;: 1000, &quot;flip&quot;: false, &quot;gan_weight&quot;: 1.0, &quot;input_dir&quot;: &quot;../training_data/MRI_cont3_motion/val&quot;, &quot;lab_colorization&quot;: false, &quot;lr&quot;: 0.0002, &quot;max_epochs&quot;: null, &quot;max_steps&quot;: null, &quot;mode&quot;: &quot;test&quot;, &quot;ndf&quot;: 64, &quot;ngf&quot;: 64, &quot;output_dir&quot;: &quot;../test_result/MRI_cont3_motion_l2_masked_test&quot;, &quot;output_filetype&quot;: &quot;png&quot;, &quot;progress_freq&quot;: 50, &quot;save_freq&quot;: 5000, &quot;scale_size&quot;: 256, &quot;seed&quot;: 1035730246, &quot;separable_conv&quot;: false, &quot;summary_freq&quot;: 100, &quot;trace_freq&quot;: 0, &quot;which_direction&quot;: &quot;BtoA&quot; Dataset_size: 2100 Outputs Training Test Strangely, training outputs seem to distort the shape of organs —— which may could be solved by put larger weight on l2 loss —— test outputs look much better than training outputs and only oversmooth. Direction: Use more data and larger l2 weight MRI_cont3_motion_l2_weight1 Parameters &quot;GEN_LOSS&quot;: &quot;L2&quot;, &quot;GPU_IND&quot;: &quot;3&quot;, &quot;aspect_ratio&quot;: 1.0, &quot;batch_size&quot;: 1, &quot;beta1&quot;: 0.5, &quot;checkpoint&quot;: &quot;../training_checkpoint/MRI_cont3_motion_l2_weight1_train&quot;, &quot;custom_loss_weight&quot;: 10.0, &quot;display_freq&quot;: 1000, &quot;flip&quot;: false, &quot;gan_weight&quot;: 1.0, &quot;input_dir&quot;: &quot;../training_data/MRI_cont3_motion/val&quot;, &quot;lab_colorization&quot;: false, &quot;lr&quot;: 0.0002, &quot;max_epochs&quot;: null, &quot;max_steps&quot;: null, &quot;mode&quot;: &quot;test&quot;, &quot;ndf&quot;: 64, &quot;ngf&quot;: 64, &quot;output_dir&quot;: &quot;../test_result/MRI_cont3_motion_l2_weight1_test&quot;, &quot;output_filetype&quot;: &quot;png&quot;, &quot;progress_freq&quot;: 50, &quot;save_freq&quot;: 5000, &quot;scale_size&quot;: 256, &quot;seed&quot;: 385461128, &quot;separable_conv&quot;: false, &quot;summary_freq&quot;: 100, &quot;trace_freq&quot;: 0, &quot;which_direction&quot;: &quot;BtoA&quot; Outputs Training Test Again….WHY!(╯°Д°）╯︵ Log 2018-09-30 Create FIle</summary></entry><entry><title type="html">My First Post Test</title><link href="http://localhost:4000/test/2018/09/30/My-first-post.html" rel="alternate" type="text/html" title="My First Post Test" /><published>2018-09-30T00:00:00-05:00</published><updated>2018-09-30T00:00:00-05:00</updated><id>http://localhost:4000/test/2018/09/30/My-first-post</id><content type="html" xml:base="http://localhost:4000/test/2018/09/30/My-first-post.html">&lt;p&gt;Hydeout updates the original &lt;a href=&quot;https://github.com/poole/hyde&quot;&gt;Hyde&lt;/a&gt;
 theme for &lt;a href=&quot;http://jekyllrb.com&quot;&gt;Jekyll&lt;/a&gt; 3.x and adds new functionality.&lt;/p&gt;
 
 &lt;!--excerpt--&gt;

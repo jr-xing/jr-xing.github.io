@@ -8,6 +8,15 @@ excerpt_separator:  <!--more-->
 .parameter{font-size:15px; background-color:rgb(230, 230, 230); padding:10px}
 </style>
 <!-- https://stackoverflow.com/questions/17677094/jekyll-for-loop-over-all-images-in-a-folder -->
+
+## Ongoing Projects
+1. l2_3C_motion_gradient_reg_no_drop_0.75_FULL_data
+	- Description: 
+	- Location: cigserver1/gpu3
+2. l2_3C_motion_masked_gradient_masked_reg_no_drop_0.75_FULL_data
+	- Description: 
+	- Location: cigserver1/gpu2
+
 ## Experiment Record
 1. **MRI_cont3_motion_l2_masked (Pix2Pix)**
     -   <details><summary>Parameters</summary>
