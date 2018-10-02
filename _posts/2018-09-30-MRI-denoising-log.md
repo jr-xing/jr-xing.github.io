@@ -10,6 +10,7 @@ excerpt_separator:  <!--more-->
 <!-- https://stackoverflow.com/questions/17677094/jekyll-for-loop-over-all-images-in-a-folder -->
 
 ## Ongoing Projects
+
 | Index | Name                                                           | Location        | Description | Comment | Start        | To              | Speed           | End         |
 | ----- | -------------------------------------------------------------- | --------------- | ----------- | ------- | ------------ | --------------- | --------------- | ----------- |
 | 1     | l2_3C_motion_masked_gradient_masked_reg_no_drop_0.75_FULL_data | cigserver1/gpu2 |             |         | Oct 1 16:10  | 27 Oct 1 19:10  | 0.11 hour/epoch | Oct 2 14:00 |

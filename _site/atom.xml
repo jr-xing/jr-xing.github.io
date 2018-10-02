@@ -4,7 +4,7 @@
  <title>Jerry Xing</title>
  <link href="http://localhost:4000/atom.xml" rel="self"/>
  <link href="http://localhost:4000/"/>
- <updated>2018-10-01T17:17:44-05:00</updated>
+ <updated>2018-10-01T19:23:39-05:00</updated>
  <id>http://localhost:4000</id>
  <author>
    <name>Jerry Xing</name>
@@ -245,20 +245,57 @@ theme. Hope this works for you!&lt;/p&gt;
 &lt;!-- https://stackoverflow.com/questions/17677094/jekyll-for-loop-over-all-images-in-a-folder --&gt;
 
 &lt;h2 id=&quot;ongoing-projects&quot;&gt;Ongoing Projects&lt;/h2&gt;
-&lt;ol&gt;
-  &lt;li&gt;l2_3C_motion_gradient_reg_no_drop_0.75_FULL_data
-    &lt;ul&gt;
-      &lt;li&gt;Description:&lt;/li&gt;
-      &lt;li&gt;Location: cigserver1/gpu3&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;l2_3C_motion_masked_gradient_masked_reg_no_drop_0.75_FULL_data
-    &lt;ul&gt;
-      &lt;li&gt;Description:&lt;/li&gt;
-      &lt;li&gt;Location: cigserver1/gpu2&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Index&lt;/th&gt;
+      &lt;th&gt;Name&lt;/th&gt;
+      &lt;th&gt;Location&lt;/th&gt;
+      &lt;th&gt;Description&lt;/th&gt;
+      &lt;th&gt;Comment&lt;/th&gt;
+      &lt;th&gt;Start&lt;/th&gt;
+      &lt;th&gt;To&lt;/th&gt;
+      &lt;th&gt;Speed&lt;/th&gt;
+      &lt;th&gt;End&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;l2_3C_motion_masked_gradient_masked_reg_no_drop_0.75_FULL_data&lt;/td&gt;
+      &lt;td&gt;cigserver1/gpu2&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;Oct 1 16:10&lt;/td&gt;
+      &lt;td&gt;27 Oct 1 19:10&lt;/td&gt;
+      &lt;td&gt;0.11 hour/epoch&lt;/td&gt;
+      &lt;td&gt;Oct 2 14:00&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;2&lt;/td&gt;
+      &lt;td&gt;l2_3C_motion_gradient_reg_no_drop_0.75_FULL_data&lt;/td&gt;
+      &lt;td&gt;cigserver1/gpu3&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;Sep 30 22:32&lt;/td&gt;
+      &lt;td&gt;189 Oct 1 19:09&lt;/td&gt;
+      &lt;td&gt;0.1 hour/epoch&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;3&lt;/td&gt;
+      &lt;td&gt;test_MRI_cont3_motion_l2_masked_grad_masked_w3_FULL&lt;/td&gt;
+      &lt;td&gt;cigserver2&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;Oct 1 12:53&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;Oct 2 11:30&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
 
 &lt;h2 id=&quot;experiment-record&quot;&gt;Experiment Record&lt;/h2&gt;
 &lt;ol&gt;
