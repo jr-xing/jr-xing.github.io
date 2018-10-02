@@ -10,12 +10,11 @@ excerpt_separator:  <!--more-->
 <!-- https://stackoverflow.com/questions/17677094/jekyll-for-loop-over-all-images-in-a-folder -->
 
 ## Ongoing Projects
-1. l2_3C_motion_gradient_reg_no_drop_0.75_FULL_data
-	- Description: 
-	- Location: cigserver1/gpu3
-2. l2_3C_motion_masked_gradient_masked_reg_no_drop_0.75_FULL_data
-	- Description: 
-	- Location: cigserver1/gpu2
+| Index | Name                                                           | Location        | Description | Comment | Start        | To              | Speed           | End         |
+| ----- | -------------------------------------------------------------- | --------------- | ----------- | ------- | ------------ | --------------- | --------------- | ----------- |
+| 1     | l2_3C_motion_masked_gradient_masked_reg_no_drop_0.75_FULL_data | cigserver1/gpu2 |             |         | Oct 1 16:10  | 27 Oct 1 19:10  | 0.11 hour/epoch | Oct 2 14:00 |
+| 2     | l2_3C_motion_gradient_reg_no_drop_0.75_FULL_data               | cigserver1/gpu3 |             |         | Sep 30 22:32 | 189 Oct 1 19:09 | 0.1 hour/epoch  |             |
+| 3     | test_MRI_cont3_motion_l2_masked_grad_masked_w3_FULL            | cigserver2      |             |         | Oct 1 12:53  |                 |                 | Oct 2 11:30 |
 
 ## Experiment Record
 1. **MRI_cont3_motion_l2_masked (Pix2Pix)**
