@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Log of MRI Denoising Project
+title: MRI Denoising Project Log
 category: MRI Denoising
 excerpt_separator:  <!--more-->
 ---
@@ -18,7 +18,10 @@ excerpt_separator:  <!--more-->
 | 2     | l2_3C_motion_gradient_reg_no_drop_0.75_FULL_data               | cigserver1/gpu3 |             |  END    | Sep 30 22:32 | 189 Oct 1 19:09 | 0.1 hour/epoch  |             |
 | 3     | test_MRI_cont3_motion_l2_masked_grad_masked_w3_FULL            | cigserver2      |             |  END    | Oct 1 12:53  |                 |                 | Oct 2 11:30 |
 | 4     | test_MRI_cont3_motion_l2_masked_grad_masked_w3_FULL_SEG        | cigserver2      |             |         | Oct 2 11:40  |                 |                 | Oct 3 17:30 |
+| 5     | l2_3C_motion_masked_gradient_masked_reg_no_drop_0.75_FULL_data_w2 | cigserver1/gpu3 |             |  300Eps       | Oct 2 15:20  |   | x hour/epoch | Oct 3 21:20 |
+| 6     | l2_3C_motion_masked_gradient_masked_reg_no_drop_0.75_FULL_SEG | cigserver1/gpu2 |             |  300Eps     | Oct 2 15:20  |   | x hour/epoch | Oct 3 21:20 |
 
+<!--more-->
 
 ## Experiment Record
 1. **MRI_cont3_motion_l2_masked (Pix2Pix)**
