@@ -9,21 +9,74 @@ excerpt_separator:  <!--more-->
 </style>
 <!-- https://stackoverflow.com/questions/17677094/jekyll-for-loop-over-all-images-in-a-folder -->
 
-## Ongoing Projects
+## 1. Ongoing Projects
 
+### UNet+Loss
 
-| Index | Name                                                           | Location        | Description | Comment | Start        | To              | Speed           | End         |
-| ----- | -------------------------------------------------------------- | --------------- | ----------- | ------- | ------------ | --------------- | --------------- | ----------- |
-| 1     | l2_3C_motion_masked_gradient_masked_reg_no_drop_0.75_FULL_data | cigserver1/gpu2 |             |         | Oct 1 16:10  | 27 Oct 1 19:10  | 0.11 hour/epoch | Oct 2 14:00 |
-| 2     | l2_3C_motion_gradient_reg_no_drop_0.75_FULL_data               | cigserver1/gpu3 |             |  END    | Sep 30 22:32 | 189 Oct 1 19:09 | 0.1 hour/epoch  |             |
-| 3     | test_MRI_cont3_motion_l2_masked_grad_masked_w3_FULL            | cigserver2      |             |  END    | Oct 1 12:53  |                 |                 | Oct 2 11:30 |
-| 4     | test_MRI_cont3_motion_l2_masked_grad_masked_w3_FULL_SEG        | cigserver2      |             |         | Oct 2 11:40  |                 |                 | Oct 3 17:30 |
-| 5     | l2_3C_motion_masked_gradient_masked_reg_no_drop_0.75_FULL_data_w2 | cigserver1/gpu3 |             |  300Eps       | Oct 2 16:20  |   | x hour/epoch | Oct 3 22:20 |
-| 6     | l2_3C_motion_masked_gradient_masked_reg_no_drop_0.75_FULL_SEG | cigserver1/gpu2 |             |  300Eps     | Oct 2 16:20  |   | x hour/epoch | Oct 3 22:20 |
+| Index | Name                                               | Location   | Description | Comment | Start       | To  | Speed | End         |
+| ----- | -------------------------------------------------- | ---------- | ----------- | ------- | ----------- | --- | ----- | ----------- |
+| 4     | MRI_cont3_motion_l2_masked_grad_masked_w3_FULL     | cigserver2 |             | END     | Oct 1 12:53 |     |       | Oct 2 11:30 |
+| 5     | MRI_cont3_motion_l2_masked_grad_masked_w3_FULL_SEG | cigserver2 |             |         | Oct 2 11:40 |     |       | Oct 3 17:30 |
+
+### GAN
+
+| Index | Name                                                              | Location        | Description | Comment | Start        | To              | Speed           | End         |
+| ----- | ----------------------------------------------------------------- | --------------- | ----------- | ------- | ------------ | --------------- | --------------- | ----------- |
+| 7     | l2_3C_motion_masked_gradient_masked_reg_no_drop_0.75_FULL_data    | cigserver1/gpu2 |             |         | Oct 1 16:10  | 27 Oct 1 19:10  | 0.11 hour/epoch | Oct 2 14:00 |
+| 5     | l2_3C_motion_gradient_reg_no_drop_0.75_FULL_data                  | cigserver1/gpu3 |             | END     | Sep 30 22:32 | 189 Oct 1 19:09 | 0.1 hour/epoch  |             |
+| 8     | l2_3C_motion_masked_gradient_masked_reg_no_drop_0.75_FULL_data_w2 | cigserver1/gpu3 |             | 300Eps  | Oct 2 16:20  |                 | x hour/epoch    | Oct 3 22:20 |
+| 9     | l2_3C_motion_masked_gradient_masked_reg_no_drop_0.75_FULL_SEG     | cigserver1/gpu2 |             | 300Eps  | Oct 2 16:20  |                 | x hour/epoch    | Oct 3 22:20 |
 
 <!--more-->
 
-## Experiment Record
+## 2. Experiment Record
+### 2.1 UNet+Loss
+1. **l2_3C_motion_reg_no_drop_0.75_Part_data**
+    - Start Date: Sep 28
+    - File Location: cigserver1/gpu3
+    - Description:
+
+2. **l2_mask_reg_no_drop_0.75_Part_data**
+    - Start Date: Sep 28
+    - File Location: cigserver1/gpu2
+    - Description
+
+3. **l2_3C_motion_reg_no_drop_0.75_FULL_data**
+    - Start Date: Sep 29
+    - File Location: gpu3
+    - Description
+
+4. **l2_mask_reg_no_drop_0.75_FULL_data**
+    - Start Date: Sep 29
+    - File Location: gpu2
+    - Description
+
+5. **l2_3C_motion_gradient_reg_no_drop_0.75_FULL_data**
+    - Start Date: Sep 30
+    - File Location: 3
+    - Description
+
+6. **l2_3C_motion_masked_reg_no_drop_0.75_FULL_data**
+    - Start Date: Sep 30
+    - File Location: 2
+    - Description
+
+7. **l2_3C_motion_masked_gradient_masked_reg_no_drop_0.75_FULL_data**
+    - Start Date: Oct 1
+    - File Location: 2
+    - Description
+
+8. **l2_3C_motion_masked_gradient_masked_reg_no_drop_0.75_FULL_data_w2**
+    - Start Date: Oct 2
+    - File Location: 3
+    - Description
+
+9. **l2_3C_motion_masked_gradient_masked_reg_no_drop_0.75_FULL_SEG**
+    - Start Date: Oct 2
+    - File Location: 2
+    - Description
+
+### 2.2 GAN(Pix2Pix)
 1. **MRI_cont3_motion_l2_masked (Pix2Pix)**
     -   <details><summary>Parameters</summary>
         <pre class="parameter">
@@ -78,7 +131,7 @@ excerpt_separator:  <!--more-->
     - Strangely, training outputs seem to distort the shape of organs —— which may could be solved by put larger weight on l2 loss —— test outputs look much better than training outputs and only oversmooth. 
     - Direction: Use more data and larger l2 weight
 
-2. **MRI_cont3_motion_l2_weight1**
+2. **MRI_cont3_motion_l2_weight1 (Pix2Pix)**
     -   <details><summary>Parameters</summary>
         <pre class="parameter">
             "GEN_LOSS": "L2",
@@ -130,6 +183,11 @@ excerpt_separator:  <!--more-->
             </details>    
     - Again....WHY!(╯°Д°）╯︵ 
 
+3. **MRI_cont3_motion_l2_masked_grad_masked**
+4. **MRI_cont3_motion_l2_masked_grad_masked_w2**
+5. **MRI_cont3_motion_l2_masked_grad_masked_w2**
+6. **MRI_cont3_motion_l2_masked_grad_masked_w3_FULL**
+7. **MRI_cont3_motion_l2_masked_grad_masked_w3_FULL_SEG**
 
 
 ## Log
