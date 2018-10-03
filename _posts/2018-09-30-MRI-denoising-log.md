@@ -11,22 +11,22 @@ excerpt_separator:  <!--more-->
 
 ## 1. Ongoing Projects
 
-### UNet+Loss
+### GAN
 
 | Index | Name                                               | Location   | Description | Comment | Start       | To  | Speed | End         |
 | ----- | -------------------------------------------------- | ---------- | ----------- | ------- | ----------- | --- | ----- | ----------- |
 | 4     | MRI_cont3_motion_l2_masked_grad_masked_w3_FULL     | cigserver2 |             | END     | Oct 1 12:53 |     |       | Oct 2 11:30 |
 | 5     | MRI_cont3_motion_l2_masked_grad_masked_w3_FULL_SEG | cigserver2 |             |         | Oct 2 11:40 |     |       | Oct 3 17:30 |
 
-### GAN
+### UNet+Loss
 
 | Index | Name                                                              | Location        | Description | Comment | Start        | To              | Speed           | End         |
 | ----- | ----------------------------------------------------------------- | --------------- | ----------- | ------- | ------------ | --------------- | --------------- | ----------- |
-| 7     | l2_3C_motion_masked_gradient_masked_reg_no_drop_0.75_FULL_data    | cigserver1/gpu2 |             |         | Oct 1 16:10  | 27 Oct 1 19:10  | 0.11 hour/epoch | Oct 2 14:00 |
+| 7     | l2_3C_motion_masked_gradient_masked_reg_no_drop_0.75_FULL_data    | cigserver1/gpu2 |             | END     | Oct 1 16:10  | 27 Oct 1 19:10  | 0.11 hour/epoch | Oct 2 14:00 |
 | 5     | l2_3C_motion_gradient_reg_no_drop_0.75_FULL_data                  | cigserver1/gpu3 |             | END     | Sep 30 22:32 | 189 Oct 1 19:09 | 0.1 hour/epoch  |             |
 | 8     | l2_3C_motion_masked_gradient_masked_reg_no_drop_0.75_FULL_data_w2 | cigserver1/gpu3 |             | 300Eps  | Oct 2 16:20  |                 | x hour/epoch    | Oct 3 22:20 |
 | 9     | l2_3C_motion_masked_gradient_masked_reg_no_drop_0.75_FULL_SEG     | cigserver1/gpu2 |             | 300Eps  | Oct 2 16:20  |                 | x hour/epoch    | Oct 3 22:20 |
-
+- 
 <!--more-->
 
 ## 2. Experiment Record
@@ -69,7 +69,6 @@ excerpt_separator:  <!--more-->
                 <summary>Tensorboard</summary>                
                 {% for image in site.static_files %}
                     {% if image.path contains 'l2_3C_motion_masked_gradient_masked_reg_no_drop_0.75_FULL_data/tensorboard' %}
-                        <p>{{ image.name }}</p>
                         <img src="{{ site.baseurl }}{{ image.path }}" alt="image" style="float: left; vertical-align: text-top;" />
                     {% endif %}
                 {% endfor %}
@@ -104,7 +103,6 @@ excerpt_separator:  <!--more-->
                 <summary>Tensorboard</summary>                
                 {% for image in site.static_files %}
                     {% if image.path contains 'l2_3C_motion_masked_gradient_masked_reg_no_drop_0.75_FULL_data_w2/tensorboard' %}
-                        <p>{{ image.name }}</p>
                         <img src="{{ site.baseurl }}{{ image.path }}" alt="image" style="float: left; vertical-align: text-top;" />
                     {% endif %}
                 {% endfor %}
@@ -139,7 +137,6 @@ excerpt_separator:  <!--more-->
                 <summary>Tensorboard</summary>                
                 {% for image in site.static_files %}
                     {% if image.path contains 'l2_3C_motion_masked_gradient_masked_reg_no_drop_0.75_FULL_SEG/tensorboard' %}
-                        <p>{{ image.name }}</p>
                         <img src="{{ site.baseurl }}{{ image.path }}" alt="image" style="float: left; vertical-align: text-top;" />
                     {% endif %}
                 {% endfor %}
@@ -209,7 +206,7 @@ excerpt_separator:  <!--more-->
                         <img src="{{ site.baseurl }}{{ image.path }}" alt="image" style="float: left; vertical-align: text-top;" />
                     {% endif %}
                 {% endfor %}
-            </details>    
+            </details>
         - <details style="margin-top:0px; width:1000px">
                 <summary>Test</summary>
                 {% for image in site.static_files %}
@@ -279,6 +276,9 @@ excerpt_separator:  <!--more-->
 6. **MRI_cont3_motion_l2_masked_grad_masked_w3_FULL**
 7. **MRI_cont3_motion_l2_masked_grad_masked_w3_FULL_SEG**
 
+## 3. Ideas & Plans
+- From 2-8 ```l2_3C_motion_masked_gradient_masked_reg_no_drop_0.75_FULL_data_w2``` we can see that the body edge is very sharp, which may indicts that much part of the gradient loss falled on the body edges, and organ fine structures were not given enough attention. Experiments using ```mask_only_middle_1/4)``` may work.
+- Try a only-l2 net to extract the contour and a only-gradient to extract the fine structure, and combine the two?
 
 ## Log
 ### 2018-09-30
