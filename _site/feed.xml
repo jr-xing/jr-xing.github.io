@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-10-01T19:23:39-05:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Jerry Xing</title><subtitle>WUSTL CSE MS Student</subtitle><author><name>Jerry Xing</name></author><entry><title type="html">MRI Denoising Project Report Files</title><link href="http://localhost:4000/mri%20denoising/2018/10/01/MRI-denoising-reports.html" rel="alternate" type="text/html" title="MRI Denoising Project Report Files" /><published>2018-10-01T00:00:00-05:00</published><updated>2018-10-01T00:00:00-05:00</updated><id>http://localhost:4000/mri%20denoising/2018/10/01/MRI-denoising-reports</id><content type="html" xml:base="http://localhost:4000/mri%20denoising/2018/10/01/MRI-denoising-reports.html">&lt;style&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-10-02T21:28:00-05:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Jerry Xing</title><subtitle>WUSTL CSE MS Student</subtitle><author><name>Jerry Xing</name></author><entry><title type="html">MRI Denoising Project Report Files</title><link href="http://localhost:4000/mri%20denoising/2018/10/01/MRI-denoising-reports.html" rel="alternate" type="text/html" title="MRI Denoising Project Report Files" /><published>2018-10-01T00:00:00-05:00</published><updated>2018-10-01T00:00:00-05:00</updated><id>http://localhost:4000/mri%20denoising/2018/10/01/MRI-denoising-reports</id><content type="html" xml:base="http://localhost:4000/mri%20denoising/2018/10/01/MRI-denoising-reports.html">&lt;style&gt;
 .parameter{font-size:15px; background-color:rgb(230, 230, 230); padding:10px}
 &lt;/style&gt;
 
@@ -119,13 +119,63 @@
 
 
 
-&lt;/ul&gt;</content><author><name>Jerry Xing</name></author><category term="MRI Denoising" /><summary type="html">Files jrxing_mri_report_0927.pptx jrxing_mri_report_0927_updated.pptx jrxing_report_0927.tar.gz jrxing_report_0927_update.tar.gz</summary></entry><entry><title type="html">Log of MRI Denoising Project</title><link href="http://localhost:4000/mri%20denoising/2018/09/30/MRI-denoising-log.html" rel="alternate" type="text/html" title="Log of MRI Denoising Project" /><published>2018-09-30T00:00:00-05:00</published><updated>2018-09-30T00:00:00-05:00</updated><id>http://localhost:4000/mri%20denoising/2018/09/30/MRI-denoising-log</id><content type="html" xml:base="http://localhost:4000/mri%20denoising/2018/09/30/MRI-denoising-log.html">&lt;style&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;/ul&gt;</content><author><name>Jerry Xing</name></author><category term="MRI Denoising" /><summary type="html">Files jrxing_mri_report_0927.pptx jrxing_mri_report_0927_updated.pptx jrxing_report_0927.tar.gz jrxing_report_0927_update.tar.gz</summary></entry><entry><title type="html">MRI Denoising Project Log</title><link href="http://localhost:4000/mri%20denoising/2018/09/30/MRI-denoising-log.html" rel="alternate" type="text/html" title="MRI Denoising Project Log" /><published>2018-09-30T00:00:00-05:00</published><updated>2018-09-30T00:00:00-05:00</updated><id>http://localhost:4000/mri%20denoising/2018/09/30/MRI-denoising-log</id><content type="html" xml:base="http://localhost:4000/mri%20denoising/2018/09/30/MRI-denoising-log.html">&lt;style&gt;
 .parameter{font-size:15px; background-color:rgb(230, 230, 230); padding:10px}
 &lt;/style&gt;
 
 &lt;!-- https://stackoverflow.com/questions/17677094/jekyll-for-loop-over-all-images-in-a-folder --&gt;
 
-&lt;h2 id=&quot;ongoing-projects&quot;&gt;Ongoing Projects&lt;/h2&gt;
+&lt;h2 id=&quot;1-ongoing-projects&quot;&gt;1. Ongoing Projects&lt;/h2&gt;
+
+&lt;h3 id=&quot;unetloss&quot;&gt;UNet+Loss&lt;/h3&gt;
 
 &lt;table&gt;
   &lt;thead&gt;
@@ -143,7 +193,49 @@
   &lt;/thead&gt;
   &lt;tbody&gt;
     &lt;tr&gt;
-      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;4&lt;/td&gt;
+      &lt;td&gt;MRI_cont3_motion_l2_masked_grad_masked_w3_FULL&lt;/td&gt;
+      &lt;td&gt;cigserver2&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;END&lt;/td&gt;
+      &lt;td&gt;Oct 1 12:53&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;Oct 2 11:30&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;5&lt;/td&gt;
+      &lt;td&gt;MRI_cont3_motion_l2_masked_grad_masked_w3_FULL_SEG&lt;/td&gt;
+      &lt;td&gt;cigserver2&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;Oct 2 11:40&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;Oct 3 17:30&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h3 id=&quot;gan&quot;&gt;GAN&lt;/h3&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Index&lt;/th&gt;
+      &lt;th&gt;Name&lt;/th&gt;
+      &lt;th&gt;Location&lt;/th&gt;
+      &lt;th&gt;Description&lt;/th&gt;
+      &lt;th&gt;Comment&lt;/th&gt;
+      &lt;th&gt;Start&lt;/th&gt;
+      &lt;th&gt;To&lt;/th&gt;
+      &lt;th&gt;Speed&lt;/th&gt;
+      &lt;th&gt;End&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;7&lt;/td&gt;
       &lt;td&gt;l2_3C_motion_masked_gradient_masked_reg_no_drop_0.75_FULL_data&lt;/td&gt;
       &lt;td&gt;cigserver1/gpu2&lt;/td&gt;
       &lt;td&gt; &lt;/td&gt;
@@ -154,31 +246,617 @@
       &lt;td&gt;Oct 2 14:00&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;td&gt;2&lt;/td&gt;
+      &lt;td&gt;5&lt;/td&gt;
       &lt;td&gt;l2_3C_motion_gradient_reg_no_drop_0.75_FULL_data&lt;/td&gt;
       &lt;td&gt;cigserver1/gpu3&lt;/td&gt;
       &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;END&lt;/td&gt;
       &lt;td&gt;Sep 30 22:32&lt;/td&gt;
       &lt;td&gt;189 Oct 1 19:09&lt;/td&gt;
       &lt;td&gt;0.1 hour/epoch&lt;/td&gt;
       &lt;td&gt; &lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;td&gt;3&lt;/td&gt;
-      &lt;td&gt;test_MRI_cont3_motion_l2_masked_grad_masked_w3_FULL&lt;/td&gt;
-      &lt;td&gt;cigserver2&lt;/td&gt;
+      &lt;td&gt;8&lt;/td&gt;
+      &lt;td&gt;l2_3C_motion_masked_gradient_masked_reg_no_drop_0.75_FULL_data_w2&lt;/td&gt;
+      &lt;td&gt;cigserver1/gpu3&lt;/td&gt;
       &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;300Eps&lt;/td&gt;
+      &lt;td&gt;Oct 2 16:20&lt;/td&gt;
       &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt;Oct 1 12:53&lt;/td&gt;
+      &lt;td&gt;x hour/epoch&lt;/td&gt;
+      &lt;td&gt;Oct 3 22:20&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;9&lt;/td&gt;
+      &lt;td&gt;l2_3C_motion_masked_gradient_masked_reg_no_drop_0.75_FULL_SEG&lt;/td&gt;
+      &lt;td&gt;cigserver1/gpu2&lt;/td&gt;
       &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;300Eps&lt;/td&gt;
+      &lt;td&gt;Oct 2 16:20&lt;/td&gt;
       &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt;Oct 2 11:30&lt;/td&gt;
+      &lt;td&gt;x hour/epoch&lt;/td&gt;
+      &lt;td&gt;Oct 3 22:20&lt;/td&gt;
     &lt;/tr&gt;
   &lt;/tbody&gt;
 &lt;/table&gt;
 
-&lt;h2 id=&quot;experiment-record&quot;&gt;Experiment Record&lt;/h2&gt;
+&lt;!--more--&gt;
+
+&lt;h2 id=&quot;2-experiment-record&quot;&gt;2. Experiment Record&lt;/h2&gt;
+&lt;h3 id=&quot;21-unetloss&quot;&gt;2.1 UNet+Loss&lt;/h3&gt;
+&lt;ol&gt;
+  &lt;li&gt;&lt;strong&gt;l2_3C_motion_reg_no_drop_0.75_Part_data&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;Start Date: Sep 28&lt;/li&gt;
+      &lt;li&gt;File Location: cigserver1/gpu3&lt;/li&gt;
+      &lt;li&gt;Description:&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;l2_mask_reg_no_drop_0.75_Part_data&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;Start Date: Sep 28&lt;/li&gt;
+      &lt;li&gt;File Location: cigserver1/gpu2&lt;/li&gt;
+      &lt;li&gt;Description&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;l2_3C_motion_reg_no_drop_0.75_FULL_data&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;Start Date: Sep 29&lt;/li&gt;
+      &lt;li&gt;File Location: gpu3&lt;/li&gt;
+      &lt;li&gt;Description&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;l2_mask_reg_no_drop_0.75_FULL_data&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;Start Date: Sep 29&lt;/li&gt;
+      &lt;li&gt;File Location: gpu2&lt;/li&gt;
+      &lt;li&gt;Description&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;l2_3C_motion_gradient_reg_no_drop_0.75_FULL_data&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;Start Date: Sep 30&lt;/li&gt;
+      &lt;li&gt;File Location: 3&lt;/li&gt;
+      &lt;li&gt;Description&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;l2_3C_motion_masked_reg_no_drop_0.75_FULL_data&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;Start Date: Sep 30&lt;/li&gt;
+      &lt;li&gt;File Location: 2&lt;/li&gt;
+      &lt;li&gt;Description&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;ls2_3C_motion_masked_gradient_masked_reg_no_drop_0.75_FULL_data&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;Start Date: Oct 1&lt;/li&gt;
+      &lt;li&gt;File Location: 2&lt;/li&gt;
+      &lt;li&gt;Description&lt;/li&gt;
+      &lt;li&gt;
+        &lt;details style=&quot;margin-top:0px; width:1000px&quot;&gt;
+          &lt;summary&gt;Tensorboard&lt;/summary&gt;                
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                  &lt;img src=&quot;/assets/imgs/denoising/l2_3C_motion_masked_gradient_masked_reg_no_drop_0.75_FULL_data/tensorboard/tra_loss.png&quot; alt=&quot;image&quot; style=&quot;float: left; vertical-align: text-top;&quot; /&gt;
+                    
+                
+                    
+                  &lt;img src=&quot;/assets/imgs/denoising/l2_3C_motion_masked_gradient_masked_reg_no_drop_0.75_FULL_data/tensorboard/tra_psnr.png&quot; alt=&quot;image&quot; style=&quot;float: left; vertical-align: text-top;&quot; /&gt;
+                    
+                
+                    
+                  &lt;img src=&quot;/assets/imgs/denoising/l2_3C_motion_masked_gradient_masked_reg_no_drop_0.75_FULL_data/tensorboard/val_loss.png&quot; alt=&quot;image&quot; style=&quot;float: left; vertical-align: text-top;&quot; /&gt;
+                    
+                
+                    
+                  &lt;img src=&quot;/assets/imgs/denoising/l2_3C_motion_masked_gradient_masked_reg_no_drop_0.75_FULL_data/tensorboard/val_psnr.png&quot; alt=&quot;image&quot; style=&quot;float: left; vertical-align: text-top;&quot; /&gt;
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+  &lt;/details&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;details style=&quot;margin-top:0px; width:1000px&quot;&gt;
+          &lt;summary&gt;Training Outputs&lt;/summary&gt;
+          Every 3 rows: training inputs, training outputs and training target
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                  &lt;img src=&quot;/assets/imgs/denoising/l2_3C_motion_masked_gradient_masked_reg_no_drop_0.75_FULL_data/train/epoch_198_train_inputs_img.png&quot; alt=&quot;image&quot; style=&quot;float: left; vertical-align: text-top;&quot; /&gt;
+                    
+                
+                    
+                  &lt;img src=&quot;/assets/imgs/denoising/l2_3C_motion_masked_gradient_masked_reg_no_drop_0.75_FULL_data/train/epoch_198_train_outputs_img.png&quot; alt=&quot;image&quot; style=&quot;float: left; vertical-align: text-top;&quot; /&gt;
+                    
+                
+                    
+                  &lt;img src=&quot;/assets/imgs/denoising/l2_3C_motion_masked_gradient_masked_reg_no_drop_0.75_FULL_data/train/epoch_198_train_targets_img.png&quot; alt=&quot;image&quot; style=&quot;float: left; vertical-align: text-top;&quot; /&gt;
+                    
+                
+                    
+                  &lt;img src=&quot;/assets/imgs/denoising/l2_3C_motion_masked_gradient_masked_reg_no_drop_0.75_FULL_data/train/epoch_199_train_inputs_img.png&quot; alt=&quot;image&quot; style=&quot;float: left; vertical-align: text-top;&quot; /&gt;
+                    
+                
+                    
+                  &lt;img src=&quot;/assets/imgs/denoising/l2_3C_motion_masked_gradient_masked_reg_no_drop_0.75_FULL_data/train/epoch_199_train_outputs_img.png&quot; alt=&quot;image&quot; style=&quot;float: left; vertical-align: text-top;&quot; /&gt;
+                    
+                
+                    
+                  &lt;img src=&quot;/assets/imgs/denoising/l2_3C_motion_masked_gradient_masked_reg_no_drop_0.75_FULL_data/train/epoch_199_train_targets_img.png&quot; alt=&quot;image&quot; style=&quot;float: left; vertical-align: text-top;&quot; /&gt;
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+  &lt;/details&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;details style=&quot;margin-top:0px; width:1000px&quot;&gt;
+          &lt;summary&gt;Validation Outputs&lt;/summary&gt;
+          First 2 rows: validation outputs of last 2 epochs (out of 200)
+          Last 2 rows: validation targets and intputs
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                  &lt;img src=&quot;/assets/imgs/denoising/l2_3C_motion_masked_gradient_masked_reg_no_drop_0.75_FULL_data/valid/epoch_198_valid_img.png&quot; alt=&quot;image&quot; style=&quot;float: left; vertical-align: text-top;&quot; /&gt;
+                    
+                
+                    
+                  &lt;img src=&quot;/assets/imgs/denoising/l2_3C_motion_masked_gradient_masked_reg_no_drop_0.75_FULL_data/valid/epoch_199_valid_img.png&quot; alt=&quot;image&quot; style=&quot;float: left; vertical-align: text-top;&quot; /&gt;
+                    
+                
+                    
+                  &lt;img src=&quot;/assets/imgs/denoising/l2_3C_motion_masked_gradient_masked_reg_no_drop_0.75_FULL_data/valid/trainGt_img.png&quot; alt=&quot;image&quot; style=&quot;float: left; vertical-align: text-top;&quot; /&gt;
+                    
+                
+                    
+                  &lt;img src=&quot;/assets/imgs/denoising/l2_3C_motion_masked_gradient_masked_reg_no_drop_0.75_FULL_data/valid/trainOb_img.png&quot; alt=&quot;image&quot; style=&quot;float: left; vertical-align: text-top;&quot; /&gt;
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+  &lt;/details&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;l2_3C_motion_masked_gradient_masked_reg_no_drop_0.75_FULL_data_w2&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;Start Date: Oct 2&lt;/li&gt;
+      &lt;li&gt;File Location: 3&lt;/li&gt;
+      &lt;li&gt;Description&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;l2_3C_motion_masked_gradient_masked_reg_no_drop_0.75_FULL_SEG&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;Start Date: Oct 2&lt;/li&gt;
+      &lt;li&gt;File Location: 2&lt;/li&gt;
+      &lt;li&gt;Description&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;22-ganpix2pix&quot;&gt;2.2 GAN(Pix2Pix)&lt;/h3&gt;
 &lt;ol&gt;
   &lt;li&gt;&lt;strong&gt;MRI_cont3_motion_l2_masked (Pix2Pix)&lt;/strong&gt;
     &lt;ul&gt;
@@ -287,6 +965,54 @@
                 
                     
               &lt;img src=&quot;/assets/imgs/denoising/MRI_cont3_motion_l2_masked/training/00204000-1699-targets.png&quot; alt=&quot;image&quot; style=&quot;float: left; vertical-align: text-top;&quot; /&gt;
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
                     
                 
                     
@@ -473,6 +1199,54 @@
                 
                     
                 
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
   &lt;/details&gt;
           &lt;/li&gt;
         &lt;/ul&gt;
@@ -481,7 +1255,7 @@
       &lt;li&gt;Direction: Use more data and larger l2 weight&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;MRI_cont3_motion_l2_weight1&lt;/strong&gt;
+  &lt;li&gt;&lt;strong&gt;MRI_cont3_motion_l2_weight1 (Pix2Pix)&lt;/strong&gt;
     &lt;ul&gt;
       &lt;li&gt;
         &lt;details&gt;&lt;summary&gt;Parameters&lt;/summary&gt;
@@ -645,6 +1419,54 @@
                 
                     
                 
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
   &lt;/details&gt;
           &lt;/li&gt;
           &lt;li&gt;
@@ -773,6 +1595,54 @@
                 
                     
                 
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
   &lt;/details&gt;
           &lt;/li&gt;
         &lt;/ul&gt;
@@ -780,13 +1650,18 @@
       &lt;li&gt;Again….WHY!(╯°Д°）╯︵&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;MRI_cont3_motion_l2_masked_grad_masked&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;MRI_cont3_motion_l2_masked_grad_masked_w2&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;MRI_cont3_motion_l2_masked_grad_masked_w2&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;MRI_cont3_motion_l2_masked_grad_masked_w3_FULL&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;MRI_cont3_motion_l2_masked_grad_masked_w3_FULL_SEG&lt;/strong&gt;&lt;/li&gt;
 &lt;/ol&gt;
 
 &lt;h2 id=&quot;log&quot;&gt;Log&lt;/h2&gt;
 &lt;h3 id=&quot;2018-09-30&quot;&gt;2018-09-30&lt;/h3&gt;
 &lt;ul&gt;
   &lt;li&gt;Create FIle&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>Jerry Xing</name></author><category term="MRI Denoising" /><summary type="html">Ongoing Projects Index Name Location Description Comment Start To Speed End 1 l2_3C_motion_masked_gradient_masked_reg_no_drop_0.75_FULL_data cigserver1/gpu2     Oct 1 16:10 27 Oct 1 19:10 0.11 hour/epoch Oct 2 14:00 2 l2_3C_motion_gradient_reg_no_drop_0.75_FULL_data cigserver1/gpu3     Sep 30 22:32 189 Oct 1 19:09 0.1 hour/epoch   3 test_MRI_cont3_motion_l2_masked_grad_masked_w3_FULL cigserver2     Oct 1 12:53     Oct 2 11:30 Experiment Record MRI_cont3_motion_l2_masked (Pix2Pix) Parameters &quot;GEN_LOSS&quot;: &quot;L2_masked&quot;, &quot;GPU_IND&quot;: &quot;3&quot;, &quot;aspect_ratio&quot;: 1.0, &quot;batch_size&quot;: 1, &quot;beta1&quot;: 0.5, &quot;checkpoint&quot;: &quot;../training_checkpoint/MRI_cont3_motion_l2_masked_train&quot;, &quot;custom_loss_weight&quot;: 100.0, &quot;display_freq&quot;: 1000, &quot;flip&quot;: false, &quot;gan_weight&quot;: 1.0, &quot;input_dir&quot;: &quot;../training_data/MRI_cont3_motion/val&quot;, &quot;lab_colorization&quot;: false, &quot;lr&quot;: 0.0002, &quot;max_epochs&quot;: null, &quot;max_steps&quot;: null, &quot;mode&quot;: &quot;test&quot;, &quot;ndf&quot;: 64, &quot;ngf&quot;: 64, &quot;output_dir&quot;: &quot;../test_result/MRI_cont3_motion_l2_masked_test&quot;, &quot;output_filetype&quot;: &quot;png&quot;, &quot;progress_freq&quot;: 50, &quot;save_freq&quot;: 5000, &quot;scale_size&quot;: 256, &quot;seed&quot;: 1035730246, &quot;separable_conv&quot;: false, &quot;summary_freq&quot;: 100, &quot;trace_freq&quot;: 0, &quot;which_direction&quot;: &quot;BtoA&quot; Dataset_size: 2100 Outputs Training Test Strangely, training outputs seem to distort the shape of organs —— which may could be solved by put larger weight on l2 loss —— test outputs look much better than training outputs and only oversmooth. Direction: Use more data and larger l2 weight MRI_cont3_motion_l2_weight1 Parameters &quot;GEN_LOSS&quot;: &quot;L2&quot;, &quot;GPU_IND&quot;: &quot;3&quot;, &quot;aspect_ratio&quot;: 1.0, &quot;batch_size&quot;: 1, &quot;beta1&quot;: 0.5, &quot;checkpoint&quot;: &quot;../training_checkpoint/MRI_cont3_motion_l2_weight1_train&quot;, &quot;custom_loss_weight&quot;: 10.0, &quot;display_freq&quot;: 1000, &quot;flip&quot;: false, &quot;gan_weight&quot;: 1.0, &quot;input_dir&quot;: &quot;../training_data/MRI_cont3_motion/val&quot;, &quot;lab_colorization&quot;: false, &quot;lr&quot;: 0.0002, &quot;max_epochs&quot;: null, &quot;max_steps&quot;: null, &quot;mode&quot;: &quot;test&quot;, &quot;ndf&quot;: 64, &quot;ngf&quot;: 64, &quot;output_dir&quot;: &quot;../test_result/MRI_cont3_motion_l2_weight1_test&quot;, &quot;output_filetype&quot;: &quot;png&quot;, &quot;progress_freq&quot;: 50, &quot;save_freq&quot;: 5000, &quot;scale_size&quot;: 256, &quot;seed&quot;: 385461128, &quot;separable_conv&quot;: false, &quot;summary_freq&quot;: 100, &quot;trace_freq&quot;: 0, &quot;which_direction&quot;: &quot;BtoA&quot; Outputs Training Test Again….WHY!(╯°Д°）╯︵ Log 2018-09-30 Create FIle</summary></entry><entry><title type="html">My First Post Test</title><link href="http://localhost:4000/test/2018/09/30/My-first-post.html" rel="alternate" type="text/html" title="My First Post Test" /><published>2018-09-30T00:00:00-05:00</published><updated>2018-09-30T00:00:00-05:00</updated><id>http://localhost:4000/test/2018/09/30/My-first-post</id><content type="html" xml:base="http://localhost:4000/test/2018/09/30/My-first-post.html">&lt;p&gt;Hydeout updates the original &lt;a href=&quot;https://github.com/poole/hyde&quot;&gt;Hyde&lt;/a&gt;
+&lt;/ul&gt;</content><author><name>Jerry Xing</name></author><category term="MRI Denoising" /><summary type="html">1. Ongoing Projects UNet+Loss Index Name Location Description Comment Start To Speed End 4 MRI_cont3_motion_l2_masked_grad_masked_w3_FULL cigserver2   END Oct 1 12:53     Oct 2 11:30 5 MRI_cont3_motion_l2_masked_grad_masked_w3_FULL_SEG cigserver2     Oct 2 11:40     Oct 3 17:30 GAN Index Name Location Description Comment Start To Speed End 7 l2_3C_motion_masked_gradient_masked_reg_no_drop_0.75_FULL_data cigserver1/gpu2     Oct 1 16:10 27 Oct 1 19:10 0.11 hour/epoch Oct 2 14:00 5 l2_3C_motion_gradient_reg_no_drop_0.75_FULL_data cigserver1/gpu3   END Sep 30 22:32 189 Oct 1 19:09 0.1 hour/epoch   8 l2_3C_motion_masked_gradient_masked_reg_no_drop_0.75_FULL_data_w2 cigserver1/gpu3   300Eps Oct 2 16:20   x hour/epoch Oct 3 22:20 9 l2_3C_motion_masked_gradient_masked_reg_no_drop_0.75_FULL_SEG cigserver1/gpu2   300Eps Oct 2 16:20   x hour/epoch Oct 3 22:20</summary></entry><entry><title type="html">My First Post Test</title><link href="http://localhost:4000/test/2018/09/30/My-first-post.html" rel="alternate" type="text/html" title="My First Post Test" /><published>2018-09-30T00:00:00-05:00</published><updated>2018-09-30T00:00:00-05:00</updated><id>http://localhost:4000/test/2018/09/30/My-first-post</id><content type="html" xml:base="http://localhost:4000/test/2018/09/30/My-first-post.html">&lt;p&gt;Hydeout updates the original &lt;a href=&quot;https://github.com/poole/hyde&quot;&gt;Hyde&lt;/a&gt;
 theme for &lt;a href=&quot;http://jekyllrb.com&quot;&gt;Jekyll&lt;/a&gt; 3.x and adds new functionality.&lt;/p&gt;
 
 &lt;!--excerpt--&gt;

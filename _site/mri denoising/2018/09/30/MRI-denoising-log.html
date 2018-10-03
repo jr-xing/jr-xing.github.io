@@ -11,7 +11,7 @@
 
   <title>
     
-      Log of MRI Denoising Project &middot; Jerry Xing
+      MRI Denoising Project Log &middot; Jerry Xing
     
   </title>
 
@@ -244,7 +244,7 @@
 
     <main class="container">
       <header>
-  <h1 class="post-title">Log of MRI Denoising Project</h1>
+  <h1 class="post-title">MRI Denoising Project Log</h1>
 </header>
 <div class="content">
   <div class="post-meta">
@@ -274,7 +274,9 @@
 
 <!-- https://stackoverflow.com/questions/17677094/jekyll-for-loop-over-all-images-in-a-folder -->
 
-<h2 id="ongoing-projects">Ongoing Projects</h2>
+<h2 id="1-ongoing-projects">1. Ongoing Projects</h2>
+
+<h3 id="unetloss">UNet+Loss</h3>
 
 <table>
   <thead>
@@ -292,7 +294,49 @@
   </thead>
   <tbody>
     <tr>
-      <td>1</td>
+      <td>4</td>
+      <td>MRI_cont3_motion_l2_masked_grad_masked_w3_FULL</td>
+      <td>cigserver2</td>
+      <td> </td>
+      <td>END</td>
+      <td>Oct 1 12:53</td>
+      <td> </td>
+      <td> </td>
+      <td>Oct 2 11:30</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>MRI_cont3_motion_l2_masked_grad_masked_w3_FULL_SEG</td>
+      <td>cigserver2</td>
+      <td> </td>
+      <td> </td>
+      <td>Oct 2 11:40</td>
+      <td> </td>
+      <td> </td>
+      <td>Oct 3 17:30</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="gan">GAN</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Index</th>
+      <th>Name</th>
+      <th>Location</th>
+      <th>Description</th>
+      <th>Comment</th>
+      <th>Start</th>
+      <th>To</th>
+      <th>Speed</th>
+      <th>End</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>7</td>
       <td>l2_3C_motion_masked_gradient_masked_reg_no_drop_0.75_FULL_data</td>
       <td>cigserver1/gpu2</td>
       <td> </td>
@@ -303,31 +347,617 @@
       <td>Oct 2 14:00</td>
     </tr>
     <tr>
-      <td>2</td>
+      <td>5</td>
       <td>l2_3C_motion_gradient_reg_no_drop_0.75_FULL_data</td>
       <td>cigserver1/gpu3</td>
       <td> </td>
-      <td> </td>
+      <td>END</td>
       <td>Sep 30 22:32</td>
       <td>189 Oct 1 19:09</td>
       <td>0.1 hour/epoch</td>
       <td> </td>
     </tr>
     <tr>
-      <td>3</td>
-      <td>test_MRI_cont3_motion_l2_masked_grad_masked_w3_FULL</td>
-      <td>cigserver2</td>
+      <td>8</td>
+      <td>l2_3C_motion_masked_gradient_masked_reg_no_drop_0.75_FULL_data_w2</td>
+      <td>cigserver1/gpu3</td>
       <td> </td>
+      <td>300Eps</td>
+      <td>Oct 2 16:20</td>
       <td> </td>
-      <td>Oct 1 12:53</td>
+      <td>x hour/epoch</td>
+      <td>Oct 3 22:20</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>l2_3C_motion_masked_gradient_masked_reg_no_drop_0.75_FULL_SEG</td>
+      <td>cigserver1/gpu2</td>
       <td> </td>
+      <td>300Eps</td>
+      <td>Oct 2 16:20</td>
       <td> </td>
-      <td>Oct 2 11:30</td>
+      <td>x hour/epoch</td>
+      <td>Oct 3 22:20</td>
     </tr>
   </tbody>
 </table>
 
-<h2 id="experiment-record">Experiment Record</h2>
+<!--more-->
+
+<h2 id="2-experiment-record">2. Experiment Record</h2>
+<h3 id="21-unetloss">2.1 UNet+Loss</h3>
+<ol>
+  <li><strong>l2_3C_motion_reg_no_drop_0.75_Part_data</strong>
+    <ul>
+      <li>Start Date: Sep 28</li>
+      <li>File Location: cigserver1/gpu3</li>
+      <li>Description:</li>
+    </ul>
+  </li>
+  <li><strong>l2_mask_reg_no_drop_0.75_Part_data</strong>
+    <ul>
+      <li>Start Date: Sep 28</li>
+      <li>File Location: cigserver1/gpu2</li>
+      <li>Description</li>
+    </ul>
+  </li>
+  <li><strong>l2_3C_motion_reg_no_drop_0.75_FULL_data</strong>
+    <ul>
+      <li>Start Date: Sep 29</li>
+      <li>File Location: gpu3</li>
+      <li>Description</li>
+    </ul>
+  </li>
+  <li><strong>l2_mask_reg_no_drop_0.75_FULL_data</strong>
+    <ul>
+      <li>Start Date: Sep 29</li>
+      <li>File Location: gpu2</li>
+      <li>Description</li>
+    </ul>
+  </li>
+  <li><strong>l2_3C_motion_gradient_reg_no_drop_0.75_FULL_data</strong>
+    <ul>
+      <li>Start Date: Sep 30</li>
+      <li>File Location: 3</li>
+      <li>Description</li>
+    </ul>
+  </li>
+  <li><strong>l2_3C_motion_masked_reg_no_drop_0.75_FULL_data</strong>
+    <ul>
+      <li>Start Date: Sep 30</li>
+      <li>File Location: 2</li>
+      <li>Description</li>
+    </ul>
+  </li>
+  <li><strong>ls2_3C_motion_masked_gradient_masked_reg_no_drop_0.75_FULL_data</strong>
+    <ul>
+      <li>Start Date: Oct 1</li>
+      <li>File Location: 2</li>
+      <li>Description</li>
+      <li>
+        <details style="margin-top:0px; width:1000px">
+          <summary>Tensorboard</summary>                
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                  <img src="/assets/imgs/denoising/l2_3C_motion_masked_gradient_masked_reg_no_drop_0.75_FULL_data/tensorboard/tra_loss.png" alt="image" style="float: left; vertical-align: text-top;" />
+                    
+                
+                    
+                  <img src="/assets/imgs/denoising/l2_3C_motion_masked_gradient_masked_reg_no_drop_0.75_FULL_data/tensorboard/tra_psnr.png" alt="image" style="float: left; vertical-align: text-top;" />
+                    
+                
+                    
+                  <img src="/assets/imgs/denoising/l2_3C_motion_masked_gradient_masked_reg_no_drop_0.75_FULL_data/tensorboard/val_loss.png" alt="image" style="float: left; vertical-align: text-top;" />
+                    
+                
+                    
+                  <img src="/assets/imgs/denoising/l2_3C_motion_masked_gradient_masked_reg_no_drop_0.75_FULL_data/tensorboard/val_psnr.png" alt="image" style="float: left; vertical-align: text-top;" />
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+  </details>
+      </li>
+      <li>
+        <details style="margin-top:0px; width:1000px">
+          <summary>Training Outputs</summary>
+          Every 3 rows: training inputs, training outputs and training target
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                  <img src="/assets/imgs/denoising/l2_3C_motion_masked_gradient_masked_reg_no_drop_0.75_FULL_data/train/epoch_198_train_inputs_img.png" alt="image" style="float: left; vertical-align: text-top;" />
+                    
+                
+                    
+                  <img src="/assets/imgs/denoising/l2_3C_motion_masked_gradient_masked_reg_no_drop_0.75_FULL_data/train/epoch_198_train_outputs_img.png" alt="image" style="float: left; vertical-align: text-top;" />
+                    
+                
+                    
+                  <img src="/assets/imgs/denoising/l2_3C_motion_masked_gradient_masked_reg_no_drop_0.75_FULL_data/train/epoch_198_train_targets_img.png" alt="image" style="float: left; vertical-align: text-top;" />
+                    
+                
+                    
+                  <img src="/assets/imgs/denoising/l2_3C_motion_masked_gradient_masked_reg_no_drop_0.75_FULL_data/train/epoch_199_train_inputs_img.png" alt="image" style="float: left; vertical-align: text-top;" />
+                    
+                
+                    
+                  <img src="/assets/imgs/denoising/l2_3C_motion_masked_gradient_masked_reg_no_drop_0.75_FULL_data/train/epoch_199_train_outputs_img.png" alt="image" style="float: left; vertical-align: text-top;" />
+                    
+                
+                    
+                  <img src="/assets/imgs/denoising/l2_3C_motion_masked_gradient_masked_reg_no_drop_0.75_FULL_data/train/epoch_199_train_targets_img.png" alt="image" style="float: left; vertical-align: text-top;" />
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+  </details>
+      </li>
+      <li>
+        <details style="margin-top:0px; width:1000px">
+          <summary>Validation Outputs</summary>
+          First 2 rows: validation outputs of last 2 epochs (out of 200)
+          Last 2 rows: validation targets and intputs
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                  <img src="/assets/imgs/denoising/l2_3C_motion_masked_gradient_masked_reg_no_drop_0.75_FULL_data/valid/epoch_198_valid_img.png" alt="image" style="float: left; vertical-align: text-top;" />
+                    
+                
+                    
+                  <img src="/assets/imgs/denoising/l2_3C_motion_masked_gradient_masked_reg_no_drop_0.75_FULL_data/valid/epoch_199_valid_img.png" alt="image" style="float: left; vertical-align: text-top;" />
+                    
+                
+                    
+                  <img src="/assets/imgs/denoising/l2_3C_motion_masked_gradient_masked_reg_no_drop_0.75_FULL_data/valid/trainGt_img.png" alt="image" style="float: left; vertical-align: text-top;" />
+                    
+                
+                    
+                  <img src="/assets/imgs/denoising/l2_3C_motion_masked_gradient_masked_reg_no_drop_0.75_FULL_data/valid/trainOb_img.png" alt="image" style="float: left; vertical-align: text-top;" />
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+  </details>
+      </li>
+    </ul>
+  </li>
+  <li><strong>l2_3C_motion_masked_gradient_masked_reg_no_drop_0.75_FULL_data_w2</strong>
+    <ul>
+      <li>Start Date: Oct 2</li>
+      <li>File Location: 3</li>
+      <li>Description</li>
+    </ul>
+  </li>
+  <li><strong>l2_3C_motion_masked_gradient_masked_reg_no_drop_0.75_FULL_SEG</strong>
+    <ul>
+      <li>Start Date: Oct 2</li>
+      <li>File Location: 2</li>
+      <li>Description</li>
+    </ul>
+  </li>
+</ol>
+
+<h3 id="22-ganpix2pix">2.2 GAN(Pix2Pix)</h3>
 <ol>
   <li><strong>MRI_cont3_motion_l2_masked (Pix2Pix)</strong>
     <ul>
@@ -436,6 +1066,54 @@
                 
                     
               <img src="/assets/imgs/denoising/MRI_cont3_motion_l2_masked/training/00204000-1699-targets.png" alt="image" style="float: left; vertical-align: text-top;" />
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
                     
                 
                     
@@ -622,6 +1300,54 @@
                 
                     
                 
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
   </details>
           </li>
         </ul>
@@ -630,7 +1356,7 @@
       <li>Direction: Use more data and larger l2 weight</li>
     </ul>
   </li>
-  <li><strong>MRI_cont3_motion_l2_weight1</strong>
+  <li><strong>MRI_cont3_motion_l2_weight1 (Pix2Pix)</strong>
     <ul>
       <li>
         <details><summary>Parameters</summary>
@@ -794,6 +1520,54 @@
                 
                     
                 
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
   </details>
           </li>
           <li>
@@ -922,6 +1696,54 @@
                 
                     
                 
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
   </details>
           </li>
         </ul>
@@ -929,6 +1751,11 @@
       <li>Again….WHY!(╯°Д°）╯︵</li>
     </ul>
   </li>
+  <li><strong>MRI_cont3_motion_l2_masked_grad_masked</strong></li>
+  <li><strong>MRI_cont3_motion_l2_masked_grad_masked_w2</strong></li>
+  <li><strong>MRI_cont3_motion_l2_masked_grad_masked_w2</strong></li>
+  <li><strong>MRI_cont3_motion_l2_masked_grad_masked_w3_FULL</strong></li>
+  <li><strong>MRI_cont3_motion_l2_masked_grad_masked_w3_FULL_SEG</strong></li>
 </ol>
 
 <h2 id="log">Log</h2>

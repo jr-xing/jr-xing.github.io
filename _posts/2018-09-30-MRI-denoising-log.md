@@ -61,10 +61,37 @@ excerpt_separator:  <!--more-->
     - File Location: 2
     - Description
 
-7. **l2_3C_motion_masked_gradient_masked_reg_no_drop_0.75_FULL_data**
+7. **ls2_3C_motion_masked_gradient_masked_reg_no_drop_0.75_FULL_data**
     - Start Date: Oct 1
     - File Location: 2
     - Description
+    - <details style="margin-top:0px; width:1000px">
+                <summary>Tensorboard</summary>                
+                {% for image in site.static_files %}
+                    {% if image.path contains 'l2_3C_motion_masked_gradient_masked_reg_no_drop_0.75_FULL_data/tensorboard' %}
+                        <img src="{{ site.baseurl }}{{ image.path }}" alt="image" style="float: left; vertical-align: text-top;" />
+                    {% endif %}
+                {% endfor %}
+        </details>  
+    - <details style="margin-top:0px; width:1000px">
+                <summary>Training Outputs</summary>
+                Every 3 rows: training inputs, training outputs and training target
+                {% for image in site.static_files %}
+                    {% if image.path contains 'l2_3C_motion_masked_gradient_masked_reg_no_drop_0.75_FULL_data/train' %}
+                        <img src="{{ site.baseurl }}{{ image.path }}" alt="image" style="float: left; vertical-align: text-top;" />
+                    {% endif %}
+                {% endfor %}
+        </details>  
+    - <details style="margin-top:0px; width:1000px">
+                <summary>Validation Outputs</summary>
+                First 2 rows: validation outputs of last 2 epochs (out of 200)
+                Last 2 rows: validation targets and intputs
+                {% for image in site.static_files %}
+                    {% if image.path contains 'l2_3C_motion_masked_gradient_masked_reg_no_drop_0.75_FULL_data/valid' %}
+                        <img src="{{ site.baseurl }}{{ image.path }}" alt="image" style="float: left; vertical-align: text-top;" />
+                    {% endif %}
+                {% endfor %}
+        </details>  
 
 8. **l2_3C_motion_masked_gradient_masked_reg_no_drop_0.75_FULL_data_w2**
     - Start Date: Oct 2
