@@ -69,6 +69,7 @@ excerpt_separator:  <!--more-->
                 <summary>Tensorboard</summary>                
                 {% for image in site.static_files %}
                     {% if image.path contains 'l2_3C_motion_masked_gradient_masked_reg_no_drop_0.75_FULL_data/tensorboard' %}
+                        <p>{{ image.name }}</p>
                         <img src="{{ site.baseurl }}{{ image.path }}" alt="image" style="float: left; vertical-align: text-top;" />
                     {% endif %}
                 {% endfor %}
@@ -78,6 +79,7 @@ excerpt_separator:  <!--more-->
                 Every 3 rows: training inputs, training outputs and training target
                 {% for image in site.static_files %}
                     {% if image.path contains 'l2_3C_motion_masked_gradient_masked_reg_no_drop_0.75_FULL_data/train' %}
+                        <p>{{ image.name }}</p>
                         <img src="{{ site.baseurl }}{{ image.path }}" alt="image" style="float: left; vertical-align: text-top;" />
                     {% endif %}
                 {% endfor %}
@@ -88,6 +90,7 @@ excerpt_separator:  <!--more-->
                 Last 2 rows: validation targets and intputs
                 {% for image in site.static_files %}
                     {% if image.path contains 'l2_3C_motion_masked_gradient_masked_reg_no_drop_0.75_FULL_data/valid' %}
+                        <p>{{ image.name }}</p>
                         <img src="{{ site.baseurl }}{{ image.path }}" alt="image" style="float: left; vertical-align: text-top;" />
                     {% endif %}
                 {% endfor %}
@@ -97,11 +100,71 @@ excerpt_separator:  <!--more-->
     - Start Date: Oct 2
     - File Location: 3
     - Description
+    - <details style="margin-top:0px; width:1000px">
+                <summary>Tensorboard</summary>                
+                {% for image in site.static_files %}
+                    {% if image.path contains 'l2_3C_motion_masked_gradient_masked_reg_no_drop_0.75_FULL_data_w2/tensorboard' %}
+                        <p>{{ image.name }}</p>
+                        <img src="{{ site.baseurl }}{{ image.path }}" alt="image" style="float: left; vertical-align: text-top;" />
+                    {% endif %}
+                {% endfor %}
+        </details>  
+    - <details style="margin-top:0px; width:1000px">
+                <summary>Training Outputs</summary>
+                Every 3 rows: training inputs, training outputs and training target
+                {% for image in site.static_files %}
+                    {% if image.path contains 'l2_3C_motion_masked_gradient_masked_reg_no_drop_0.75_FULL_data_w2/train' %}
+                        <p>{{ image.name }}</p>
+                        <img src="{{ site.baseurl }}{{ image.path }}" alt="image" style="float: left; vertical-align: text-top;" />
+                    {% endif %}
+                {% endfor %}
+        </details>  
+    - <details style="margin-top:0px; width:1000px">
+                <summary>Validation Outputs</summary>
+                First 2 rows: validation outputs of last 2 epochs (out of 200)
+                Last 2 rows: validation targets and intputs
+                {% for image in site.static_files %}
+                    {% if image.path contains 'l2_3C_motion_masked_gradient_masked_reg_no_drop_0.75_FULL_data_w2/valid' %}
+                        <p>{{ image.name }}</p>
+                        <img src="{{ site.baseurl }}{{ image.path }}" alt="image" style="float: left; vertical-align: text-top;" />
+                    {% endif %}
+                {% endfor %}
+        </details>
 
 9. **l2_3C_motion_masked_gradient_masked_reg_no_drop_0.75_FULL_SEG**
     - Start Date: Oct 2
     - File Location: 2
     - Description
+    - <details style="margin-top:0px; width:1000px">
+                <summary>Tensorboard</summary>                
+                {% for image in site.static_files %}
+                    {% if image.path contains 'l2_3C_motion_masked_gradient_masked_reg_no_drop_0.75_FULL_SEG/tensorboard' %}
+                        <p>{{ image.name }}</p>
+                        <img src="{{ site.baseurl }}{{ image.path }}" alt="image" style="float: left; vertical-align: text-top;" />
+                    {% endif %}
+                {% endfor %}
+        </details>  
+    - <details style="margin-top:0px; width:1000px">
+                <summary>Training Outputs</summary>
+                Every 3 rows: training inputs, training outputs and training target
+                {% for image in site.static_files %}
+                    {% if image.path contains 'l2_3C_motion_masked_gradient_masked_reg_no_drop_0.75_FULL_SEG/train' %}
+                        <p>{{ image.name }}</p>
+                        <img src="{{ site.baseurl }}{{ image.path }}" alt="image" style="float: left; vertical-align: text-top;" />
+                    {% endif %}
+                {% endfor %}
+        </details>  
+    - <details style="margin-top:0px; width:1000px">
+                <summary>Validation Outputs</summary>
+                First 2 rows: validation outputs of last 2 epochs (out of 200)
+                Last 2 rows: validation targets and intputs
+                {% for image in site.static_files %}
+                    {% if image.path contains 'l2_3C_motion_masked_gradient_masked_reg_no_drop_0.75_FULL_SEG/valid' %}
+                        <p>{{ image.name }}</p>
+                        <img src="{{ site.baseurl }}{{ image.path }}" alt="image" style="float: left; vertical-align: text-top;" />
+                    {% endif %}
+                {% endfor %}
+        </details>
 
 ### 2.2 GAN(Pix2Pix)
 1. **MRI_cont3_motion_l2_masked (Pix2Pix)**
