@@ -26,7 +26,7 @@ excerpt_separator:  <!--more-->
 | 5     | l2_3C_motion_gradient_reg_no_drop_0.75_FULL_data                  | cigserver1/gpu3 |             | END     | Sep 30 22:32 | 189 Oct 1 19:09 | 0.1 hour/epoch  |             |
 | 8     | l2_3C_motion_masked_gradient_masked_reg_no_drop_0.75_FULL_data_w2 | cigserver1/gpu3 |             | 300Eps  | Oct 2 16:20  |                 | x hour/epoch    | Oct 3 22:20 |
 | 9     | l2_3C_motion_masked_gradient_masked_reg_no_drop_0.75_FULL_SEG     | cigserver1/gpu2 |             | 300Eps  | Oct 2 16:20  |                 | x hour/epoch    | Oct 3 22:20 |
-- 
+
 <!--more-->
 
 ## 2. Experiment Record
