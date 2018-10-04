@@ -232,8 +232,6 @@ excerpt_separator:  <!--more-->
                     {% endif %}
                 {% endfor %}
         </details>
-| 10    | l2_3C_motion_masked_gradient_masked_mid5_reg_no_drop_0.75_FULL_data_w2 | cigserver1/gpu3 |             | 300Eps  | Oct 3 8:40   |                 | x hour/epoch    | Oct 4 17:40 |
-| 11    | l2_3C_motion_masked_gradient_masked_reg_no_drop_0.9_FULL_SEG           | cigserver1/gpu2 |             | 300Eps  | Oct 3 8:40   |                 | x hour/epoch    | Oct 4 17:40 |
 
 ### 2.2 GAN(Pix2Pix)
 1. **MRI_cont3_motion_l2_masked (Pix2Pix)**
