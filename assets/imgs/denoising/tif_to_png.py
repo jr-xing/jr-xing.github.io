@@ -10,7 +10,8 @@ Created on Wed Oct  3 14:41:13 2018
 import os
 from PIL import Image
 
-folders = ['l2_3C_motion_masked_gradient_masked_reg_no_drop_0.75_FULL_SEG']
+folders = ['l2_3C_motion_masked_gradient_masked_reg_no_drop_0.75_FULL_SEG',
+	   'l2_3C_motion_masked_gradient_masked_reg_no_drop_0.75_FULL_data_w2']
 
 
 raw_train_folder = '/raw_train'

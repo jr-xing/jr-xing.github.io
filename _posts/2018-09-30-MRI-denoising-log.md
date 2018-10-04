@@ -20,12 +20,14 @@ excerpt_separator:  <!--more-->
 
 ### UNet+Loss
 
-| Index | Name                                                              | Location        | Description | Comment | Start        | To              | Speed           | End         |
-| ----- | ----------------------------------------------------------------- | --------------- | ----------- | ------- | ------------ | --------------- | --------------- | ----------- |
-| 7     | l2_3C_motion_masked_gradient_masked_reg_no_drop_0.75_FULL_data    | cigserver1/gpu2 |             | END     | Oct 1 16:10  | 27 Oct 1 19:10  | 0.11 hour/epoch | Oct 2 14:00 |
-| 5     | l2_3C_motion_gradient_reg_no_drop_0.75_FULL_data                  | cigserver1/gpu3 |             | END     | Sep 30 22:32 | 189 Oct 1 19:09 | 0.1 hour/epoch  |             |
-| 8     | l2_3C_motion_masked_gradient_masked_reg_no_drop_0.75_FULL_data_w2 | cigserver1/gpu3 |             | 300Eps  | Oct 2 16:20  |                 | x hour/epoch    | Oct 3 22:20 |
-| 9     | l2_3C_motion_masked_gradient_masked_reg_no_drop_0.75_FULL_SEG     | cigserver1/gpu2 |             | 300Eps  | Oct 2 16:20  |                 | x hour/epoch    | Oct 3 22:20 |
+| Index | Name                                                                   | Location        | Description | Comment | Start        | To              | Speed           | End         |
+| ----- | ---------------------------------------------------------------------- | --------------- | ----------- | ------- | ------------ | --------------- | --------------- | ----------- |
+| 7     | l2_3C_motion_masked_gradient_masked_reg_no_drop_0.75_FULL_data         | cigserver1/gpu2 |             | END     | Oct 1 16:10  | 27 Oct 1 19:10  | 0.11 hour/epoch | Oct 2 14:00 |
+| 5     | l2_3C_motion_gradient_reg_no_drop_0.75_FULL_data                       | cigserver1/gpu3 |             | END     | Sep 30 22:32 | 189 Oct 1 19:09 | 0.1 hour/epoch  |             |
+| 8     | l2_3C_motion_masked_gradient_masked_reg_no_drop_0.75_FULL_data_w2      | cigserver1/gpu3 |             | END     | Oct 2 16:20  |                 | x hour/epoch    | Oct 3 22:20 |
+| 9     | l2_3C_motion_masked_gradient_masked_reg_no_drop_0.75_FULL_SEG          | cigserver1/gpu2 |             | END     | Oct 2 16:20  |                 | x hour/epoch    | Oct 3 22:20 |
+| 10    | l2_3C_motion_masked_gradient_masked_mid5_reg_no_drop_0.75_FULL_data_w2 | cigserver1/gpu3 |             | 300Eps  | Oct 3 8:40   |                 | x hour/epoch    | Oct 4 17:40 |
+| 11    | l2_3C_motion_masked_gradient_masked_reg_no_drop_0.9_FULL_SEG           | cigserver1/gpu2 |             | 300Eps  | Oct 3 8:40   |                 | x hour/epoch    | Oct 4 17:40 |
 
 <!--more-->
 
@@ -163,6 +165,76 @@ excerpt_separator:  <!--more-->
                 {% endfor %}
         </details>
 
+10. **l2_3C_motion_masked_gradient_masked_mid5_reg_no_drop_0.75_FULL_data_w2**
+    - Start Date: Oct 2
+    - File Location: 2
+    - Description
+    - <details style="margin-top:0px; width:1000px">
+                <summary>Tensorboard</summary>                
+                {% for image in site.static_files %}
+                    {% if image.path contains 'l2_3C_motion_masked_gradient_masked_mid5_reg_no_drop_0.75_FULL_data_w2/tensorboard' %}
+                        <img src="{{ site.baseurl }}{{ image.path }}" alt="image" style="float: left; vertical-align: text-top;" />
+                    {% endif %}
+                {% endfor %}
+        </details>  
+    - <details style="margin-top:0px; width:1000px">
+                <summary>Training Outputs</summary>
+                Every 3 rows: training inputs, training outputs and training target
+                {% for image in site.static_files %}
+                    {% if image.path contains 'l2_3C_motion_masked_gradient_masked_mid5_reg_no_drop_0.75_FULL_data_w2/train' %}
+                        <p>{{ image.name }}</p>
+                        <img src="{{ site.baseurl }}{{ image.path }}" alt="image" style="float: left; vertical-align: text-top;" />
+                    {% endif %}
+                {% endfor %}
+        </details>  
+    - <details style="margin-top:0px; width:1000px">
+                <summary>Validation Outputs</summary>
+                First 2 rows: validation outputs of last 2 epochs (out of 200)
+                Last 2 rows: validation targets and intputs
+                {% for image in site.static_files %}
+                    {% if image.path contains 'l2_3C_motion_masked_gradient_masked_mid5_reg_no_drop_0.75_FULL_data_w2/valid' %}
+                        <p>{{ image.name }}</p>
+                        <img src="{{ site.baseurl }}{{ image.path }}" alt="image" style="float: left; vertical-align: text-top;" />
+                    {% endif %}
+                {% endfor %}
+        </details>
+
+11. **l2_3C_motion_masked_gradient_masked_reg_no_drop_0.9_FULL_SEG**
+    - Start Date: Oct 2
+    - File Location: 2
+    - Description
+    - <details style="margin-top:0px; width:1000px">
+                <summary>Tensorboard</summary>                
+                {% for image in site.static_files %}
+                    {% if image.path contains 'l2_3C_motion_masked_gradient_masked_reg_no_drop_0.9_FULL_SEG/tensorboard' %}
+                        <img src="{{ site.baseurl }}{{ image.path }}" alt="image" style="float: left; vertical-align: text-top;" />
+                    {% endif %}
+                {% endfor %}
+        </details>  
+    - <details style="margin-top:0px; width:1000px">
+                <summary>Training Outputs</summary>
+                Every 3 rows: training inputs, training outputs and training target
+                {% for image in site.static_files %}
+                    {% if image.path contains 'l2_3C_motion_masked_gradient_masked_reg_no_drop_0.9_FULL_SEG/train' %}
+                        <p>{{ image.name }}</p>
+                        <img src="{{ site.baseurl }}{{ image.path }}" alt="image" style="float: left; vertical-align: text-top;" />
+                    {% endif %}
+                {% endfor %}
+        </details>  
+    - <details style="margin-top:0px; width:1000px">
+                <summary>Validation Outputs</summary>
+                First 2 rows: validation outputs of last 2 epochs (out of 200)
+                Last 2 rows: validation targets and intputs
+                {% for image in site.static_files %}
+                    {% if image.path contains 'l2_3C_motion_masked_gradient_masked_reg_no_drop_0.9_FULL_SEG/valid' %}
+                        <p>{{ image.name }}</p>
+                        <img src="{{ site.baseurl }}{{ image.path }}" alt="image" style="float: left; vertical-align: text-top;" />
+                    {% endif %}
+                {% endfor %}
+        </details>
+| 10    | l2_3C_motion_masked_gradient_masked_mid5_reg_no_drop_0.75_FULL_data_w2 | cigserver1/gpu3 |             | 300Eps  | Oct 3 8:40   |                 | x hour/epoch    | Oct 4 17:40 |
+| 11    | l2_3C_motion_masked_gradient_masked_reg_no_drop_0.9_FULL_SEG           | cigserver1/gpu2 |             | 300Eps  | Oct 3 8:40   |                 | x hour/epoch    | Oct 4 17:40 |
+
 ### 2.2 GAN(Pix2Pix)
 1. **MRI_cont3_motion_l2_masked (Pix2Pix)**
     -   <details><summary>Parameters</summary>
@@ -279,6 +351,9 @@ excerpt_separator:  <!--more-->
 ## 3. Ideas & Plans
 - From 2-8 ```l2_3C_motion_masked_gradient_masked_reg_no_drop_0.75_FULL_data_w2``` we can see that the body edge is very sharp, which may indicts that much part of the gradient loss falled on the body edges, and organ fine structures were not given enough attention. Experiments using ```mask_only_middle_1/4)``` may work.
 - Try a only-l2 net to extract the contour and a only-gradient to extract the fine structure, and combine the two?
+- Increase keep_prob to enhance net power
+- Sobel
+- Other direction data
 
 ## Log
 ### 2018-09-30
