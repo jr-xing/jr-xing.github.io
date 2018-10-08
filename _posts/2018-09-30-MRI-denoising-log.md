@@ -16,19 +16,30 @@ excerpt_separator:  <!--more-->
 | Index | Name                                               | Location   | Description | Comment | Start       | To  | Speed | End         |
 | ----- | -------------------------------------------------- | ---------- | ----------- | ------- | ----------- | --- | ----- | ----------- |
 | 4     | MRI_cont3_motion_l2_masked_grad_masked_w3_FULL     | cigserver2 |             | END     | Oct 1 12:53 |     |       | Oct 2 11:30 |
-| 5     | MRI_cont3_motion_l2_masked_grad_masked_w3_FULL_SEG | cigserver2 |             |         | Oct 2 11:40 |     |       | Oct 3 17:30 |
+| 5     | MRI_cont3_motion_l2_masked_grad_masked_w3_FULL_SEG | cigserver2 |             | END     | Oct 2 11:40 |     |       | Oct 3 17:30 |
 
 ### UNet+Loss
 
-| Index | Name                                                                   | Location        | Description | Comment | Start        | To              | Speed           | End         |
-| ----- | ---------------------------------------------------------------------- | --------------- | ----------- | ------- | ------------ | --------------- | --------------- | ----------- |
-| 7     | l2_3C_motion_masked_gradient_masked_reg_no_drop_0.75_FULL_data         | cigserver1/gpu2 |             | END     | Oct 1 16:10  | 27 Oct 1 19:10  | 0.11 hour/epoch | Oct 2 14:00 |
-| 5     | l2_3C_motion_gradient_reg_no_drop_0.75_FULL_data                       | cigserver1/gpu3 |             | END     | Sep 30 22:32 | 189 Oct 1 19:09 | 0.1 hour/epoch  |             |
-| 8     | l2_3C_motion_masked_gradient_masked_reg_no_drop_0.75_FULL_data_w2      | cigserver1/gpu3 |             | END     | Oct 2 16:20  |                 | x hour/epoch    | Oct 3 22:20 |
-| 9     | l2_3C_motion_masked_gradient_masked_reg_no_drop_0.75_FULL_SEG          | cigserver1/gpu2 |             | END     | Oct 2 16:20  |                 | x hour/epoch    | Oct 3 22:20 |
-| 10    | l2_3C_motion_masked_gradient_masked_mid5_reg_no_drop_0.75_FULL_data_w2 | cigserver1/gpu3 |             | 300Eps  | Oct 3 8:40   |                 | x hour/epoch    | Oct 4 17:40 |
-| 11    | l2_3C_motion_masked_gradient_masked_reg_no_drop_0.9_FULL_SEG           | cigserver1/gpu2 |             | 300Eps  | Oct 3 8:40   |                 | x hour/epoch    | Oct 4 17:40 |
+| Index | Name                                                                                                              | Location        | Description | Comment                      | Start        | End         |
+| ----- | ----------------------------------------------------------------------------------------------------------------- | --------------- | ----------- | ---------------------------- | ------------ | ----------- |
+| 7     | l2_3C_motion_masked_gradient_masked_reg_no_drop_0.75_FULL_data                                                    | cigserver1/gpu2 |             | END                          | Oct 1 16:10  | Oct 2 14:00 |
+| 5     | l2_3C_motion_gradient_reg_no_drop_0.75_FULL_data                                                                  | cigserver1/gpu3 |             | END                          | Sep 30 22:32 |             |
+| 8     | l2_3C_motion_masked_gradient_masked_reg_no_drop_0.75_FULL_data_w2(OldGradFunc)                                    | cigserver1/gpu3 |             | END                          | Oct 2 16:20  | Oct 3 22:20 |
+| 9     | l2_3C_motion_masked_gradient_masked_reg_no_drop_0.75_FULL_SEG(OldGradFunc)                                        | cigserver1/gpu2 |             | END                          | Oct 2 16:20  | Oct 3 22:20 |
+| 10    | l2_3C_motion_masked_gradient_masked_mid5_reg_no_drop_0.75_FULL_data_w2(OldGradFunc)                               | cigserver1/gpu3 |             | 300Eps                       | Oct 3 8:40   | Oct 4 17:40 |
+| 11    | l2_3C_motion_masked_gradient_masked_reg_no_drop_0.9_FULL_SEG(OldGradFunc)                                         | cigserver1/gpu2 |             | 300Eps                       | Oct 3 8:40   | Oct 4 17:40 |
+| 12    | l2_3C_motion_masked_masked_Sobel_reg_no_drop_0.9_FULL_SEG                                                         | cigserver1/gpu2 |             | END                          | Oct 3 8:40   | Oct 4 17:40 |
+| 13    | l2_3C_motion_masked_masked_Sobel_reg_no_drop_0.9_FULL_SEG_w2                                                      | cigserver1/gpu3 |             | END                          | Oct 3 8:40   | Oct 4 17:40 |
+| 14    | l2_3C_motion_masked_Sobel_masked_reg_no_drop_0.9_FULL_SEG                                                         | cigserver2/gpu3 | NaN,mid5    | END                          | Oct 3 8:40   | Oct 4 17:40 |
+| 15    | l2_3C_motion_masked_mid5-gradient_masked_mid5-reg_no-drop_0.9-FULL_SEG                                            | cigserver1/gpu2 | NaN         |                              | Oct 7        | Oct 4 17:40 |
+| 15-2  | Loss_l2_masked_mid5-Loss-gradient_masked_mid5-Reg_no-Drop_0.9-Ob_FULL_SEG_3C_motion-Gt_FULL_SEG-Opti-Clipping     | cigserver1/gpu2 | NaN         | RUNNING                      |              | Oct 9 15:30 |
+| 16    | Loss_l2_masked_mid5-Loss-Sobel_masked_mid5_w2-Reg_no-Drop_0.9-Ob_FULL_SEG_3C_motion-Gt_FULL_SEG(Sobel weight = 1) | cigserver1/gpu3 |             | RUNNING                      | Oct 7        | Oct 8 17:30 |
+| 17    | l2_3C_motion_masked_mid5-Sobel_masked_mid5-reg_no-drop_0.75-FULL_SEG(Sobel weight = 1)                            | cigserver2/gpu3 | NaN         | END                          | Oct 7        | Oct 4 17:40 |
+| 18    | Loss_l2_masked_mid5-Loss-LoG_masked_mid5-Reg_no-Drop_0.9-Ob_FULL_SEG_3C_motion-Gt_FULL_SEG                        | cigserver2/gpu3 |             | RUNNING                      | Oct 7        | Oct 8 23:58 |
+| 19    | Loss_l2_masked_mid5-Loss-Sobel_masked_mid5_w2-Reg_no-Drop_0.9-Ob_FULL_SEG_3C_motion-Gt_FULL_SEG                   | cigserver1/gpu3 |             | Rerun 16 with correct weight | Oct 7        | Oct         |
+| 20    | Loss_l2_masked_mid5-Loss-gradient_masked_mid5-Reg_no-Drop_0.9-Ob_FULL_SEG_3C_motion-Gt_FULL_SEG-Opti-Clipping     | cigserver1/gpu2 |             | Rerun 15-2 with loss clip    | Oct 7        | Oct         |
 
+> - When ```epochSize = 5```, the average training speed is about ```0.11 hour/epoch```
 <!--more-->
 
 ## 2. Experiment Record
@@ -352,6 +363,10 @@ excerpt_separator:  <!--more-->
 - Increase keep_prob to enhance net power
 - Sobel
 - Other direction data
+- LoG edge, norm mask with y=:
+- gradient clipping
+  > https://stackoverflow.com/questions/36498127/how-to-apply-gradient-clipping-in-tensorflow
+- 15-2, 16,17 have mistake in weight, need to re-run
 
 ## Log
 ### 2018-09-30
