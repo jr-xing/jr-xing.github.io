@@ -36,7 +36,7 @@ Once you have installed Java, you can directly open ```xession.jnlp```. Java may
 <p style="text-align: center;"> Turbo VNC </p>  
 
 
-<p> BLANK LINE</p>  
+<!-- <p> BLANK LINE</p>   -->
 ## 2.3 SSH to Server
 Again, you can simple ssh to the server without opening a remote desktop window. Open ```xession.jnlp``` as a text file, at the last lines you would find something like ```<argument>linuxlab009.seas.wustl.edu:7</argument>```, which indicates the session you just created runs on server ```linuxlab009```. Then, you can ssh to it by simply ```ssh <your WUSTL Key>@linuxlab009```.
 <img src="{{ site.baseurl }}/assets/imgs/Server-Usage/LL-ssh.png" alt="image" style="float: left; vertical-align: text-top;" />
