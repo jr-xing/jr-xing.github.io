@@ -30,7 +30,7 @@ You can go to [here](https://linuxlab.seas.wustl.edu/equeue/) to create your lin
 Once you have installed Java, you can directly open ```xession.jnlp```. Java may stop you to run it for securiy issue. To resolve this problem, you can open ```Java Control Panel``` and goto ```Security``` tab, and add ```http://linuxlab.seas.wustl.edu``` to the exception site list, and then you should be able to run it.
 <img src="{{ site.baseurl }}/assets/imgs/Server-Usage/LL-java.png"/>
 <p style="text-align: center;"> Find Java Control Panel </p>
-<img src="{{ site.baseurl }}/assets/imgs/Server-Usage/LL-java-security.png"/>
+<img src="{{ site.baseurl }}/assets/imgs/Server-Usage/LL-java-security.png" style="vertical-align: center;" />
 <p style="text-align: center;"> Security Tab </p>  
 <img src="{{ site.baseurl }}/assets/imgs/Server-Usage/LL-VNC.png"/>
 <p style="text-align: center;"> Turbo VNC </p>  
