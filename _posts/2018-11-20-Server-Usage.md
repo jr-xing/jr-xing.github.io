@@ -32,7 +32,7 @@ Once you have installed Java, you can directly open ```xession.jnlp```. Java may
 <p style="text-align: center;"> Find Java Control Panel </p>
 <img src="{{ site.baseurl }}/assets/imgs/Server-Usage/LL-java-security.png" alt="image" style="float: left; vertical-align: text-top;" />
 <p style="text-align: center;"> Security Tab </p>  
-<img src="{{ site.baseurl }}/assets/imgs/Server-Usage/LL-VNC.png" alt="image" style="float: left; vertical-align: text-top;" />
+<img src="{{ site.baseurl }}/assets/imgs/Server-Usage/LL-VNC.png"/>
 <p style="text-align: center;"> Turbo VNC </p>  
 
 
