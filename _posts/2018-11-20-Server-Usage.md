@@ -57,7 +57,7 @@ Then you should be able to run GUI programs. The XServer address (```localhost:0
 <p style="text-align: center;"> Check Xming port </p>  
 
 ### 1.2.3 Other Windows Version Users
-<To Be Added>
+To Be Added
 
 ## 1.3 SSHFS to Server
 This section will guide you to mount server's disk to your machine, which makes it much easier to explore and edit the files on the server.
