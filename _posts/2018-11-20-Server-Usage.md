@@ -1,7 +1,7 @@
 ---
 layout: post
 title: CIG Server Usage
-category: CIG
+category: MRI Denoising
 excerpt_separator:  <!--more-->
 ---
 
