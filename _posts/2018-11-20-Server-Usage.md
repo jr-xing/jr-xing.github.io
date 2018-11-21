@@ -14,9 +14,9 @@ This is a note for using the CIG's server and university virtual Linux lab.
 # 1 CIG Server
 ## 1.1 Request for Permission and Install Cisco AnyConnect
 Please ask the professor for permission to access to server. After being permitted, you can go to (Engineering IT)[https://engineering.wustl.edu/our-school/leadership/offices/engineering-it/networks-remote-access/Pages/vpn.aspx] and follow the guide to install Cisco AnyConnect, the VPN software. Everytime you want to access to server, you need to start VPN first. And remember to select ```keyvpn``` in the ```Group`` option.
-<img src="{{ site.baseurl }}/assets/imgs/Server-Usage/AnyConnect-Linux.png"/>
+<center><img src="{{ site.baseurl }}/assets/imgs/Server-Usage/AnyConnect-Linux.png"/></center> 
 <p style="text-align: center;"> Linux AnyConnect Client </p>  
-<img src="{{ site.baseurl }}/assets/imgs/Server-Usage/AnyConnect-Win.png"/>
+<center><img src="{{ site.baseurl }}/assets/imgs/Server-Usage/AnyConnect-Win.png"/></center>
 <p style="text-align: center;"> Windows AnyConnect Client </p>  
 
 ## 1.2 SSH to Server
@@ -33,7 +33,7 @@ What's more, I recommend to add the ```-X``` option to enable you to run GUI pro
 ```bash
 ssh -X <your WUSTL Key>@cigserver<1 or 2>.seas.wustl.edu
 ```
-<img src="{{ site.baseurl }}/assets/imgs/Server-Usage/sshX.png"/>
+<center><img src="{{ site.baseurl }}/assets/imgs/Server-Usage/sshX.png"/></center>
 <p style="text-align: center;"> Running MATLAB </p>  
 
 ### 1.2.2 Windows 10 Users
@@ -41,7 +41,7 @@ For windows 10 users, I strongly recommend to use the windows Linux subsystem (W
 ```bash
 ssh <your WUSTL Key>@cigserver<1 or 2>.seas.wustl.edu
 ```
-<img src="{{ site.baseurl }}/assets/imgs/Server-Usage/SSH-Win-WSL.png"/>
+<center><img src="{{ site.baseurl }}/assets/imgs/Server-Usage/SSH-Win-WSL.png"/></center>
 <p style="text-align: center;"> SSH on WSL </p>  
 
 However, you cannot directly use ```-X``` to enable GUI program since windows does not have XServer. There are many XServer software on windows, this note will be based on Xming. After installing and starting Xming, you can run this code to tell WSL where to find the XServer (run this on your local machine instead of ont the server!):
@@ -51,9 +51,9 @@ export DISPLAY=localhost:0.0
 
 Then you should be able to run GUI programs. The XServer address (```localhost:0.0```) should match the port opened by Xming, which is by default ```0.0```. If your do not want to input it everytime when your open a new WSL bash, you can save it in ```~/.bachrc```.
 
-<img src="{{ site.baseurl }}/assets/imgs/Server-Usage/SSH-Win-Matlab.png"/>
+<center><img src="{{ site.baseurl }}/assets/imgs/Server-Usage/SSH-Win-Matlab.png"/></center>
 <p style="text-align: center;"> Running MATLAB on WSL </p>  
-<img src="{{ site.baseurl }}/assets/imgs/Server-Usage/SSH-Win-Xming.png"/>
+<center><img src="{{ site.baseurl }}/assets/imgs/Server-Usage/SSH-Win-Xming.png"/></center>
 <p style="text-align: center;"> Check Xming port </p>  
 
 ### 1.2.3 Other Windows Version Users
@@ -78,16 +78,16 @@ Replace ```/home/remussn/.ssh/id_rsa``` with your RSA path. When you finish you 
 sudo umount /mnt/cigserver2_jiarui_xing
 ```
 
-<img src="{{ site.baseurl }}/assets/imgs/Server-Usage/SSHFS-Linux.png"/>
+<center><img src="{{ site.baseurl }}/assets/imgs/Server-Usage/SSHFS-Linux.png"/></center>
 <p style="text-align: center;"> Using Sshfs on Linux </p>  
 
 ### 1.3.2 Windows 10 Users
 Unfortunately, till now WSL doesn't support sshfs and we need to use some third-part softwares. Personally I use SFTP Net Drive, which is free for non-commerical use. Using SFTP Net Drive is fairly simple: enter the inforation,  click "connect", and you're done:
 
-<img src="{{ site.baseurl }}/assets/imgs/Server-Usage/SSHFS-Win-SFTPpng.png"/>
+<center><img src="{{ site.baseurl }}/assets/imgs/Server-Usage/SSHFS-Win-SFTPpng.png"/></center>
 <p style="text-align: center;"> SFTP Net Drive Interface </p>  
 
-<img src="{{ site.baseurl }}/assets/imgs/Server-Usage/SSHFS-Win.png"/>
+<center><img src="{{ site.baseurl }}/assets/imgs/Server-Usage/SSHFS-Win.png"/></center>
 <p style="text-align: center;"> Using SFTP Net Drive </p>  
 
 # 2 University Linux Lab
