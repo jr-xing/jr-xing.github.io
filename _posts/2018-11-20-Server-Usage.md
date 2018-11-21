@@ -118,11 +118,11 @@ You can go to [here](https://linuxlab.seas.wustl.edu/equeue/) to create your lin
 
 ## 2.2 Start VNC
 Once you have installed Java, you can directly open ```xession.jnlp```. Java may stop you to run it for securiy issue. To resolve this problem, you can open ```Java Control Panel``` and goto ```Security``` tab, and add ```http://linuxlab.seas.wustl.edu``` to the exception site list, and then you should be able to run it.
-<img src="{{ site.baseurl }}/assets/imgs/Server-Usage/LL-java.png"/>
+<center><img src="{{ site.baseurl }}/assets/imgs/Server-Usage/LL-java.png"/></center>
 <p style="text-align: center;"> Find Java Control Panel </p>
-<img src="{{ site.baseurl }}/assets/imgs/Server-Usage/LL-java-security.png" style="vertical-align: center;" />
+<center><img src="{{ site.baseurl }}/assets/imgs/Server-Usage/LL-java-security.png"/></center>
 <p style="text-align: center;"> Security Tab </p>  
-<img src="{{ site.baseurl }}/assets/imgs/Server-Usage/LL-VNC.png"/>
+<center><img src="{{ site.baseurl }}/assets/imgs/Server-Usage/LL-VNC.png"/></center>
 <p style="text-align: center;"> Turbo VNC </p>  
 
 
