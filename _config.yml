@@ -42,6 +42,9 @@ github:
   repo:             https://github.com/fongandrew/hydeout
 
 excerpt_separator: <!--more-->  #这里可以定义自己的摘要分割符
+
+gems:
+  - jekyll-last-modified-at
 # http://daemon369.github.io/blog/2014/01/16/jekyll-using-excerpt
 # https://stackoverflow.com/questions/19389451/how-can-i-get-a-post-excerpt-in-jekyll
 
