@@ -1,7 +1,7 @@
 ---
 layout: post
 title: CIG Server Usage
-category: CIG
+category: MRI Denoising
 excerpt_separator:  <!--more-->
 ---
 
@@ -50,7 +50,7 @@ What's more, I recommend to add the ```-X``` option to enable you to run GUI pro
 ```bash
 ssh -X <your WUSTL Key>@cigserver<1 or 2>.seas.wustl.edu
 ```
-<center><img src="{{ site.baseurl }}/assets/imgs/Server-Usage/sshX.png"/></center>
+<center><img src="{{ site.baseurl }}/assets/imgs/Server-Usage/sshX-Linux.png"/></center>
 <p style="text-align: center;"> Running MATLAB </p>  
 
 ### 1.2.2 Windows 10 Users
