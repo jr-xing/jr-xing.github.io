@@ -96,7 +96,7 @@ sudo umount /mnt/cigserver2_jiarui_xing
 ```
 
 <center><img src="{{ site.baseurl }}/assets/imgs/Server-Usage/SSHFS-Linux.png"/></center>
-<p style="text-align: center;"> Using Sshfs on Linux </p>  
+<p style="text-align: center;"> Using SSHFS on Linux </p>  
 
 ### 1.3.2 Windows 10 Users
 Unfortunately, till now WSL doesn't support sshfs and we need to use some third-part softwares. Personally I use SFTP Net Drive, which is free for non-commerical use. Using SFTP Net Drive is fairly simple: enter the inforation,  click "connect", and you're done:
@@ -110,9 +110,9 @@ Unfortunately, till now WSL doesn't support sshfs and we need to use some third-
 # 2 University Linux Lab
 ## 2.1 Create Linux Session
 You can go to [here](https://linuxlab.seas.wustl.edu/equeue/) to create your linux session. After logging with your WUSTL key and password, you can go to "Submit Job" to submit a new linux session. For general usages, I recommend to submit a "Linux_Desktop" job. After setting parameters(you can just use the default setting), the session will be created in a few seconds and the page will let you download ```xsession.jnlp```, which is a script to run a TurboVNC.
-<img src="{{ site.baseurl }}/assets/imgs/Server-Usage/LL-welcome.png"/>
+<center><img src="{{ site.baseurl }}/assets/imgs/Server-Usage/LL-welcome.png"/></center>
 <p style="text-align: center;"> Welcome Page </p>  
-<img src="{{ site.baseurl }}/assets/imgs/Server-Usage/LL-submit.png"/>
+<center><img src="{{ site.baseurl }}/assets/imgs/Server-Usage/LL-submit.png"/></center>
 <p style="text-align: center;"> Submit Job </p>  
   
 
@@ -129,7 +129,7 @@ Once you have installed Java, you can directly open ```xession.jnlp```. Java may
 <!-- <p> BLANK LINE</p>   -->
 ## 2.3 SSH to Server
 Again, you can simple ssh to the server without opening a remote desktop window. Open ```xession.jnlp``` as a text file, at the last lines you would find something like ```<argument>linuxlab009.seas.wustl.edu:7</argument>```, which indicates the session you just created runs on server ```linuxlab009```. Then, you can ssh to it by simply ```ssh <your WUSTL Key>@linuxlab009```.
-<img src="{{ site.baseurl }}/assets/imgs/Server-Usage/LL-ssh.png"/>
+<center><img src="{{ site.baseurl }}/assets/imgs/Server-Usage/LL-ssh.png"/></center>
 <p style="text-align: center;"> ssh </p>  
 
 
