@@ -11,6 +11,23 @@ excerpt_separator:  <!--more-->
 This is a note for using the CIG's server and university virtual Linux lab. 
 <!--more-->
 
+- [Abstract](#abstract)
+- [1 CIG Server](#1-cig-server)
+    - [1.1 Request for Permission and Install Cisco AnyConnect](#11-request-for-permission-and-install-cisco-anyconnect)
+    - [1.2 SSH to Server](#12-ssh-to-server)
+        - [1.2.1 Linux Users](#121-linux-users)
+        - [1.2.2 Windows 10 Users](#122-windows-10-users)
+        - [1.2.3 Other Windows Version Users](#123-other-windows-version-users)
+    - [1.3 SSHFS to Server](#13-sshfs-to-server)
+        - [1.3.1 Linux Users](#131-linux-users)
+        - [1.3.2 Windows 10 Users](#132-windows-10-users)
+- [2 University Linux Lab](#2-university-linux-lab)
+    - [2.1 Create Linux Session](#21-create-linux-session)
+    - [2.2 Start VNC](#22-start-vnc)
+    - [2.3 SSH to Server](#23-ssh-to-server)
+    - [2.4 SSHFS to Server](#24-sshfs-to-server)
+    - [2.5 Cancel](#25-cancel)
+
 # 1 CIG Server
 ## 1.1 Request for Permission and Install Cisco AnyConnect
 Please ask the professor for permission to access to server. After being permitted, you can go to (Engineering IT)[https://engineering.wustl.edu/our-school/leadership/offices/engineering-it/networks-remote-access/Pages/vpn.aspx] and follow the guide to install Cisco AnyConnect, the VPN software. Everytime you want to access to server, you need to start VPN first. And remember to select ```keyvpn``` in the ```Group`` option.
