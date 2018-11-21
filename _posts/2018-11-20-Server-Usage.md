@@ -44,7 +44,7 @@ Linux user can simply use ```SSH``` to open a shell on the server:
 ```bash
 ssh <your WUSTL Key>@cigserver<1 or 2>.seas.wustl.edu
 ```
-Then the server should ask you for your password, which is the same to your WUSTL account password. To avoid inputing password every time, you can following the guidenc in (this page)[https://www.digitalocean.com/community/tutorials/how-to-set-up-ssh-keys-on-ubuntu-1604] to generate a RSA pair and send it to the server.
+Then the server should ask you for your password, which is the same to your WUSTL account password. To avoid inputing password every time, you can following the guidenc in [this page](https://www.digitalocean.com/community/tutorials/how-to-set-up-ssh-keys-on-ubuntu-1604) to generate a RSA pair and send it to the server.
 
 What's more, I recommend to add the ```-X``` option to enable you to run GUI programs:
 ```bash
