@@ -34,7 +34,7 @@ This is a note for using the CIG's server and university virtual Linux lab.
 Please ask the professor for permission to access to server. After being permitted, you can go to [Engineering IT](https://engineering.wustl.edu/our-school/leadership/offices/engineering-it/networks-remote-access/Pages/vpn.aspx) and follow the guide to install Cisco AnyConnect, the VPN software. Everytime you want to access to server, you need to start VPN first. And remember to select ```keyvpn``` in the ```Group`` option.
 <center><img src="{{ site.baseurl }}/assets/imgs/Server-Usage/AnyConnect-Linux.png"/></center> 
 <p style="text-align: center;"> Linux AnyConnect Client </p>  
-<center><img src="{{ site.baseurl }}/assets/imgs/Server-Usage/AnyConnect-Win.png" style="max-width:600px;"/></center>
+<center><img src="{{ site.baseurl }}/assets/imgs/Server-Usage/AnyConnect-Win.png"/></center>
 <p style="text-align: center;"> Windows AnyConnect Client </p>  
 
 ## 1.2 SSH to Server
