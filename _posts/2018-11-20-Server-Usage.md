@@ -54,7 +54,7 @@ ssh -X <your WUSTL Key>@cigserver<1 or 2>.seas.wustl.edu
 <p style="text-align: center;"> Running MATLAB </p>  
 
 ### 1.2.2 Windows 10 Users
-For windows 10 users, I strongly recommend to use the windows Linux subsystem (WSL), which will make things a lot easier. You can follow this (offical guide)[https://docs.microsoft.com/en-us/windows/wsl/install-win10] to install your favorite Linux distribution on windows. And the note is based on Ubuntu 16.04 LTS. Now you can use exact same method to ```SSH``` to the server:
+For windows 10 users, I strongly recommend to use the windows Linux subsystem (WSL), which will make things a lot easier. You can follow this [offical guide](https://docs.microsoft.com/en-us/windows/wsl/install-win10) to install your favorite Linux distribution on windows. And the note is based on Ubuntu 16.04 LTS. Now you can use exact same method to ```SSH``` to the server:
 ```bash
 ssh <your WUSTL Key>@cigserver<1 or 2>.seas.wustl.edu
 ```
