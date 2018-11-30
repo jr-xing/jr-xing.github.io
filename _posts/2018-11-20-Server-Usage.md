@@ -4,7 +4,6 @@ title: CIG Server Usage
 category: MRI Denoising
 excerpt_separator:  <!--more-->
 ---
-{% last_modified_at %}
 
 <!-- <img src="{{ site.baseurl }}{{ image.path }}" alt="image" style="float: left; vertical-align: text-top;" /> -->
 
