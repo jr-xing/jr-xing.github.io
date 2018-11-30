@@ -4,13 +4,157 @@
  <title>Jerry Xing</title>
  <link href="http://localhost:4000/atom.xml" rel="self"/>
  <link href="http://localhost:4000/"/>
- <updated>2018-10-03T10:08:13-05:00</updated>
+ <updated>2018-11-30T15:10:30-06:00</updated>
  <id>http://localhost:4000</id>
  <author>
    <name>Jerry Xing</name>
    <email></email>
  </author>
 
+ 
+ <entry>
+   <title>CIG Server Usage</title>
+   <link href="http://localhost:4000/mri%20denoising/2018/11/20/Server-Usage.html"/>
+   <updated>2018-11-20T00:00:00-06:00</updated>
+   <id>http://localhost:4000/mri%20denoising/2018/11/20/Server-Usage</id>
+   <content type="html">&lt;!-- &lt;img src=&quot;/&quot; alt=&quot;image&quot; style=&quot;float: left; vertical-align: text-top;&quot; /&gt; --&gt;
+
+&lt;h1 id=&quot;abstract&quot;&gt;Abstract&lt;/h1&gt;
+&lt;p&gt;This is a note for using the CIG’s server and university virtual Linux lab. 
+&lt;!--more--&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;#abstract&quot;&gt;Abstract&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#1-cig-server&quot;&gt;1 CIG Server&lt;/a&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#11-request-for-permission-and-install-cisco-anyconnect&quot;&gt;1.1 Request for Permission and Install Cisco AnyConnect&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#12-ssh-to-server&quot;&gt;1.2 SSH to Server&lt;/a&gt;
+        &lt;ul&gt;
+          &lt;li&gt;&lt;a href=&quot;#121-linux-users&quot;&gt;1.2.1 Linux Users&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;#122-windows-10-users&quot;&gt;1.2.2 Windows 10 Users&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;#123-other-windows-version-users&quot;&gt;1.2.3 Other Windows Version Users&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#13-sshfs-to-server&quot;&gt;1.3 SSHFS to Server&lt;/a&gt;
+        &lt;ul&gt;
+          &lt;li&gt;&lt;a href=&quot;#131-linux-users&quot;&gt;1.3.1 Linux Users&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;#132-windows-10-users&quot;&gt;1.3.2 Windows 10 Users&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#2-university-linux-lab&quot;&gt;2 University Linux Lab&lt;/a&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#21-create-linux-session&quot;&gt;2.1 Create Linux Session&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#22-start-vnc&quot;&gt;2.2 Start VNC&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#23-ssh-to-server&quot;&gt;2.3 SSH to Server&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#24-sshfs-to-server&quot;&gt;2.4 SSHFS to Server&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#25-cancel&quot;&gt;2.5 Cancel&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;1-cig-server&quot;&gt;1 CIG Server&lt;/h1&gt;
+&lt;h2 id=&quot;11-request-for-permission-and-install-cisco-anyconnect&quot;&gt;1.1 Request for Permission and Install Cisco AnyConnect&lt;/h2&gt;
+&lt;p&gt;Please ask the professor for permission to access to server. After being permitted, you can go to &lt;a href=&quot;https://engineering.wustl.edu/our-school/leadership/offices/engineering-it/networks-remote-access/Pages/vpn.aspx&quot;&gt;Engineering IT&lt;/a&gt; and follow the guide to install Cisco AnyConnect, the VPN software. Everytime you want to access to server, you need to start VPN first. And remember to select &lt;code class=&quot;highlighter-rouge&quot;&gt;keyvpn&lt;/code&gt; in the ```Group`` option.&lt;/p&gt;
+&lt;center&gt;&lt;img src=&quot;//assets/imgs/Server-Usage/AnyConnect-Linux.png&quot; /&gt;&lt;/center&gt;
+&lt;p style=&quot;text-align: center;&quot;&gt; Linux AnyConnect Client &lt;/p&gt;
+&lt;center&gt;&lt;img src=&quot;//assets/imgs/Server-Usage/AnyConnect-Win.png&quot; /&gt;&lt;/center&gt;
+&lt;p style=&quot;text-align: center;&quot;&gt; Windows AnyConnect Client &lt;/p&gt;
+
+&lt;h2 id=&quot;12-ssh-to-server&quot;&gt;1.2 SSH to Server&lt;/h2&gt;
+&lt;p&gt;This section will guide you to open a shell on the server.&lt;/p&gt;
+
+&lt;h3 id=&quot;121-linux-users&quot;&gt;1.2.1 Linux Users&lt;/h3&gt;
+&lt;p&gt;Linux user can simply use &lt;code class=&quot;highlighter-rouge&quot;&gt;SSH&lt;/code&gt; to open a shell on the server:&lt;/p&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;ssh &amp;lt;your WUSTL Key&amp;gt;@cigserver&amp;lt;1 or 2&amp;gt;.seas.wustl.edu
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;Then the server should ask you for your password, which is the same to your WUSTL account password. To avoid inputing password every time, you can following the guidenc in &lt;a href=&quot;https://www.digitalocean.com/community/tutorials/how-to-set-up-ssh-keys-on-ubuntu-1604&quot;&gt;this page&lt;/a&gt; to generate a RSA pair and send it to the server.&lt;/p&gt;
+
+&lt;p&gt;What’s more, I recommend to add the &lt;code class=&quot;highlighter-rouge&quot;&gt;-X&lt;/code&gt; option to enable you to run GUI programs:&lt;/p&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;ssh &lt;span class=&quot;nt&quot;&gt;-X&lt;/span&gt; &amp;lt;your WUSTL Key&amp;gt;@cigserver&amp;lt;1 or 2&amp;gt;.seas.wustl.edu
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;center&gt;&lt;img src=&quot;//assets/imgs/Server-Usage/sshX-Linux.png&quot; /&gt;&lt;/center&gt;
+&lt;p style=&quot;text-align: center;&quot;&gt; Running MATLAB &lt;/p&gt;
+
+&lt;h3 id=&quot;122-windows-10-users&quot;&gt;1.2.2 Windows 10 Users&lt;/h3&gt;
+&lt;p&gt;For windows 10 users, I strongly recommend to use the windows Linux subsystem (WSL), which will make things a lot easier. You can follow this &lt;a href=&quot;https://docs.microsoft.com/en-us/windows/wsl/install-win10&quot;&gt;offical guide&lt;/a&gt; to install your favorite Linux distribution on windows. And the note is based on Ubuntu 16.04 LTS. Now you can use exact same method to &lt;code class=&quot;highlighter-rouge&quot;&gt;SSH&lt;/code&gt; to the server:&lt;/p&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;ssh &amp;lt;your WUSTL Key&amp;gt;@cigserver&amp;lt;1 or 2&amp;gt;.seas.wustl.edu
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;center&gt;&lt;img src=&quot;//assets/imgs/Server-Usage/SSH-Win-WSL.png&quot; /&gt;&lt;/center&gt;
+&lt;p style=&quot;text-align: center;&quot;&gt; SSH on WSL &lt;/p&gt;
+
+&lt;p&gt;However, you cannot directly use &lt;code class=&quot;highlighter-rouge&quot;&gt;-X&lt;/code&gt; to enable GUI program since windows does not have XServer. There are many XServer software on windows, this note will be based on Xming. After installing and starting Xming, you can run this code to tell WSL where to find the XServer (run this on your local machine instead of ont the server!):&lt;/p&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;export &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;DISPLAY&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;localhost:0.0
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Then you should be able to run GUI programs. The XServer address (&lt;code class=&quot;highlighter-rouge&quot;&gt;localhost:0.0&lt;/code&gt;) should match the port opened by Xming, which is by default &lt;code class=&quot;highlighter-rouge&quot;&gt;0.0&lt;/code&gt;. If your do not want to input it everytime when your open a new WSL bash, you can save it in &lt;code class=&quot;highlighter-rouge&quot;&gt;~/.bachrc&lt;/code&gt;.&lt;/p&gt;
+
+&lt;center&gt;&lt;img src=&quot;//assets/imgs/Server-Usage/SSH-Win-Matlab.png&quot; /&gt;&lt;/center&gt;
+&lt;p style=&quot;text-align: center;&quot;&gt; Running MATLAB on WSL &lt;/p&gt;
+&lt;center&gt;&lt;img src=&quot;//assets/imgs/Server-Usage/SSH-Win-Xming.png&quot; /&gt;&lt;/center&gt;
+&lt;p style=&quot;text-align: center;&quot;&gt; Check Xming port &lt;/p&gt;
+
+&lt;h3 id=&quot;123-other-windows-version-users&quot;&gt;1.2.3 Other Windows Version Users&lt;/h3&gt;
+&lt;p&gt;To Be Added&lt;/p&gt;
+
+&lt;h2 id=&quot;13-sshfs-to-server&quot;&gt;1.3 SSHFS to Server&lt;/h2&gt;
+&lt;p&gt;This section will guide you to mount server’s disk to your machine, which makes it much easier to explore and edit the files on the server.&lt;/p&gt;
+
+&lt;h3 id=&quot;131-linux-users&quot;&gt;1.3.1 Linux Users&lt;/h3&gt;
+&lt;p&gt;Linux users can simply use &lt;code class=&quot;highlighter-rouge&quot;&gt;sshfs&lt;/code&gt; to mount the server (though you may install it first):&lt;/p&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;sshfs &lt;span class=&quot;nt&quot;&gt;-o&lt;/span&gt; allow_other jiarui.xing@cigserver2.seas.wustl.edu:/export/project/jiarui.xing /mnt/cigserver2_jiarui_xing/
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Please make sure the mount path (&lt;code class=&quot;highlighter-rouge&quot;&gt;/mnt/cigserver2_jiarui_xing/&lt;/code&gt;) already exists and you have the access. You should be able to look into the files on the server in that folder, which just looks like a local disk. The files would be downloaded when you enter a folder and deleted (on your machine) when you left, so it may be a little slow when you open a folder that contains lots of files and you don’t need to worry about if you have enough free space. What’s more, you can also use your RSA to skip entering password everytime by adding &lt;code class=&quot;highlighter-rouge&quot;&gt;-o IdentityFile&lt;/code&gt; option:&lt;/p&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;sshfs &lt;span class=&quot;nt&quot;&gt;-o&lt;/span&gt; allow_other &lt;span class=&quot;nt&quot;&gt;-o&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;IdentityFile&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;/home/remussn/.ssh/id_rsa jiarui.xing@cigserver2.seas.wustl.edu:/export/project/jiarui.xing /mnt/cigserver2_jiarui_xing/
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Replace &lt;code class=&quot;highlighter-rouge&quot;&gt;/home/remussn/.ssh/id_rsa&lt;/code&gt; with your RSA path. When you finish you task, you can use &lt;code class=&quot;highlighter-rouge&quot;&gt;umount&lt;/code&gt; to deiconnect the disk:&lt;/p&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;umount /mnt/cigserver2_jiarui_xing
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;center&gt;&lt;img src=&quot;//assets/imgs/Server-Usage/SSHFS-Linux.png&quot; /&gt;&lt;/center&gt;
+&lt;p style=&quot;text-align: center;&quot;&gt; Using SSHFS on Linux &lt;/p&gt;
+
+&lt;h3 id=&quot;132-windows-10-users&quot;&gt;1.3.2 Windows 10 Users&lt;/h3&gt;
+&lt;p&gt;Unfortunately, till now WSL doesn’t support sshfs and we need to use some third-part softwares. Personally I use SFTP Net Drive, which is free for non-commerical use. Using SFTP Net Drive is fairly simple: enter the inforation,  click “connect”, and you’re done:&lt;/p&gt;
+
+&lt;center&gt;&lt;img src=&quot;//assets/imgs/Server-Usage/SSHFS-Win-SFTPpng.png&quot; /&gt;&lt;/center&gt;
+&lt;p style=&quot;text-align: center;&quot;&gt; SFTP Net Drive Interface &lt;/p&gt;
+
+&lt;center&gt;&lt;img src=&quot;//assets/imgs/Server-Usage/SSHFS-Win.png&quot; /&gt;&lt;/center&gt;
+&lt;p style=&quot;text-align: center;&quot;&gt; Using SFTP Net Drive &lt;/p&gt;
+
+&lt;h1 id=&quot;2-university-linux-lab&quot;&gt;2 University Linux Lab&lt;/h1&gt;
+&lt;h2 id=&quot;21-create-linux-session&quot;&gt;2.1 Create Linux Session&lt;/h2&gt;
+&lt;p&gt;You can go to &lt;a href=&quot;https://linuxlab.seas.wustl.edu/equeue/&quot;&gt;here&lt;/a&gt; to create your linux session. After logging with your WUSTL key and password, you can go to “Submit Job” to submit a new linux session. For general usages, I recommend to submit a “Linux_Desktop” job. After setting parameters(you can just use the default setting), the session will be created in a few seconds and the page will let you download &lt;code class=&quot;highlighter-rouge&quot;&gt;xsession.jnlp&lt;/code&gt;, which is a script to run a TurboVNC.&lt;/p&gt;
+&lt;center&gt;&lt;img src=&quot;//assets/imgs/Server-Usage/LL-welcome.png&quot; /&gt;&lt;/center&gt;
+&lt;p style=&quot;text-align: center;&quot;&gt; Welcome Page &lt;/p&gt;
+&lt;center&gt;&lt;img src=&quot;//assets/imgs/Server-Usage/LL-submit.png&quot; /&gt;&lt;/center&gt;
+&lt;p style=&quot;text-align: center;&quot;&gt; Submit Job &lt;/p&gt;
+
+&lt;h2 id=&quot;22-start-vnc&quot;&gt;2.2 Start VNC&lt;/h2&gt;
+&lt;p&gt;Once you have installed Java, you can directly open &lt;code class=&quot;highlighter-rouge&quot;&gt;xession.jnlp&lt;/code&gt;. Java may stop you to run it for securiy issue. To resolve this problem, you can open &lt;code class=&quot;highlighter-rouge&quot;&gt;Java Control Panel&lt;/code&gt; and goto &lt;code class=&quot;highlighter-rouge&quot;&gt;Security&lt;/code&gt; tab, and add &lt;code class=&quot;highlighter-rouge&quot;&gt;http://linuxlab.seas.wustl.edu&lt;/code&gt; to the exception site list, and then you should be able to run it.&lt;/p&gt;
+&lt;center&gt;&lt;img src=&quot;//assets/imgs/Server-Usage/LL-java.png&quot; /&gt;&lt;/center&gt;
+&lt;p style=&quot;text-align: center;&quot;&gt; Find Java Control Panel &lt;/p&gt;
+&lt;center&gt;&lt;img src=&quot;//assets/imgs/Server-Usage/LL-java-security.png&quot; /&gt;&lt;/center&gt;
+&lt;p style=&quot;text-align: center;&quot;&gt; Security Tab &lt;/p&gt;
+&lt;center&gt;&lt;img src=&quot;//assets/imgs/Server-Usage/LL-VNC.png&quot; /&gt;&lt;/center&gt;
+&lt;p style=&quot;text-align: center;&quot;&gt; Turbo VNC &lt;/p&gt;
+
+&lt;!-- &lt;p&gt; BLANK LINE&lt;/p&gt;   --&gt;
+&lt;h2 id=&quot;23-ssh-to-server&quot;&gt;2.3 SSH to Server&lt;/h2&gt;
+&lt;p&gt;Again, you can simply ssh to the server without opening a remote desktop window. Open &lt;code class=&quot;highlighter-rouge&quot;&gt;xession.jnlp&lt;/code&gt; as a text file, at the last lines you would find something like &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;argument&amp;gt;linuxlab009.seas.wustl.edu:7&amp;lt;/argument&amp;gt;&lt;/code&gt;, which indicates the session you just created runs on server &lt;code class=&quot;highlighter-rouge&quot;&gt;linuxlab009&lt;/code&gt;. Then, you can ssh to it by simply &lt;code class=&quot;highlighter-rouge&quot;&gt;ssh &amp;lt;your WUSTL Key&amp;gt;@linuxlab009&lt;/code&gt;.&lt;/p&gt;
+&lt;center&gt;&lt;img src=&quot;//assets/imgs/Server-Usage/LL-ssh.png&quot; /&gt;&lt;/center&gt;
+&lt;p style=&quot;text-align: center;&quot;&gt; ssh &lt;/p&gt;
+
+&lt;h2 id=&quot;24-sshfs-to-server&quot;&gt;2.4 SSHFS to Server&lt;/h2&gt;
+&lt;p&gt;Since we have found the server address in the last step, we can use the same methods used in section 1.3 to mount the server.&lt;/p&gt;
+&lt;h2 id=&quot;25-cancel&quot;&gt;2.5 Cancel&lt;/h2&gt;
+&lt;p&gt;After finishing your task, you can go to &lt;code class=&quot;highlighter-rouge&quot;&gt;Job management&lt;/code&gt; page and delete your job.&lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>MRI Denoising Project Report Files</title>
@@ -31,19 +175,81 @@
 
 
 
-	&lt;li&gt;&lt;a href=&quot;/assets/files/denoising/jrxing_mri_report_0927.pptx&quot;&gt;jrxing_mri_report_0927.pptx&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;//assets/files/denoising/jrxing_mri_report_0927.pptx&quot;&gt;jrxing_mri_report_0927.pptx&lt;/a&gt;&lt;/li&gt;
 
 
 
-	&lt;li&gt;&lt;a href=&quot;/assets/files/denoising/jrxing_mri_report_0927_updated.pptx&quot;&gt;jrxing_mri_report_0927_updated.pptx&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;//assets/files/denoising/jrxing_mri_report_0927_updated.pptx&quot;&gt;jrxing_mri_report_0927_updated.pptx&lt;/a&gt;&lt;/li&gt;
 
 
 
-	&lt;li&gt;&lt;a href=&quot;/assets/files/denoising/jrxing_report_0927.tar.gz&quot;&gt;jrxing_report_0927.tar.gz&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;//assets/files/denoising/jrxing_report_0927.tar.gz&quot;&gt;jrxing_report_0927.tar.gz&lt;/a&gt;&lt;/li&gt;
 
 
 
-	&lt;li&gt;&lt;a href=&quot;/assets/files/denoising/jrxing_report_0927_update.tar.gz&quot;&gt;jrxing_report_0927_update.tar.gz&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;//assets/files/denoising/jrxing_report_0927_update.tar.gz&quot;&gt;jrxing_report_0927_update.tar.gz&lt;/a&gt;&lt;/li&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -372,7 +578,7 @@ theme. Hope this works for you!&lt;/p&gt;
 
 &lt;h2 id=&quot;1-ongoing-projects&quot;&gt;1. Ongoing Projects&lt;/h2&gt;
 
-&lt;h3 id=&quot;unetloss&quot;&gt;UNet+Loss&lt;/h3&gt;
+&lt;h3 id=&quot;gan&quot;&gt;GAN&lt;/h3&gt;
 
 &lt;table&gt;
   &lt;thead&gt;
@@ -405,7 +611,7 @@ theme. Hope this works for you!&lt;/p&gt;
       &lt;td&gt;MRI_cont3_motion_l2_masked_grad_masked_w3_FULL_SEG&lt;/td&gt;
       &lt;td&gt;cigserver2&lt;/td&gt;
       &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;END&lt;/td&gt;
       &lt;td&gt;Oct 2 11:40&lt;/td&gt;
       &lt;td&gt; &lt;/td&gt;
       &lt;td&gt; &lt;/td&gt;
@@ -414,7 +620,7 @@ theme. Hope this works for you!&lt;/p&gt;
   &lt;/tbody&gt;
 &lt;/table&gt;
 
-&lt;h3 id=&quot;gan&quot;&gt;GAN&lt;/h3&gt;
+&lt;h3 id=&quot;unetloss&quot;&gt;UNet+Loss&lt;/h3&gt;
 
 &lt;table&gt;
   &lt;thead&gt;
@@ -424,9 +630,6 @@ theme. Hope this works for you!&lt;/p&gt;
       &lt;th&gt;Location&lt;/th&gt;
       &lt;th&gt;Description&lt;/th&gt;
       &lt;th&gt;Comment&lt;/th&gt;
-      &lt;th&gt;Start&lt;/th&gt;
-      &lt;th&gt;To&lt;/th&gt;
-      &lt;th&gt;Speed&lt;/th&gt;
       &lt;th&gt;End&lt;/th&gt;
     &lt;/tr&gt;
   &lt;/thead&gt;
@@ -436,10 +639,7 @@ theme. Hope this works for you!&lt;/p&gt;
       &lt;td&gt;l2_3C_motion_masked_gradient_masked_reg_no_drop_0.75_FULL_data&lt;/td&gt;
       &lt;td&gt;cigserver1/gpu2&lt;/td&gt;
       &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt;Oct 1 16:10&lt;/td&gt;
-      &lt;td&gt;27 Oct 1 19:10&lt;/td&gt;
-      &lt;td&gt;0.11 hour/epoch&lt;/td&gt;
+      &lt;td&gt;END&lt;/td&gt;
       &lt;td&gt;Oct 2 14:00&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
@@ -448,37 +648,153 @@ theme. Hope this works for you!&lt;/p&gt;
       &lt;td&gt;cigserver1/gpu3&lt;/td&gt;
       &lt;td&gt; &lt;/td&gt;
       &lt;td&gt;END&lt;/td&gt;
-      &lt;td&gt;Sep 30 22:32&lt;/td&gt;
-      &lt;td&gt;189 Oct 1 19:09&lt;/td&gt;
-      &lt;td&gt;0.1 hour/epoch&lt;/td&gt;
       &lt;td&gt; &lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
       &lt;td&gt;8&lt;/td&gt;
-      &lt;td&gt;l2_3C_motion_masked_gradient_masked_reg_no_drop_0.75_FULL_data_w2&lt;/td&gt;
+      &lt;td&gt;l2_3C_motion_masked_gradient_masked_reg_no_drop_0.75_FULL_data_w2(OldGradFunc)&lt;/td&gt;
       &lt;td&gt;cigserver1/gpu3&lt;/td&gt;
       &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt;300Eps&lt;/td&gt;
-      &lt;td&gt;Oct 2 16:20&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt;x hour/epoch&lt;/td&gt;
+      &lt;td&gt;END&lt;/td&gt;
       &lt;td&gt;Oct 3 22:20&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
       &lt;td&gt;9&lt;/td&gt;
-      &lt;td&gt;l2_3C_motion_masked_gradient_masked_reg_no_drop_0.75_FULL_SEG&lt;/td&gt;
+      &lt;td&gt;l2_3C_motion_masked_gradient_masked_reg_no_drop_0.75_FULL_SEG(OldGradFunc)&lt;/td&gt;
+      &lt;td&gt;cigserver1/gpu2&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;END&lt;/td&gt;
+      &lt;td&gt;Oct 3 22:20&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;10&lt;/td&gt;
+      &lt;td&gt;l2_3C_motion_masked_gradient_masked_mid5_reg_no_drop_0.75_FULL_data_w2(OldGradFunc)&lt;/td&gt;
+      &lt;td&gt;cigserver1/gpu3&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;300Eps&lt;/td&gt;
+      &lt;td&gt;Oct 4 17:40&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;11&lt;/td&gt;
+      &lt;td&gt;l2_3C_motion_masked_gradient_masked_reg_no_drop_0.9_FULL_SEG(OldGradFunc)&lt;/td&gt;
       &lt;td&gt;cigserver1/gpu2&lt;/td&gt;
       &lt;td&gt; &lt;/td&gt;
       &lt;td&gt;300Eps&lt;/td&gt;
-      &lt;td&gt;Oct 2 16:20&lt;/td&gt;
+      &lt;td&gt;Oct 4 17:40&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;12&lt;/td&gt;
+      &lt;td&gt;l2_3C_motion_masked_masked_Sobel_reg_no_drop_0.9_FULL_SEG&lt;/td&gt;
+      &lt;td&gt;cigserver1/gpu2&lt;/td&gt;
       &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt;x hour/epoch&lt;/td&gt;
-      &lt;td&gt;Oct 3 22:20&lt;/td&gt;
+      &lt;td&gt;END&lt;/td&gt;
+      &lt;td&gt;Oct 4 17:40&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;13&lt;/td&gt;
+      &lt;td&gt;l2_3C_motion_masked_masked_Sobel_reg_no_drop_0.9_FULL_SEG_w2&lt;/td&gt;
+      &lt;td&gt;cigserver1/gpu3&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;END&lt;/td&gt;
+      &lt;td&gt;Oct 4 17:40&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;14&lt;/td&gt;
+      &lt;td&gt;l2_3C_motion_masked_Sobel_masked_reg_no_drop_0.9_FULL_SEG&lt;/td&gt;
+      &lt;td&gt;cigserver2/gpu3&lt;/td&gt;
+      &lt;td&gt;NaN,mid5&lt;/td&gt;
+      &lt;td&gt;END&lt;/td&gt;
+      &lt;td&gt;Oct 4 17:40&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;15&lt;/td&gt;
+      &lt;td&gt;l2_3C_motion_masked_mid5-gradient_masked_mid5-reg_no-drop_0.9-FULL_SEG&lt;/td&gt;
+      &lt;td&gt;cigserver1/gpu2&lt;/td&gt;
+      &lt;td&gt;NaN&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;Oct 4 17:40&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;15-2&lt;/td&gt;
+      &lt;td&gt;Loss_l2_masked_mid5-Loss-gradient_masked_mid5-Reg_no-Drop_0.9-Ob_FULL_SEG_3C_motion-Gt_FULL_SEG-Opti-Clipping&lt;/td&gt;
+      &lt;td&gt;cigserver1/gpu2&lt;/td&gt;
+      &lt;td&gt;BLACK&lt;/td&gt;
+      &lt;td&gt;END&lt;/td&gt;
+      &lt;td&gt;Oct 9 15:30&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;16&lt;/td&gt;
+      &lt;td&gt;Loss_l2_masked_mid5-Loss-Sobel_masked_mid5_w2-Reg_no-Drop_0.9-Ob_FULL_SEG_3C_motion-Gt_FULL_SEG(Sobel weight = 1)&lt;/td&gt;
+      &lt;td&gt;cigserver1/gpu3&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;END&lt;/td&gt;
+      &lt;td&gt;Oct 8 17:30&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;17&lt;/td&gt;
+      &lt;td&gt;l2_3C_motion_masked_mid5-Sobel_masked_mid5-reg_no-drop_0.75-FULL_SEG(Sobel weight = 1)&lt;/td&gt;
+      &lt;td&gt;cigserver2/gpu3&lt;/td&gt;
+      &lt;td&gt;NaN&lt;/td&gt;
+      &lt;td&gt;END&lt;/td&gt;
+      &lt;td&gt;Oct 4 17:40&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;18&lt;/td&gt;
+      &lt;td&gt;Loss_l2_masked_mid5-Loss-LoG_masked_mid5-Reg_no-Drop_0.9-Ob_FULL_SEG_3C_motion-Gt_FULL_SEG(LoG weight = 1)&lt;/td&gt;
+      &lt;td&gt;cigserver2/gpu3&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;END&lt;/td&gt;
+      &lt;td&gt;Oct 8 23:58&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;19&lt;/td&gt;
+      &lt;td&gt;Loss_l2_masked_mid5-Loss-Sobel_masked_mid5_w2-Reg_no-Drop_0.9-Ob_FULL_SEG_3C_motion-Gt_FULL_SEG&lt;/td&gt;
+      &lt;td&gt;cigserver1/gpu3&lt;/td&gt;
+      &lt;td&gt;Rerun 16 with correct weight,NaN&lt;/td&gt;
+      &lt;td&gt;STOP&lt;/td&gt;
+      &lt;td&gt;Oct&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;20&lt;/td&gt;
+      &lt;td&gt;Loss_l2_masked_mid5-Loss-gradient_masked_mid5_Clip-Reg_no-Drop_0.9-Ob_FULL_SEG_3C_motion-Gt_FULL_SEG-Opti_Clipping&lt;/td&gt;
+      &lt;td&gt;cigserver1/gpu2&lt;/td&gt;
+      &lt;td&gt;BLACK&lt;/td&gt;
+      &lt;td&gt;STOP&lt;/td&gt;
+      &lt;td&gt;Oct&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;21&lt;/td&gt;
+      &lt;td&gt;Loss_l2_masked_mid5-Loss-LoG_masked_mid5-Reg_no-Drop_0.9-Ob_FULL_SEG_3C_motion-Gt_FULL_SEG&lt;/td&gt;
+      &lt;td&gt;cigserver2/gpu3&lt;/td&gt;
+      &lt;td&gt;Rerun 18 with correct weight&lt;/td&gt;
+      &lt;td&gt;RUNNING&lt;/td&gt;
+      &lt;td&gt;Oct 8 23:58&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;22&lt;/td&gt;
+      &lt;td&gt;Loss_l2_masked_mid5-Loss_LoG_masked_mid5_w2-Reg_no-Drop_0.9-Ob_FULL_SEG_3C_motion-Gt_FULL_SEG&lt;/td&gt;
+      &lt;td&gt;cigserver1/gpu3&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;RUNNING&lt;/td&gt;
+      &lt;td&gt;Oct&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;23&lt;/td&gt;
+      &lt;td&gt;Loss_l2_masked_mid5-Loss-gradient_XY_masked_mid5-Reg_no-Drop_0.9-Ob_FULL_SEG_3C_motion-Gt_FULL_SEG&lt;/td&gt;
+      &lt;td&gt;cigserver1/gpu2&lt;/td&gt;
+      &lt;td&gt;Rerun 15 with edited gradient&lt;/td&gt;
+      &lt;td&gt;RUNNING&lt;/td&gt;
+      &lt;td&gt;Oct&lt;/td&gt;
     &lt;/tr&gt;
   &lt;/tbody&gt;
 &lt;/table&gt;
 
-&lt;!--more--&gt;
+&lt;blockquote&gt;
+  &lt;ul&gt;
+    &lt;li&gt;When &lt;code class=&quot;highlighter-rouge&quot;&gt;epochSize = 5&lt;/code&gt;, the average training speed is about &lt;code class=&quot;highlighter-rouge&quot;&gt;0.11 hour/epoch&lt;/code&gt;
+&lt;!--more--&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/blockquote&gt;
 
 &lt;h2 id=&quot;2-experiment-record&quot;&gt;2. Experiment Record&lt;/h2&gt;
 &lt;h3 id=&quot;21-unetloss&quot;&gt;2.1 UNet+Loss&lt;/h3&gt;
@@ -677,23 +993,81 @@ theme. Hope this works for you!&lt;/p&gt;
                     
                 
                     
-                  &lt;p&gt;tra_loss.png&lt;/p&gt;
-                  &lt;img src=&quot;/assets/imgs/denoising/l2_3C_motion_masked_gradient_masked_reg_no_drop_0.75_FULL_data/tensorboard/tra_loss.png&quot; alt=&quot;image&quot; style=&quot;float: left; vertical-align: text-top;&quot; /&gt;
+                
                     
                 
                     
-                  &lt;p&gt;tra_psnr.png&lt;/p&gt;
-                  &lt;img src=&quot;/assets/imgs/denoising/l2_3C_motion_masked_gradient_masked_reg_no_drop_0.75_FULL_data/tensorboard/tra_psnr.png&quot; alt=&quot;image&quot; style=&quot;float: left; vertical-align: text-top;&quot; /&gt;
+                
                     
                 
                     
-                  &lt;p&gt;val_loss.png&lt;/p&gt;
-                  &lt;img src=&quot;/assets/imgs/denoising/l2_3C_motion_masked_gradient_masked_reg_no_drop_0.75_FULL_data/tensorboard/val_loss.png&quot; alt=&quot;image&quot; style=&quot;float: left; vertical-align: text-top;&quot; /&gt;
+                
                     
                 
                     
-                  &lt;p&gt;val_psnr.png&lt;/p&gt;
-                  &lt;img src=&quot;/assets/imgs/denoising/l2_3C_motion_masked_gradient_masked_reg_no_drop_0.75_FULL_data/tensorboard/val_psnr.png&quot; alt=&quot;image&quot; style=&quot;float: left; vertical-align: text-top;&quot; /&gt;
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                  &lt;img src=&quot;//assets/imgs/denoising/l2_3C_motion_masked_gradient_masked_reg_no_drop_0.75_FULL_data/tensorboard/tra_loss.png&quot; alt=&quot;image&quot; style=&quot;float: left; vertical-align: text-top;&quot; /&gt;
+                    
+                
+                    
+                  &lt;img src=&quot;//assets/imgs/denoising/l2_3C_motion_masked_gradient_masked_reg_no_drop_0.75_FULL_data/tensorboard/tra_psnr.png&quot; alt=&quot;image&quot; style=&quot;float: left; vertical-align: text-top;&quot; /&gt;
+                    
+                
+                    
+                  &lt;img src=&quot;//assets/imgs/denoising/l2_3C_motion_masked_gradient_masked_reg_no_drop_0.75_FULL_data/tensorboard/val_loss.png&quot; alt=&quot;image&quot; style=&quot;float: left; vertical-align: text-top;&quot; /&gt;
+                    
+                
+                    
+                  &lt;img src=&quot;//assets/imgs/denoising/l2_3C_motion_masked_gradient_masked_reg_no_drop_0.75_FULL_data/tensorboard/val_psnr.png&quot; alt=&quot;image&quot; style=&quot;float: left; vertical-align: text-top;&quot; /&gt;
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
                     
                 
                     
@@ -934,33 +1308,95 @@ theme. Hope this works for you!&lt;/p&gt;
                     
                 
                     
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
                   &lt;p&gt;epoch_198_train_inputs_img.png&lt;/p&gt;
-                  &lt;img src=&quot;/assets/imgs/denoising/l2_3C_motion_masked_gradient_masked_reg_no_drop_0.75_FULL_data/train/epoch_198_train_inputs_img.png&quot; alt=&quot;image&quot; style=&quot;float: left; vertical-align: text-top;&quot; /&gt;
+                  &lt;img src=&quot;//assets/imgs/denoising/l2_3C_motion_masked_gradient_masked_reg_no_drop_0.75_FULL_data/train/epoch_198_train_inputs_img.png&quot; alt=&quot;image&quot; style=&quot;float: left; vertical-align: text-top;&quot; /&gt;
                     
                 
                     
                   &lt;p&gt;epoch_198_train_outputs_img.png&lt;/p&gt;
-                  &lt;img src=&quot;/assets/imgs/denoising/l2_3C_motion_masked_gradient_masked_reg_no_drop_0.75_FULL_data/train/epoch_198_train_outputs_img.png&quot; alt=&quot;image&quot; style=&quot;float: left; vertical-align: text-top;&quot; /&gt;
+                  &lt;img src=&quot;//assets/imgs/denoising/l2_3C_motion_masked_gradient_masked_reg_no_drop_0.75_FULL_data/train/epoch_198_train_outputs_img.png&quot; alt=&quot;image&quot; style=&quot;float: left; vertical-align: text-top;&quot; /&gt;
                     
                 
                     
                   &lt;p&gt;epoch_198_train_targets_img.png&lt;/p&gt;
-                  &lt;img src=&quot;/assets/imgs/denoising/l2_3C_motion_masked_gradient_masked_reg_no_drop_0.75_FULL_data/train/epoch_198_train_targets_img.png&quot; alt=&quot;image&quot; style=&quot;float: left; vertical-align: text-top;&quot; /&gt;
+                  &lt;img src=&quot;//assets/imgs/denoising/l2_3C_motion_masked_gradient_masked_reg_no_drop_0.75_FULL_data/train/epoch_198_train_targets_img.png&quot; alt=&quot;image&quot; style=&quot;float: left; vertical-align: text-top;&quot; /&gt;
                     
                 
                     
                   &lt;p&gt;epoch_199_train_inputs_img.png&lt;/p&gt;
-                  &lt;img src=&quot;/assets/imgs/denoising/l2_3C_motion_masked_gradient_masked_reg_no_drop_0.75_FULL_data/train/epoch_199_train_inputs_img.png&quot; alt=&quot;image&quot; style=&quot;float: left; vertical-align: text-top;&quot; /&gt;
+                  &lt;img src=&quot;//assets/imgs/denoising/l2_3C_motion_masked_gradient_masked_reg_no_drop_0.75_FULL_data/train/epoch_199_train_inputs_img.png&quot; alt=&quot;image&quot; style=&quot;float: left; vertical-align: text-top;&quot; /&gt;
                     
                 
                     
                   &lt;p&gt;epoch_199_train_outputs_img.png&lt;/p&gt;
-                  &lt;img src=&quot;/assets/imgs/denoising/l2_3C_motion_masked_gradient_masked_reg_no_drop_0.75_FULL_data/train/epoch_199_train_outputs_img.png&quot; alt=&quot;image&quot; style=&quot;float: left; vertical-align: text-top;&quot; /&gt;
+                  &lt;img src=&quot;//assets/imgs/denoising/l2_3C_motion_masked_gradient_masked_reg_no_drop_0.75_FULL_data/train/epoch_199_train_outputs_img.png&quot; alt=&quot;image&quot; style=&quot;float: left; vertical-align: text-top;&quot; /&gt;
                     
                 
                     
                   &lt;p&gt;epoch_199_train_targets_img.png&lt;/p&gt;
-                  &lt;img src=&quot;/assets/imgs/denoising/l2_3C_motion_masked_gradient_masked_reg_no_drop_0.75_FULL_data/train/epoch_199_train_targets_img.png&quot; alt=&quot;image&quot; style=&quot;float: left; vertical-align: text-top;&quot; /&gt;
+                  &lt;img src=&quot;//assets/imgs/denoising/l2_3C_motion_masked_gradient_masked_reg_no_drop_0.75_FULL_data/train/epoch_199_train_targets_img.png&quot; alt=&quot;image&quot; style=&quot;float: left; vertical-align: text-top;&quot; /&gt;
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
                     
                 
                     
@@ -1202,23 +1638,85 @@ theme. Hope this works for you!&lt;/p&gt;
                     
                 
                     
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
                   &lt;p&gt;epoch_198_valid_img.png&lt;/p&gt;
-                  &lt;img src=&quot;/assets/imgs/denoising/l2_3C_motion_masked_gradient_masked_reg_no_drop_0.75_FULL_data/valid/epoch_198_valid_img.png&quot; alt=&quot;image&quot; style=&quot;float: left; vertical-align: text-top;&quot; /&gt;
+                  &lt;img src=&quot;//assets/imgs/denoising/l2_3C_motion_masked_gradient_masked_reg_no_drop_0.75_FULL_data/valid/epoch_198_valid_img.png&quot; alt=&quot;image&quot; style=&quot;float: left; vertical-align: text-top;&quot; /&gt;
                     
                 
                     
                   &lt;p&gt;epoch_199_valid_img.png&lt;/p&gt;
-                  &lt;img src=&quot;/assets/imgs/denoising/l2_3C_motion_masked_gradient_masked_reg_no_drop_0.75_FULL_data/valid/epoch_199_valid_img.png&quot; alt=&quot;image&quot; style=&quot;float: left; vertical-align: text-top;&quot; /&gt;
+                  &lt;img src=&quot;//assets/imgs/denoising/l2_3C_motion_masked_gradient_masked_reg_no_drop_0.75_FULL_data/valid/epoch_199_valid_img.png&quot; alt=&quot;image&quot; style=&quot;float: left; vertical-align: text-top;&quot; /&gt;
                     
                 
                     
                   &lt;p&gt;trainGt_img.png&lt;/p&gt;
-                  &lt;img src=&quot;/assets/imgs/denoising/l2_3C_motion_masked_gradient_masked_reg_no_drop_0.75_FULL_data/valid/trainGt_img.png&quot; alt=&quot;image&quot; style=&quot;float: left; vertical-align: text-top;&quot; /&gt;
+                  &lt;img src=&quot;//assets/imgs/denoising/l2_3C_motion_masked_gradient_masked_reg_no_drop_0.75_FULL_data/valid/trainGt_img.png&quot; alt=&quot;image&quot; style=&quot;float: left; vertical-align: text-top;&quot; /&gt;
                     
                 
                     
                   &lt;p&gt;trainOb_img.png&lt;/p&gt;
-                  &lt;img src=&quot;/assets/imgs/denoising/l2_3C_motion_masked_gradient_masked_reg_no_drop_0.75_FULL_data/valid/trainOb_img.png&quot; alt=&quot;image&quot; style=&quot;float: left; vertical-align: text-top;&quot; /&gt;
+                  &lt;img src=&quot;//assets/imgs/denoising/l2_3C_motion_masked_gradient_masked_reg_no_drop_0.75_FULL_data/valid/trainOb_img.png&quot; alt=&quot;image&quot; style=&quot;float: left; vertical-align: text-top;&quot; /&gt;
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
                     
                 
                     
@@ -1524,6 +2022,76 @@ theme. Hope this works for you!&lt;/p&gt;
                 
                     
                 
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                  &lt;img src=&quot;//assets/imgs/denoising/l2_3C_motion_masked_gradient_masked_reg_no_drop_0.75_FULL_data_w2/tensorboard/tra_loss.png&quot; alt=&quot;image&quot; style=&quot;float: left; vertical-align: text-top;&quot; /&gt;
+                    
+                
+                    
+                  &lt;img src=&quot;//assets/imgs/denoising/l2_3C_motion_masked_gradient_masked_reg_no_drop_0.75_FULL_data_w2/tensorboard/tra_psnr.png&quot; alt=&quot;image&quot; style=&quot;float: left; vertical-align: text-top;&quot; /&gt;
+                    
+                
+                    
+                  &lt;img src=&quot;//assets/imgs/denoising/l2_3C_motion_masked_gradient_masked_reg_no_drop_0.75_FULL_data_w2/tensorboard/val_loss.png&quot; alt=&quot;image&quot; style=&quot;float: left; vertical-align: text-top;&quot; /&gt;
+                    
+                
+                    
+                  &lt;img src=&quot;//assets/imgs/denoising/l2_3C_motion_masked_gradient_masked_reg_no_drop_0.75_FULL_data_w2/tensorboard/val_psnr.png&quot; alt=&quot;image&quot; style=&quot;float: left; vertical-align: text-top;&quot; /&gt;
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
   &lt;/details&gt;
       &lt;/li&gt;
       &lt;li&gt;
@@ -1722,33 +2290,95 @@ theme. Hope this works for you!&lt;/p&gt;
                     
                 
                     
-                  &lt;p&gt;epoch_150_train_inputs_img.png&lt;/p&gt;
-                  &lt;img src=&quot;/assets/imgs/denoising/l2_3C_motion_masked_gradient_masked_reg_no_drop_0.75_FULL_data_w2/train/epoch_150_train_inputs_img.png&quot; alt=&quot;image&quot; style=&quot;float: left; vertical-align: text-top;&quot; /&gt;
+                
                     
                 
                     
-                  &lt;p&gt;epoch_150_train_outputs_img.png&lt;/p&gt;
-                  &lt;img src=&quot;/assets/imgs/denoising/l2_3C_motion_masked_gradient_masked_reg_no_drop_0.75_FULL_data_w2/train/epoch_150_train_outputs_img.png&quot; alt=&quot;image&quot; style=&quot;float: left; vertical-align: text-top;&quot; /&gt;
+                
                     
                 
                     
-                  &lt;p&gt;epoch_150_train_targets_img.png&lt;/p&gt;
-                  &lt;img src=&quot;/assets/imgs/denoising/l2_3C_motion_masked_gradient_masked_reg_no_drop_0.75_FULL_data_w2/train/epoch_150_train_targets_img.png&quot; alt=&quot;image&quot; style=&quot;float: left; vertical-align: text-top;&quot; /&gt;
+                
                     
                 
                     
-                  &lt;p&gt;epoch_151_train_inputs_img.png&lt;/p&gt;
-                  &lt;img src=&quot;/assets/imgs/denoising/l2_3C_motion_masked_gradient_masked_reg_no_drop_0.75_FULL_data_w2/train/epoch_151_train_inputs_img.png&quot; alt=&quot;image&quot; style=&quot;float: left; vertical-align: text-top;&quot; /&gt;
+                
                     
                 
                     
-                  &lt;p&gt;epoch_151_train_outputs_img.png&lt;/p&gt;
-                  &lt;img src=&quot;/assets/imgs/denoising/l2_3C_motion_masked_gradient_masked_reg_no_drop_0.75_FULL_data_w2/train/epoch_151_train_outputs_img.png&quot; alt=&quot;image&quot; style=&quot;float: left; vertical-align: text-top;&quot; /&gt;
+                
                     
                 
                     
-                  &lt;p&gt;epoch_151_train_targets_img.png&lt;/p&gt;
-                  &lt;img src=&quot;/assets/imgs/denoising/l2_3C_motion_masked_gradient_masked_reg_no_drop_0.75_FULL_data_w2/train/epoch_151_train_targets_img.png&quot; alt=&quot;image&quot; style=&quot;float: left; vertical-align: text-top;&quot; /&gt;
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                  &lt;p&gt;epoch_298_train_inputs_img.png&lt;/p&gt;
+                  &lt;img src=&quot;//assets/imgs/denoising/l2_3C_motion_masked_gradient_masked_reg_no_drop_0.75_FULL_data_w2/train/epoch_298_train_inputs_img.png&quot; alt=&quot;image&quot; style=&quot;float: left; vertical-align: text-top;&quot; /&gt;
+                    
+                
+                    
+                  &lt;p&gt;epoch_298_train_outputs_img.png&lt;/p&gt;
+                  &lt;img src=&quot;//assets/imgs/denoising/l2_3C_motion_masked_gradient_masked_reg_no_drop_0.75_FULL_data_w2/train/epoch_298_train_outputs_img.png&quot; alt=&quot;image&quot; style=&quot;float: left; vertical-align: text-top;&quot; /&gt;
+                    
+                
+                    
+                  &lt;p&gt;epoch_298_train_targets_img.png&lt;/p&gt;
+                  &lt;img src=&quot;//assets/imgs/denoising/l2_3C_motion_masked_gradient_masked_reg_no_drop_0.75_FULL_data_w2/train/epoch_298_train_targets_img.png&quot; alt=&quot;image&quot; style=&quot;float: left; vertical-align: text-top;&quot; /&gt;
+                    
+                
+                    
+                  &lt;p&gt;epoch_299_train_inputs_img.png&lt;/p&gt;
+                  &lt;img src=&quot;//assets/imgs/denoising/l2_3C_motion_masked_gradient_masked_reg_no_drop_0.75_FULL_data_w2/train/epoch_299_train_inputs_img.png&quot; alt=&quot;image&quot; style=&quot;float: left; vertical-align: text-top;&quot; /&gt;
+                    
+                
+                    
+                  &lt;p&gt;epoch_299_train_outputs_img.png&lt;/p&gt;
+                  &lt;img src=&quot;//assets/imgs/denoising/l2_3C_motion_masked_gradient_masked_reg_no_drop_0.75_FULL_data_w2/train/epoch_299_train_outputs_img.png&quot; alt=&quot;image&quot; style=&quot;float: left; vertical-align: text-top;&quot; /&gt;
+                    
+                
+                    
+                  &lt;p&gt;epoch_299_train_targets_img.png&lt;/p&gt;
+                  &lt;img src=&quot;//assets/imgs/denoising/l2_3C_motion_masked_gradient_masked_reg_no_drop_0.75_FULL_data_w2/train/epoch_299_train_targets_img.png&quot; alt=&quot;image&quot; style=&quot;float: left; vertical-align: text-top;&quot; /&gt;
+                    
+                
+                    
+                
+                    
+                
                     
                 
                     
@@ -1990,23 +2620,88 @@ theme. Hope this works for you!&lt;/p&gt;
                     
                 
                     
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
                   &lt;p&gt;epoch_150_valid_img.png&lt;/p&gt;
-                  &lt;img src=&quot;/assets/imgs/denoising/l2_3C_motion_masked_gradient_masked_reg_no_drop_0.75_FULL_data_w2/valid/epoch_150_valid_img.png&quot; alt=&quot;image&quot; style=&quot;float: left; vertical-align: text-top;&quot; /&gt;
+                  &lt;img src=&quot;//assets/imgs/denoising/l2_3C_motion_masked_gradient_masked_reg_no_drop_0.75_FULL_data_w2/valid/epoch_150_valid_img.png&quot; alt=&quot;image&quot; style=&quot;float: left; vertical-align: text-top;&quot; /&gt;
                     
                 
                     
                   &lt;p&gt;epoch_151_valid_img.png&lt;/p&gt;
-                  &lt;img src=&quot;/assets/imgs/denoising/l2_3C_motion_masked_gradient_masked_reg_no_drop_0.75_FULL_data_w2/valid/epoch_151_valid_img.png&quot; alt=&quot;image&quot; style=&quot;float: left; vertical-align: text-top;&quot; /&gt;
+                  &lt;img src=&quot;//assets/imgs/denoising/l2_3C_motion_masked_gradient_masked_reg_no_drop_0.75_FULL_data_w2/valid/epoch_151_valid_img.png&quot; alt=&quot;image&quot; style=&quot;float: left; vertical-align: text-top;&quot; /&gt;
+                    
+                
+                    
+                  &lt;p&gt;epoch_298_valid_img.png&lt;/p&gt;
+                  &lt;img src=&quot;//assets/imgs/denoising/l2_3C_motion_masked_gradient_masked_reg_no_drop_0.75_FULL_data_w2/valid/epoch_298_valid_img.png&quot; alt=&quot;image&quot; style=&quot;float: left; vertical-align: text-top;&quot; /&gt;
                     
                 
                     
                   &lt;p&gt;trainGt_img.png&lt;/p&gt;
-                  &lt;img src=&quot;/assets/imgs/denoising/l2_3C_motion_masked_gradient_masked_reg_no_drop_0.75_FULL_data_w2/valid/trainGt_img.png&quot; alt=&quot;image&quot; style=&quot;float: left; vertical-align: text-top;&quot; /&gt;
+                  &lt;img src=&quot;//assets/imgs/denoising/l2_3C_motion_masked_gradient_masked_reg_no_drop_0.75_FULL_data_w2/valid/trainGt_img.png&quot; alt=&quot;image&quot; style=&quot;float: left; vertical-align: text-top;&quot; /&gt;
                     
                 
                     
                   &lt;p&gt;trainOb_img.png&lt;/p&gt;
-                  &lt;img src=&quot;/assets/imgs/denoising/l2_3C_motion_masked_gradient_masked_reg_no_drop_0.75_FULL_data_w2/valid/trainOb_img.png&quot; alt=&quot;image&quot; style=&quot;float: left; vertical-align: text-top;&quot; /&gt;
+                  &lt;img src=&quot;//assets/imgs/denoising/l2_3C_motion_masked_gradient_masked_reg_no_drop_0.75_FULL_data_w2/valid/trainOb_img.png&quot; alt=&quot;image&quot; style=&quot;float: left; vertical-align: text-top;&quot; /&gt;
+                    
+                
+                    
+                
                     
                 
                     
@@ -2034,6 +2729,954 @@ theme. Hope this works for you!&lt;/p&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
   &lt;li&gt;&lt;strong&gt;l2_3C_motion_masked_gradient_masked_reg_no_drop_0.75_FULL_SEG&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;Start Date: Oct 2&lt;/li&gt;
+      &lt;li&gt;File Location: 2&lt;/li&gt;
+      &lt;li&gt;Description&lt;/li&gt;
+      &lt;li&gt;
+        &lt;details style=&quot;margin-top:0px; width:1000px&quot;&gt;
+          &lt;summary&gt;Tensorboard&lt;/summary&gt;                
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                  &lt;img src=&quot;//assets/imgs/denoising/l2_3C_motion_masked_gradient_masked_reg_no_drop_0.75_FULL_SEG/tensorboard/tra_loss.png&quot; alt=&quot;image&quot; style=&quot;float: left; vertical-align: text-top;&quot; /&gt;
+                    
+                
+                    
+                  &lt;img src=&quot;//assets/imgs/denoising/l2_3C_motion_masked_gradient_masked_reg_no_drop_0.75_FULL_SEG/tensorboard/tra_psnr.png&quot; alt=&quot;image&quot; style=&quot;float: left; vertical-align: text-top;&quot; /&gt;
+                    
+                
+                    
+                  &lt;img src=&quot;//assets/imgs/denoising/l2_3C_motion_masked_gradient_masked_reg_no_drop_0.75_FULL_SEG/tensorboard/val_loss.png&quot; alt=&quot;image&quot; style=&quot;float: left; vertical-align: text-top;&quot; /&gt;
+                    
+                
+                    
+                  &lt;img src=&quot;//assets/imgs/denoising/l2_3C_motion_masked_gradient_masked_reg_no_drop_0.75_FULL_SEG/tensorboard/val_psnr.png&quot; alt=&quot;image&quot; style=&quot;float: left; vertical-align: text-top;&quot; /&gt;
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+  &lt;/details&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;details style=&quot;margin-top:0px; width:1000px&quot;&gt;
+          &lt;summary&gt;Training Outputs&lt;/summary&gt;
+          Every 3 rows: training inputs, training outputs and training target
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                  &lt;p&gt;epoch_298_train_inputs_img.png&lt;/p&gt;
+                  &lt;img src=&quot;//assets/imgs/denoising/l2_3C_motion_masked_gradient_masked_reg_no_drop_0.75_FULL_SEG/train/epoch_298_train_inputs_img.png&quot; alt=&quot;image&quot; style=&quot;float: left; vertical-align: text-top;&quot; /&gt;
+                    
+                
+                    
+                  &lt;p&gt;epoch_298_train_outputs_img.png&lt;/p&gt;
+                  &lt;img src=&quot;//assets/imgs/denoising/l2_3C_motion_masked_gradient_masked_reg_no_drop_0.75_FULL_SEG/train/epoch_298_train_outputs_img.png&quot; alt=&quot;image&quot; style=&quot;float: left; vertical-align: text-top;&quot; /&gt;
+                    
+                
+                    
+                  &lt;p&gt;epoch_298_train_targets_img.png&lt;/p&gt;
+                  &lt;img src=&quot;//assets/imgs/denoising/l2_3C_motion_masked_gradient_masked_reg_no_drop_0.75_FULL_SEG/train/epoch_298_train_targets_img.png&quot; alt=&quot;image&quot; style=&quot;float: left; vertical-align: text-top;&quot; /&gt;
+                    
+                
+                    
+                  &lt;p&gt;epoch_299_train_inputs_img.png&lt;/p&gt;
+                  &lt;img src=&quot;//assets/imgs/denoising/l2_3C_motion_masked_gradient_masked_reg_no_drop_0.75_FULL_SEG/train/epoch_299_train_inputs_img.png&quot; alt=&quot;image&quot; style=&quot;float: left; vertical-align: text-top;&quot; /&gt;
+                    
+                
+                    
+                  &lt;p&gt;epoch_299_train_outputs_img.png&lt;/p&gt;
+                  &lt;img src=&quot;//assets/imgs/denoising/l2_3C_motion_masked_gradient_masked_reg_no_drop_0.75_FULL_SEG/train/epoch_299_train_outputs_img.png&quot; alt=&quot;image&quot; style=&quot;float: left; vertical-align: text-top;&quot; /&gt;
+                    
+                
+                    
+                  &lt;p&gt;epoch_299_train_targets_img.png&lt;/p&gt;
+                  &lt;img src=&quot;//assets/imgs/denoising/l2_3C_motion_masked_gradient_masked_reg_no_drop_0.75_FULL_SEG/train/epoch_299_train_targets_img.png&quot; alt=&quot;image&quot; style=&quot;float: left; vertical-align: text-top;&quot; /&gt;
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+  &lt;/details&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;details style=&quot;margin-top:0px; width:1000px&quot;&gt;
+          &lt;summary&gt;Validation Outputs&lt;/summary&gt;
+          First 2 rows: validation outputs of last 2 epochs (out of 200)
+          Last 2 rows: validation targets and intputs
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                  &lt;p&gt;epoch_140_valid_img.png&lt;/p&gt;
+                  &lt;img src=&quot;//assets/imgs/denoising/l2_3C_motion_masked_gradient_masked_reg_no_drop_0.75_FULL_SEG/valid/epoch_140_valid_img.png&quot; alt=&quot;image&quot; style=&quot;float: left; vertical-align: text-top;&quot; /&gt;
+                    
+                
+                    
+                  &lt;p&gt;epoch_141_valid_img.png&lt;/p&gt;
+                  &lt;img src=&quot;//assets/imgs/denoising/l2_3C_motion_masked_gradient_masked_reg_no_drop_0.75_FULL_SEG/valid/epoch_141_valid_img.png&quot; alt=&quot;image&quot; style=&quot;float: left; vertical-align: text-top;&quot; /&gt;
+                    
+                
+                    
+                  &lt;p&gt;epoch_298_valid_img.png&lt;/p&gt;
+                  &lt;img src=&quot;//assets/imgs/denoising/l2_3C_motion_masked_gradient_masked_reg_no_drop_0.75_FULL_SEG/valid/epoch_298_valid_img.png&quot; alt=&quot;image&quot; style=&quot;float: left; vertical-align: text-top;&quot; /&gt;
+                    
+                
+                    
+                  &lt;p&gt;epoch_299_valid_img.png&lt;/p&gt;
+                  &lt;img src=&quot;//assets/imgs/denoising/l2_3C_motion_masked_gradient_masked_reg_no_drop_0.75_FULL_SEG/valid/epoch_299_valid_img.png&quot; alt=&quot;image&quot; style=&quot;float: left; vertical-align: text-top;&quot; /&gt;
+                    
+                
+                    
+                  &lt;p&gt;trainGt_img.png&lt;/p&gt;
+                  &lt;img src=&quot;//assets/imgs/denoising/l2_3C_motion_masked_gradient_masked_reg_no_drop_0.75_FULL_SEG/valid/trainGt_img.png&quot; alt=&quot;image&quot; style=&quot;float: left; vertical-align: text-top;&quot; /&gt;
+                    
+                
+                    
+                  &lt;p&gt;trainOb_img.png&lt;/p&gt;
+                  &lt;img src=&quot;//assets/imgs/denoising/l2_3C_motion_masked_gradient_masked_reg_no_drop_0.75_FULL_SEG/valid/trainOb_img.png&quot; alt=&quot;image&quot; style=&quot;float: left; vertical-align: text-top;&quot; /&gt;
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+  &lt;/details&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;l2_3C_motion_masked_gradient_masked_mid5_reg_no_drop_0.75_FULL_data_w2&lt;/strong&gt;
     &lt;ul&gt;
       &lt;li&gt;Start Date: Oct 2&lt;/li&gt;
       &lt;li&gt;File Location: 2&lt;/li&gt;
@@ -2272,6 +3915,68 @@ theme. Hope this works for you!&lt;/p&gt;
                 
                     
                 
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
   &lt;/details&gt;
       &lt;/li&gt;
       &lt;li&gt;
@@ -2384,28 +4089,75 @@ theme. Hope this works for you!&lt;/p&gt;
                     
                 
                     
-                  &lt;p&gt;epoch_140_train_inputs_img.png&lt;/p&gt;
-                  &lt;img src=&quot;/assets/imgs/denoising/l2_3C_motion_masked_gradient_masked_reg_no_drop_0.75_FULL_SEG/train/epoch_140_train_inputs_img.png&quot; alt=&quot;image&quot; style=&quot;float: left; vertical-align: text-top;&quot; /&gt;
+                
                     
                 
                     
-                  &lt;p&gt;epoch_140_train_outputs_img.png&lt;/p&gt;
-                  &lt;img src=&quot;/assets/imgs/denoising/l2_3C_motion_masked_gradient_masked_reg_no_drop_0.75_FULL_SEG/train/epoch_140_train_outputs_img.png&quot; alt=&quot;image&quot; style=&quot;float: left; vertical-align: text-top;&quot; /&gt;
+                
                     
                 
                     
-                  &lt;p&gt;epoch_140_train_targets_img.png&lt;/p&gt;
-                  &lt;img src=&quot;/assets/imgs/denoising/l2_3C_motion_masked_gradient_masked_reg_no_drop_0.75_FULL_SEG/train/epoch_140_train_targets_img.png&quot; alt=&quot;image&quot; style=&quot;float: left; vertical-align: text-top;&quot; /&gt;
+                
                     
                 
                     
-                  &lt;p&gt;epoch_141_train_outputs_img.png&lt;/p&gt;
-                  &lt;img src=&quot;/assets/imgs/denoising/l2_3C_motion_masked_gradient_masked_reg_no_drop_0.75_FULL_SEG/train/epoch_141_train_outputs_img.png&quot; alt=&quot;image&quot; style=&quot;float: left; vertical-align: text-top;&quot; /&gt;
+                
                     
                 
                     
-                  &lt;p&gt;epoch_141_train_targets_img.png&lt;/p&gt;
-                  &lt;img src=&quot;/assets/imgs/denoising/l2_3C_motion_masked_gradient_masked_reg_no_drop_0.75_FULL_SEG/train/epoch_141_train_targets_img.png&quot; alt=&quot;image&quot; style=&quot;float: left; vertical-align: text-top;&quot; /&gt;
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
                     
                 
                     
@@ -2647,23 +4399,977 @@ theme. Hope this works for you!&lt;/p&gt;
                     
                 
                     
-                  &lt;p&gt;epoch_140_valid_img.png&lt;/p&gt;
-                  &lt;img src=&quot;/assets/imgs/denoising/l2_3C_motion_masked_gradient_masked_reg_no_drop_0.75_FULL_SEG/valid/epoch_140_valid_img.png&quot; alt=&quot;image&quot; style=&quot;float: left; vertical-align: text-top;&quot; /&gt;
+                
                     
                 
                     
-                  &lt;p&gt;epoch_141_valid_img.png&lt;/p&gt;
-                  &lt;img src=&quot;/assets/imgs/denoising/l2_3C_motion_masked_gradient_masked_reg_no_drop_0.75_FULL_SEG/valid/epoch_141_valid_img.png&quot; alt=&quot;image&quot; style=&quot;float: left; vertical-align: text-top;&quot; /&gt;
+                
                     
                 
                     
-                  &lt;p&gt;trainGt_img.png&lt;/p&gt;
-                  &lt;img src=&quot;/assets/imgs/denoising/l2_3C_motion_masked_gradient_masked_reg_no_drop_0.75_FULL_SEG/valid/trainGt_img.png&quot; alt=&quot;image&quot; style=&quot;float: left; vertical-align: text-top;&quot; /&gt;
+                
                     
                 
                     
-                  &lt;p&gt;trainOb_img.png&lt;/p&gt;
-                  &lt;img src=&quot;/assets/imgs/denoising/l2_3C_motion_masked_gradient_masked_reg_no_drop_0.75_FULL_SEG/valid/trainOb_img.png&quot; alt=&quot;image&quot; style=&quot;float: left; vertical-align: text-top;&quot; /&gt;
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+  &lt;/details&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;l2_3C_motion_masked_gradient_masked_reg_no_drop_0.9_FULL_SEG&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;Start Date: Oct 2&lt;/li&gt;
+      &lt;li&gt;File Location: 2&lt;/li&gt;
+      &lt;li&gt;Description&lt;/li&gt;
+      &lt;li&gt;
+        &lt;details style=&quot;margin-top:0px; width:1000px&quot;&gt;
+          &lt;summary&gt;Tensorboard&lt;/summary&gt;                
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+  &lt;/details&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;details style=&quot;margin-top:0px; width:1000px&quot;&gt;
+          &lt;summary&gt;Training Outputs&lt;/summary&gt;
+          Every 3 rows: training inputs, training outputs and training target
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+  &lt;/details&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;details style=&quot;margin-top:0px; width:1000px&quot;&gt;
+          &lt;summary&gt;Validation Outputs&lt;/summary&gt;
+          First 2 rows: validation outputs of last 2 epochs (out of 200)
+          Last 2 rows: validation targets and intputs
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
                     
                 
                     
@@ -2856,39 +5562,101 @@ theme. Hope this works for you!&lt;/p&gt;
                     
                 
                     
-              &lt;img src=&quot;/assets/imgs/denoising/MRI_cont3_motion_l2_masked/training/00202000-1095-inputs.png&quot; alt=&quot;image&quot; style=&quot;float: left; vertical-align: text-top;&quot; /&gt;
+                
                     
                 
                     
-              &lt;img src=&quot;/assets/imgs/denoising/MRI_cont3_motion_l2_masked/training/00202000-1095-outputs.png&quot; alt=&quot;image&quot; style=&quot;float: left; vertical-align: text-top;&quot; /&gt;
+                
                     
                 
                     
-              &lt;img src=&quot;/assets/imgs/denoising/MRI_cont3_motion_l2_masked/training/00202000-1095-targets.png&quot; alt=&quot;image&quot; style=&quot;float: left; vertical-align: text-top;&quot; /&gt;
+                
                     
                 
                     
-              &lt;img src=&quot;/assets/imgs/denoising/MRI_cont3_motion_l2_masked/training/00203000-816-inputs.png&quot; alt=&quot;image&quot; style=&quot;float: left; vertical-align: text-top;&quot; /&gt;
+                
                     
                 
                     
-              &lt;img src=&quot;/assets/imgs/denoising/MRI_cont3_motion_l2_masked/training/00203000-816-outputs.png&quot; alt=&quot;image&quot; style=&quot;float: left; vertical-align: text-top;&quot; /&gt;
+                
                     
                 
                     
-              &lt;img src=&quot;/assets/imgs/denoising/MRI_cont3_motion_l2_masked/training/00203000-816-targets.png&quot; alt=&quot;image&quot; style=&quot;float: left; vertical-align: text-top;&quot; /&gt;
+                
                     
                 
                     
-              &lt;img src=&quot;/assets/imgs/denoising/MRI_cont3_motion_l2_masked/training/00204000-1699-inputs.png&quot; alt=&quot;image&quot; style=&quot;float: left; vertical-align: text-top;&quot; /&gt;
+                
                     
                 
                     
-              &lt;img src=&quot;/assets/imgs/denoising/MRI_cont3_motion_l2_masked/training/00204000-1699-outputs.png&quot; alt=&quot;image&quot; style=&quot;float: left; vertical-align: text-top;&quot; /&gt;
+                
                     
                 
                     
-              &lt;img src=&quot;/assets/imgs/denoising/MRI_cont3_motion_l2_masked/training/00204000-1699-targets.png&quot; alt=&quot;image&quot; style=&quot;float: left; vertical-align: text-top;&quot; /&gt;
+              &lt;img src=&quot;//assets/imgs/denoising/MRI_cont3_motion_l2_masked/training/00202000-1095-inputs.png&quot; alt=&quot;image&quot; style=&quot;float: left; vertical-align: text-top;&quot; /&gt;
+                    
+                
+                    
+              &lt;img src=&quot;//assets/imgs/denoising/MRI_cont3_motion_l2_masked/training/00202000-1095-outputs.png&quot; alt=&quot;image&quot; style=&quot;float: left; vertical-align: text-top;&quot; /&gt;
+                    
+                
+                    
+              &lt;img src=&quot;//assets/imgs/denoising/MRI_cont3_motion_l2_masked/training/00202000-1095-targets.png&quot; alt=&quot;image&quot; style=&quot;float: left; vertical-align: text-top;&quot; /&gt;
+                    
+                
+                    
+              &lt;img src=&quot;//assets/imgs/denoising/MRI_cont3_motion_l2_masked/training/00203000-816-inputs.png&quot; alt=&quot;image&quot; style=&quot;float: left; vertical-align: text-top;&quot; /&gt;
+                    
+                
+                    
+              &lt;img src=&quot;//assets/imgs/denoising/MRI_cont3_motion_l2_masked/training/00203000-816-outputs.png&quot; alt=&quot;image&quot; style=&quot;float: left; vertical-align: text-top;&quot; /&gt;
+                    
+                
+                    
+              &lt;img src=&quot;//assets/imgs/denoising/MRI_cont3_motion_l2_masked/training/00203000-816-targets.png&quot; alt=&quot;image&quot; style=&quot;float: left; vertical-align: text-top;&quot; /&gt;
+                    
+                
+                    
+              &lt;img src=&quot;//assets/imgs/denoising/MRI_cont3_motion_l2_masked/training/00204000-1699-inputs.png&quot; alt=&quot;image&quot; style=&quot;float: left; vertical-align: text-top;&quot; /&gt;
+                    
+                
+                    
+              &lt;img src=&quot;//assets/imgs/denoising/MRI_cont3_motion_l2_masked/training/00204000-1699-outputs.png&quot; alt=&quot;image&quot; style=&quot;float: left; vertical-align: text-top;&quot; /&gt;
+                    
+                
+                    
+              &lt;img src=&quot;//assets/imgs/denoising/MRI_cont3_motion_l2_masked/training/00204000-1699-targets.png&quot; alt=&quot;image&quot; style=&quot;float: left; vertical-align: text-top;&quot; /&gt;
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
                     
                 
                     
@@ -3092,39 +5860,101 @@ theme. Hope this works for you!&lt;/p&gt;
                     
                 
                     
-              &lt;img src=&quot;/assets/imgs/denoising/MRI_cont3_motion_l2_masked/test/28-inputs.png&quot; alt=&quot;image&quot; style=&quot;float: left; vertical-align: text-top;&quot; /&gt;
+                
                     
                 
                     
-              &lt;img src=&quot;/assets/imgs/denoising/MRI_cont3_motion_l2_masked/test/28-outputs.png&quot; alt=&quot;image&quot; style=&quot;float: left; vertical-align: text-top;&quot; /&gt;
+                
                     
                 
                     
-              &lt;img src=&quot;/assets/imgs/denoising/MRI_cont3_motion_l2_masked/test/28-targets.png&quot; alt=&quot;image&quot; style=&quot;float: left; vertical-align: text-top;&quot; /&gt;
+                
                     
                 
                     
-              &lt;img src=&quot;/assets/imgs/denoising/MRI_cont3_motion_l2_masked/test/29-inputs.png&quot; alt=&quot;image&quot; style=&quot;float: left; vertical-align: text-top;&quot; /&gt;
+                
                     
                 
                     
-              &lt;img src=&quot;/assets/imgs/denoising/MRI_cont3_motion_l2_masked/test/29-outputs.png&quot; alt=&quot;image&quot; style=&quot;float: left; vertical-align: text-top;&quot; /&gt;
+                
                     
                 
                     
-              &lt;img src=&quot;/assets/imgs/denoising/MRI_cont3_motion_l2_masked/test/29-targets.png&quot; alt=&quot;image&quot; style=&quot;float: left; vertical-align: text-top;&quot; /&gt;
+                
                     
                 
                     
-              &lt;img src=&quot;/assets/imgs/denoising/MRI_cont3_motion_l2_masked/test/30-inputs.png&quot; alt=&quot;image&quot; style=&quot;float: left; vertical-align: text-top;&quot; /&gt;
+                
                     
                 
                     
-              &lt;img src=&quot;/assets/imgs/denoising/MRI_cont3_motion_l2_masked/test/30-outputs.png&quot; alt=&quot;image&quot; style=&quot;float: left; vertical-align: text-top;&quot; /&gt;
+                
                     
                 
                     
-              &lt;img src=&quot;/assets/imgs/denoising/MRI_cont3_motion_l2_masked/test/30-targets.png&quot; alt=&quot;image&quot; style=&quot;float: left; vertical-align: text-top;&quot; /&gt;
+              &lt;img src=&quot;//assets/imgs/denoising/MRI_cont3_motion_l2_masked/test/28-inputs.png&quot; alt=&quot;image&quot; style=&quot;float: left; vertical-align: text-top;&quot; /&gt;
+                    
+                
+                    
+              &lt;img src=&quot;//assets/imgs/denoising/MRI_cont3_motion_l2_masked/test/28-outputs.png&quot; alt=&quot;image&quot; style=&quot;float: left; vertical-align: text-top;&quot; /&gt;
+                    
+                
+                    
+              &lt;img src=&quot;//assets/imgs/denoising/MRI_cont3_motion_l2_masked/test/28-targets.png&quot; alt=&quot;image&quot; style=&quot;float: left; vertical-align: text-top;&quot; /&gt;
+                    
+                
+                    
+              &lt;img src=&quot;//assets/imgs/denoising/MRI_cont3_motion_l2_masked/test/29-inputs.png&quot; alt=&quot;image&quot; style=&quot;float: left; vertical-align: text-top;&quot; /&gt;
+                    
+                
+                    
+              &lt;img src=&quot;//assets/imgs/denoising/MRI_cont3_motion_l2_masked/test/29-outputs.png&quot; alt=&quot;image&quot; style=&quot;float: left; vertical-align: text-top;&quot; /&gt;
+                    
+                
+                    
+              &lt;img src=&quot;//assets/imgs/denoising/MRI_cont3_motion_l2_masked/test/29-targets.png&quot; alt=&quot;image&quot; style=&quot;float: left; vertical-align: text-top;&quot; /&gt;
+                    
+                
+                    
+              &lt;img src=&quot;//assets/imgs/denoising/MRI_cont3_motion_l2_masked/test/30-inputs.png&quot; alt=&quot;image&quot; style=&quot;float: left; vertical-align: text-top;&quot; /&gt;
+                    
+                
+                    
+              &lt;img src=&quot;//assets/imgs/denoising/MRI_cont3_motion_l2_masked/test/30-outputs.png&quot; alt=&quot;image&quot; style=&quot;float: left; vertical-align: text-top;&quot; /&gt;
+                    
+                
+                    
+              &lt;img src=&quot;//assets/imgs/denoising/MRI_cont3_motion_l2_masked/test/30-targets.png&quot; alt=&quot;image&quot; style=&quot;float: left; vertical-align: text-top;&quot; /&gt;
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
                     
                 
                     
@@ -3444,39 +6274,101 @@ theme. Hope this works for you!&lt;/p&gt;
                     
                 
                     
-              &lt;img src=&quot;/assets/imgs/denoising/MRI_cont3_motion_l2_weight1/training/00406000-1374-inputs.png&quot; alt=&quot;image&quot; style=&quot;float: left; vertical-align: text-top;&quot; /&gt;
+                
                     
                 
                     
-              &lt;img src=&quot;/assets/imgs/denoising/MRI_cont3_motion_l2_weight1/training/00406000-1374-outputs.png&quot; alt=&quot;image&quot; style=&quot;float: left; vertical-align: text-top;&quot; /&gt;
+                
                     
                 
                     
-              &lt;img src=&quot;/assets/imgs/denoising/MRI_cont3_motion_l2_weight1/training/00406000-1374-targets.png&quot; alt=&quot;image&quot; style=&quot;float: left; vertical-align: text-top;&quot; /&gt;
+                
                     
                 
                     
-              &lt;img src=&quot;/assets/imgs/denoising/MRI_cont3_motion_l2_weight1/training/00407000-409-inputs.png&quot; alt=&quot;image&quot; style=&quot;float: left; vertical-align: text-top;&quot; /&gt;
+                
                     
                 
                     
-              &lt;img src=&quot;/assets/imgs/denoising/MRI_cont3_motion_l2_weight1/training/00407000-409-outputs.png&quot; alt=&quot;image&quot; style=&quot;float: left; vertical-align: text-top;&quot; /&gt;
+                
                     
                 
                     
-              &lt;img src=&quot;/assets/imgs/denoising/MRI_cont3_motion_l2_weight1/training/00407000-409-targets.png&quot; alt=&quot;image&quot; style=&quot;float: left; vertical-align: text-top;&quot; /&gt;
+                
                     
                 
                     
-              &lt;img src=&quot;/assets/imgs/denoising/MRI_cont3_motion_l2_weight1/training/00408000-391-inputs.png&quot; alt=&quot;image&quot; style=&quot;float: left; vertical-align: text-top;&quot; /&gt;
+                
                     
                 
                     
-              &lt;img src=&quot;/assets/imgs/denoising/MRI_cont3_motion_l2_weight1/training/00408000-391-outputs.png&quot; alt=&quot;image&quot; style=&quot;float: left; vertical-align: text-top;&quot; /&gt;
+                
                     
                 
                     
-              &lt;img src=&quot;/assets/imgs/denoising/MRI_cont3_motion_l2_weight1/training/00408000-391-targets.png&quot; alt=&quot;image&quot; style=&quot;float: left; vertical-align: text-top;&quot; /&gt;
+              &lt;img src=&quot;//assets/imgs/denoising/MRI_cont3_motion_l2_weight1/training/00406000-1374-inputs.png&quot; alt=&quot;image&quot; style=&quot;float: left; vertical-align: text-top;&quot; /&gt;
+                    
+                
+                    
+              &lt;img src=&quot;//assets/imgs/denoising/MRI_cont3_motion_l2_weight1/training/00406000-1374-outputs.png&quot; alt=&quot;image&quot; style=&quot;float: left; vertical-align: text-top;&quot; /&gt;
+                    
+                
+                    
+              &lt;img src=&quot;//assets/imgs/denoising/MRI_cont3_motion_l2_weight1/training/00406000-1374-targets.png&quot; alt=&quot;image&quot; style=&quot;float: left; vertical-align: text-top;&quot; /&gt;
+                    
+                
+                    
+              &lt;img src=&quot;//assets/imgs/denoising/MRI_cont3_motion_l2_weight1/training/00407000-409-inputs.png&quot; alt=&quot;image&quot; style=&quot;float: left; vertical-align: text-top;&quot; /&gt;
+                    
+                
+                    
+              &lt;img src=&quot;//assets/imgs/denoising/MRI_cont3_motion_l2_weight1/training/00407000-409-outputs.png&quot; alt=&quot;image&quot; style=&quot;float: left; vertical-align: text-top;&quot; /&gt;
+                    
+                
+                    
+              &lt;img src=&quot;//assets/imgs/denoising/MRI_cont3_motion_l2_weight1/training/00407000-409-targets.png&quot; alt=&quot;image&quot; style=&quot;float: left; vertical-align: text-top;&quot; /&gt;
+                    
+                
+                    
+              &lt;img src=&quot;//assets/imgs/denoising/MRI_cont3_motion_l2_weight1/training/00408000-391-inputs.png&quot; alt=&quot;image&quot; style=&quot;float: left; vertical-align: text-top;&quot; /&gt;
+                    
+                
+                    
+              &lt;img src=&quot;//assets/imgs/denoising/MRI_cont3_motion_l2_weight1/training/00408000-391-outputs.png&quot; alt=&quot;image&quot; style=&quot;float: left; vertical-align: text-top;&quot; /&gt;
+                    
+                
+                    
+              &lt;img src=&quot;//assets/imgs/denoising/MRI_cont3_motion_l2_weight1/training/00408000-391-targets.png&quot; alt=&quot;image&quot; style=&quot;float: left; vertical-align: text-top;&quot; /&gt;
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
                     
                 
                     
@@ -3680,39 +6572,101 @@ theme. Hope this works for you!&lt;/p&gt;
                     
                 
                     
-              &lt;img src=&quot;/assets/imgs/denoising/MRI_cont3_motion_l2_weight1/test/28-inputs.png&quot; alt=&quot;image&quot; style=&quot;float: left; vertical-align: text-top;&quot; /&gt;
+                
                     
                 
                     
-              &lt;img src=&quot;/assets/imgs/denoising/MRI_cont3_motion_l2_weight1/test/28-outputs.png&quot; alt=&quot;image&quot; style=&quot;float: left; vertical-align: text-top;&quot; /&gt;
+                
                     
                 
                     
-              &lt;img src=&quot;/assets/imgs/denoising/MRI_cont3_motion_l2_weight1/test/28-targets.png&quot; alt=&quot;image&quot; style=&quot;float: left; vertical-align: text-top;&quot; /&gt;
+                
                     
                 
                     
-              &lt;img src=&quot;/assets/imgs/denoising/MRI_cont3_motion_l2_weight1/test/29-inputs.png&quot; alt=&quot;image&quot; style=&quot;float: left; vertical-align: text-top;&quot; /&gt;
+                
                     
                 
                     
-              &lt;img src=&quot;/assets/imgs/denoising/MRI_cont3_motion_l2_weight1/test/29-outputs.png&quot; alt=&quot;image&quot; style=&quot;float: left; vertical-align: text-top;&quot; /&gt;
+                
                     
                 
                     
-              &lt;img src=&quot;/assets/imgs/denoising/MRI_cont3_motion_l2_weight1/test/29-targets.png&quot; alt=&quot;image&quot; style=&quot;float: left; vertical-align: text-top;&quot; /&gt;
+                
                     
                 
                     
-              &lt;img src=&quot;/assets/imgs/denoising/MRI_cont3_motion_l2_weight1/test/30-inputs.png&quot; alt=&quot;image&quot; style=&quot;float: left; vertical-align: text-top;&quot; /&gt;
+                
                     
                 
                     
-              &lt;img src=&quot;/assets/imgs/denoising/MRI_cont3_motion_l2_weight1/test/30-outputs.png&quot; alt=&quot;image&quot; style=&quot;float: left; vertical-align: text-top;&quot; /&gt;
+                
                     
                 
                     
-              &lt;img src=&quot;/assets/imgs/denoising/MRI_cont3_motion_l2_weight1/test/30-targets.png&quot; alt=&quot;image&quot; style=&quot;float: left; vertical-align: text-top;&quot; /&gt;
+              &lt;img src=&quot;//assets/imgs/denoising/MRI_cont3_motion_l2_weight1/test/28-inputs.png&quot; alt=&quot;image&quot; style=&quot;float: left; vertical-align: text-top;&quot; /&gt;
+                    
+                
+                    
+              &lt;img src=&quot;//assets/imgs/denoising/MRI_cont3_motion_l2_weight1/test/28-outputs.png&quot; alt=&quot;image&quot; style=&quot;float: left; vertical-align: text-top;&quot; /&gt;
+                    
+                
+                    
+              &lt;img src=&quot;//assets/imgs/denoising/MRI_cont3_motion_l2_weight1/test/28-targets.png&quot; alt=&quot;image&quot; style=&quot;float: left; vertical-align: text-top;&quot; /&gt;
+                    
+                
+                    
+              &lt;img src=&quot;//assets/imgs/denoising/MRI_cont3_motion_l2_weight1/test/29-inputs.png&quot; alt=&quot;image&quot; style=&quot;float: left; vertical-align: text-top;&quot; /&gt;
+                    
+                
+                    
+              &lt;img src=&quot;//assets/imgs/denoising/MRI_cont3_motion_l2_weight1/test/29-outputs.png&quot; alt=&quot;image&quot; style=&quot;float: left; vertical-align: text-top;&quot; /&gt;
+                    
+                
+                    
+              &lt;img src=&quot;//assets/imgs/denoising/MRI_cont3_motion_l2_weight1/test/29-targets.png&quot; alt=&quot;image&quot; style=&quot;float: left; vertical-align: text-top;&quot; /&gt;
+                    
+                
+                    
+              &lt;img src=&quot;//assets/imgs/denoising/MRI_cont3_motion_l2_weight1/test/30-inputs.png&quot; alt=&quot;image&quot; style=&quot;float: left; vertical-align: text-top;&quot; /&gt;
+                    
+                
+                    
+              &lt;img src=&quot;//assets/imgs/denoising/MRI_cont3_motion_l2_weight1/test/30-outputs.png&quot; alt=&quot;image&quot; style=&quot;float: left; vertical-align: text-top;&quot; /&gt;
+                    
+                
+                    
+              &lt;img src=&quot;//assets/imgs/denoising/MRI_cont3_motion_l2_weight1/test/30-targets.png&quot; alt=&quot;image&quot; style=&quot;float: left; vertical-align: text-top;&quot; /&gt;
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
                     
                 
                     
@@ -3892,6 +6846,22 @@ theme. Hope this works for you!&lt;/p&gt;
   &lt;li&gt;&lt;strong&gt;MRI_cont3_motion_l2_masked_grad_masked_w3_FULL&lt;/strong&gt;&lt;/li&gt;
   &lt;li&gt;&lt;strong&gt;MRI_cont3_motion_l2_masked_grad_masked_w3_FULL_SEG&lt;/strong&gt;&lt;/li&gt;
 &lt;/ol&gt;
+
+&lt;h2 id=&quot;3-ideas--plans&quot;&gt;3. Ideas &amp;amp; Plans&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;From 2-8 &lt;code class=&quot;highlighter-rouge&quot;&gt;l2_3C_motion_masked_gradient_masked_reg_no_drop_0.75_FULL_data_w2&lt;/code&gt; we can see that the body edge is very sharp, which may indicts that much part of the gradient loss falled on the body edges, and organ fine structures were not given enough attention. Experiments using &lt;code class=&quot;highlighter-rouge&quot;&gt;mask_only_middle_1/4)&lt;/code&gt; may work.&lt;/li&gt;
+  &lt;li&gt;Try a only-l2 net to extract the contour and a only-gradient to extract the fine structure, and combine the two?&lt;/li&gt;
+  &lt;li&gt;Increase keep_prob to enhance net power&lt;/li&gt;
+  &lt;li&gt;Sobel&lt;/li&gt;
+  &lt;li&gt;Other direction data&lt;/li&gt;
+  &lt;li&gt;LoG edge, norm mask with y=:&lt;/li&gt;
+  &lt;li&gt;gradient clipping
+    &lt;blockquote&gt;
+      &lt;p&gt;https://stackoverflow.com/questions/36498127/how-to-apply-gradient-clipping-in-tensorflow&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+  &lt;li&gt;15-2, 16,17 have mistake in weight, need to re-run&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;h2 id=&quot;log&quot;&gt;Log&lt;/h2&gt;
 &lt;h3 id=&quot;2018-09-30&quot;&gt;2018-09-30&lt;/h3&gt;

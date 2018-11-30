@@ -1,0 +1,8 @@
+#!/bin/bash
+# Set default comment
+comment=${1-"Update"}  
+
+# Push
+git add .
+git commit -m $comment
+git push
