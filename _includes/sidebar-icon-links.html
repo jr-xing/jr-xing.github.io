@@ -7,6 +7,14 @@
     </a>
   {% endif %}
 
+  {% if site.author.email %}
+    <a id="email"
+       class="icon" title="Email" aria-label="Github Project"
+       href="{{ site.github.repo }}">
+      {% include svg/envelope.svg %}
+    </a>
+  {% endif %}
+
 
   {% comment %}
     Check if we have tag or search pages page active before linking to it.

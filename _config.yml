@@ -17,6 +17,7 @@ baseurl:          '/'
 author:
   name:           'Jerry Xing'
   url:            https://twitter.com/fongandrewc
+  email:          j.xing@wustl.edu
 
 paginate:         5
 # paginate_path:    '/page:num'
