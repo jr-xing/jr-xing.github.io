@@ -32,14 +32,14 @@ plugins:
 disqus:
   shortname:   jr-xing
 
-version:            3.7.1
+# version:            3.7.1
 sidebar_home_link:  true
 sidebar_blog_link:  '/index_blogs'   # By default, your home page is your blog
                                 # page. If you change your paginate_path,
                                 # set this to the root of the paginate_path
                                 # to enable a separate blog link.
 github:
-  repo:             https://github.com/fongandrew/hydeout
+  repo:             https://github.com/jr-xing
 
 excerpt_separator: <!--more-->  #这里可以定义自己的摘要分割符
 
