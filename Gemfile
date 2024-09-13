@@ -11,6 +11,10 @@ source "https://rubygems.org"
 
 gem "github-pages", group: :jekyll_plugins
 
+# Error: No source of timezone data could be found.
+# https://stackoverflow.com/questions/51069616/jekyll-3-7-3-error-no-source-of-timezone-data-could-be-found
+gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw]
+
 # If you want to use Jekyll native, uncomment the line below.
 # To upgrade, run `bundle update`.
 
